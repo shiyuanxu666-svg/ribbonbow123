@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional ribbon and bow manufacturer with 20+ years experience in Xiamen, China. Factory area 15,000㎡, 200+ employees. ISO9001, OEKO-TEX certified. OEM/ODM services for global brands.">
-    <meta name="keywords" content="ribbon manufacturer, ribbon factory China, ribbon supplier, printed ribbon factory, satin ribbon wholesaler, jacquard ribbon manufacturer, bow supplier, custom ribbon packaging, China ribbon exporter, ribbon manufacturing">
-    <title>Ribbon & Bow Manufacturer | 20+ Years Factory - Smith Ribbon</title>
+    <meta name="description" content="Professional ribbon and bow manufacturer since 2004. 15,000㎡ factory, 200+ employees. ISO9001, OEKO-TEX certified. Products: printed ribbons, satin ribbons, jacquard ribbons, hair bows, gift bows. Global export to 50+ countries.">
+    <meta name="keywords" content="ribbon manufacturer, ribbon factory China, ribbon supplier, printed ribbon factory, satin ribbon wholesaler, jacquard ribbon manufacturer, bow supplier, hair bow factory, gift ribbon, custom ribbon packaging, China ribbon exporter, ribbon manufacturing, ribbon wholesale, ribbon bow, grosgrain ribbon, organza ribbon, velvet ribbon, polyester ribbon, ribbon craft, gift wrapping, wedding ribbon">
+    <title>Ribbon & Bow Manufacturer | Custom Printed Ribbons Factory - Smith Ribbon</title>
     
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Organization",
-        "name": "Smith Ribbon",
+        "name": "Smith Ribbon Co., Ltd.",
         "url": "https://ribbonbow123.com",
-        "description": "Professional ribbon and bow manufacturer with 20+ years experience",
+        "description": "Professional ribbon and bow manufacturer with 20+ years experience in Xiamen, China",
+        "found year": "2004",
         "address": {
             "@type": "PostalAddress",
+            "streetAddress": "No.16, Meixi Road, Xike Town",
             "addressLocality": "Xiamen",
             "addressRegion": "Fujian",
             "country": "China"
@@ -26,6 +28,11 @@
             "telephone": "+86-592-5095373",
             "contactType": "Sales",
             "email": "xmmsd@126.com"
+        },
+        "areaServed": "Global",
+        "numberOfEmployees": {
+            "@type": "QuantitativeValue",
+            "value": "200"
         }
     }
     </script>
@@ -42,7 +49,7 @@
         
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
+            line-height: 1.7;
             color: #333;
         }
         
@@ -55,7 +62,7 @@
         }
         
         nav {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
             padding: 1rem 2rem;
             display: flex;
@@ -64,7 +71,7 @@
         }
         
         .logo {
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             font-weight: bold;
             color: var(--primary);
         }
@@ -73,18 +80,24 @@
             display: flex;
             gap: 2rem;
             list-style: none;
+            flex-wrap: wrap;
         }
         
         .nav-links a {
             text-decoration: none;
             color: var(--dark);
             font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary);
         }
         
         .hero {
             background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: white;
-            padding: 8rem 2rem 4rem;
+            padding: 9rem 2rem 5rem;
             text-align: center;
         }
         
@@ -94,29 +107,31 @@
         }
         
         .hero p {
-            font-size: 1.25rem;
-            max-width: 600px;
+            font-size: 1.3rem;
+            max-width: 700px;
             margin: 0 auto 2rem;
         }
         
         .btn {
             display: inline-block;
-            padding: 1rem 2rem;
+            padding: 1rem 2.5rem;
             background: white;
             color: var(--primary);
             text-decoration: none;
             border-radius: 50px;
             font-weight: bold;
-            transition: transform 0.3s;
+            font-size: 1.1rem;
+            transition: transform 0.3s, box-shadow 0.3s;
         }
         
         .btn:hover {
             transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
         }
         
         .section {
             padding: 4rem 2rem;
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
         }
         
@@ -126,9 +141,50 @@
         }
         
         .section-title h2 {
-            font-size: 2rem;
+            font-size: 2.5rem;
             color: var(--dark);
             margin-bottom: 0.5rem;
+        }
+        
+        .section-title p {
+            font-size: 1.1rem;
+            color: #666;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        .about-text h3 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .about-text p {
+            margin-bottom: 1rem;
+            color: #555;
+        }
+        
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+        
+        .stat-box {
+            background: var(--light);
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .stat-box h4 {
+            font-size: 2rem;
+            color: var(--primary);
         }
         
         .products-grid {
@@ -139,31 +195,33 @@
         
         .product-card {
             border: 1px solid #eee;
-            border-radius: 10px;
+            border-radius: 12px;
             overflow: hidden;
-            transition: box-shadow 0.3s;
+            transition: all 0.3s;
         }
         
         .product-card:hover {
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+            transform: translateY(-5px);
         }
         
         .product-card img {
             width: 100%;
-            height: 200px;
+            height: 220px;
             object-fit: cover;
-            background: #f0f0f0;
+            background: #f5f5f5;
         }
         
         .product-card h3 {
             padding: 1rem;
             color: var(--dark);
+            font-size: 1.2rem;
         }
         
         .product-card p {
             padding: 0 1rem 1rem;
             color: #666;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
         }
         
         .features {
@@ -179,58 +237,127 @@
         .feature {
             text-align: center;
             padding: 2rem;
+            background: white;
+            border-radius: 12px;
+            transition: transform 0.3s;
+        }
+        
+        .feature:hover {
+            transform: translateY(-5px);
         }
         
         .feature-icon {
-            font-size: 3rem;
+            font-size: 3.5rem;
             margin-bottom: 1rem;
         }
         
+        .feature h3 {
+            margin-bottom: 0.5rem;
+            color: var(--dark);
+        }
+        
         .stats {
-            background: var(--dark);
+            background: linear-gradient(135deg, var(--dark), #34495e);
             color: white;
-            padding: 3rem 2rem;
+            padding: 4rem 2rem;
         }
         
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
             gap: 2rem;
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 0 auto;
             text-align: center;
         }
         
         .stat-item h3 {
-            font-size: 2.5rem;
+            font-size: 3rem;
             color: var(--primary);
+        }
+        
+        .stat-item p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .cert-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid #eee;
+        }
+        
+        .cert-item h3 {
+            color: var(--primary);
+            margin-top: 0.5rem;
+        }
+        
+        .faq {
+            background: var(--light);
+        }
+        
+        .faq-item {
+            background: white;
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid var(--primary);
+        }
+        
+        .faq-item h3 {
+            color: var(--dark);
+            margin-bottom: 0.5rem;
         }
         
         .blog-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 2rem;
         }
         
         .blog-card {
             border: 1px solid #eee;
-            border-radius: 10px;
+            border-radius: 12px;
             padding: 1.5rem;
+            transition: all 0.3s;
+        }
+        
+        .blog-card:hover {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
         
         .blog-card .date {
-            color: #999;
-            font-size: 0.85rem;
+            color: var(--primary);
+            font-size: 0.9rem;
+            font-weight: 500;
         }
         
         .blog-card h3 {
             margin: 0.5rem 0;
             color: var(--dark);
+            font-size: 1.3rem;
+        }
+        
+        .blog-card p {
+            color: #666;
         }
         
         .blog-card a {
             color: var(--primary);
             text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .blog-card a:hover {
+            text-decoration: underline;
         }
         
         .contact {
@@ -239,36 +366,55 @@
         }
         
         .contact-form {
-            max-width: 600px;
+            max-width: 650px;
             margin: 0 auto;
         }
         
         .form-group {
-            margin-bottom: 1rem;
+            margin-bottom: 1.2rem;
         }
         
         .form-group input,
         .form-group textarea,
         .form-group select {
             width: 100%;
-            padding: 0.75rem;
+            padding: 1rem;
             border: none;
-            border-radius: 5px;
+            border-radius: 8px;
+            font-size: 1rem;
         }
         
         .form-group textarea {
-            height: 120px;
+            height: 140px;
         }
         
         .submit-btn {
             background: var(--primary);
             color: white;
-            padding: 1rem 2rem;
+            padding: 1.2rem 2rem;
             border: none;
-            border-radius: 5px;
+            border-radius: 8px;
             cursor: pointer;
-            font-size: 1rem;
+            font-size: 1.1rem;
+            font-weight: bold;
             width: 100%;
+            transition: background 0.3s;
+        }
+        
+        .submit-btn:hover {
+            background: #c2185b;
+        }
+        
+        .contact-info {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .contact-info p {
+            margin: 0.5rem 0;
+            font-size: 1.1rem;
         }
         
         footer {
@@ -278,22 +424,11 @@
             padding: 2rem;
         }
         
-        .faq {
-            background: var(--light);
-        }
-        
-        .faq-item {
-            margin-bottom: 1.5rem;
-        }
-        
-        .faq-item h3 {
-            color: var(--dark);
-            margin-bottom: 0.5rem;
-        }
-        
         @media (max-width: 768px) {
             .nav-links { display: none; }
             .hero h1 { font-size: 2rem; }
+            .about-content { grid-template-columns: 1fr; }
+            .section-title h2 { font-size: 2rem; }
         }
     </style>
 </head>
@@ -302,10 +437,12 @@
         <nav>
             <div class="logo">Smith Ribbon</div>
             <ul class="nav-links">
+                <li><a href="#about">About</a></li>
                 <li><a href="#products">Products</a></li>
                 <li><a href="#factory">Factory</a></li>
                 <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#blog">Blog</a></li>
+                <li><a href="#blog">News</a></li>
+                <li><a href="#faq">FAQ</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -313,11 +450,167 @@
     
     <section class="hero">
         <h1>Professional Ribbon & Bow Manufacturer</h1>
-        <p>20+ years of experience in ribbon production. Factory direct prices, OEM/ODM services available. Exporting to 50+ countries worldwide.</p>
+        <p>20+ years of experience in ribbon production. Factory direct prices, OEM/ODM services. Exporting to 50+ countries worldwide. Your reliable China supplier!</p>
         <a href="#contact" class="btn">Get Free Quote</a>
     </section>
     
-    <!-- Factory Stats -->
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="section-title">
+            <h2>About Smith Ribbon</h2>
+            <p>Your Trusted Ribbon & Bow Manufacturer in China</p>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Welcome to Smith Ribbon Co., Ltd.</h3>
+                <p>Founded in 2004, Smith Ribbon is a professional manufacturer and exporter of ribbons, bows, and decorative accessories in Xiamen, Fujian Province, China. With over 20 years of industry experience, we have established ourselves as a leading supplier in the global ribbon market.</p>
+                
+                <p>Our company specializes in manufacturing a wide range of ribbon products including printed ribbons, satin ribbons, jacquard ribbons, grosgrain ribbons, organza ribbons, velvet ribbons, and custom-made bows. We serve clients across various industries including gift packaging, fashion accessories, wedding decorations, holiday crafts, and promotional products.</p>
+                
+                <p>At Smith Ribbon, we are committed to providing high-quality products at competitive factory prices. Our dedicated team of 200+ employees works diligently to ensure every product meets international quality standards. We welcome OEM and ODM orders, and offer customized solutions to meet your specific requirements.</p>
+                
+                <p>Our mission is to help customers succeed by providing them with high-quality, innovative ribbon products that enhance their product packaging and brand value. We look forward to building long-term business relationships with clients worldwide.</p>
+            </div>
+            <div class="about-stats">
+                <div class="stat-box">
+                    <h4>20+</h4>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat-box">
+                    <h4>15,000㎡</h4>
+                    <p>Factory Area</p>
+                </div>
+                <div class="stat-box">
+                    <h4>200+</h4>
+                    <p>Employees</p>
+                </div>
+                <div class="stat-box">
+                    <h4>100,000m</h4>
+                    <p>Daily Capacity</p>
+                </div>
+                <div class="stat-box">
+                    <h4>50+</h4>
+                    <p>Export Countries</p>
+                </div>
+                <div class="stat-box">
+                    <h4>1000+</h4>
+                    <p>Global Clients</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Products Section -->
+    <section id="products" class="section">
+        <div class="section-title">
+            <h2>Our Products</h2>
+            <p>Wide range of ribbon products for global markets</p>
+        </div>
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400" alt="Printed Ribbons" loading="lazy">
+                <h3>Printed Ribbons</h3>
+                <p>Custom logo printing, pattern design. Various materials. MOQ: 1000m. Ideal for brand packaging.</p>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?w=400" alt="Satin Ribbons" loading="lazy">
+                <h3>Satin Ribbons</h3>
+                <p>Premium smooth finish. 100+ colors available. Perfect for weddings and luxury packaging.</p>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1595124240639-6ac31c977f70?w=400" alt="Jacquard Ribbons" loading="lazy">
+                <h3>Jacquard Ribbons</h3>
+                <p>Intricate woven patterns. Premium quality. Custom designs for luxury brands.</p>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=400" alt="Custom Bows" loading="lazy">
+                <h3>Custom Bows</h3>
+                <p>Pre-made bows in various styles. Wholesale supply. Ready to ship.</p>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1606293926075-69a00dbfde81?w=400" alt="Organza Ribbons" loading="lazy">
+                <h3>Organza Ribbons</h3>
+                <p>Sheer and elegant. Perfect for gift wrapping. 50+ colors in stock.</p>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1583212292454-1fe6229603b5?w=400" alt="Grosgrain Ribbons" loading="lazy">
+                <h3>Grosgrain Ribbons</h3>
+                <p>Durable textured finish. Ideal for packaging, crafts. Multiple widths.</p>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=400" alt="Velvet Ribbons" loading="lazy">
+                <h3>Velvet Ribbons</h3>
+                <p>Soft luxurious texture. Rich colors. Perfect for premium packaging.</p>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=400" alt="Hair Bows" loading="lazy">
+                <h3>Hair Bows</h3>
+                <p>Girls hair bows, baby headbands. Various sizes and colors. Wholesale.</p>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1609342122563-a43ac8917a3a?w=400" alt="Gift Bows" loading="lazy">
+                <h3>Gift Bows</h3>
+                <p>Packaging bows, pull bows. Various sizes. For gift boxes and bags.</p>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?w=400" alt="Wired Ribbons" loading="lazy">
+                <h3>Wired Ribbons</h3>
+                <p>Wire edge ribbons for crafting. Easy to shape. Holiday decorations.</p>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1594040226829-7f251ab46d80?w=400" alt="Ribbon Flowers" loading="lazy">
+                <h3>Ribbon Flowers</h3>
+                <p>Decorative ribbon flowers. For gifts, weddings, home decor.</p>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=400" alt="Seasonal Ribbons" loading="lazy">
+                <h3>Holiday Ribbons</h3>
+                <p>Christmas, Easter, Valentine's. Themed patterns and colors.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Factory Section -->
+    <section id="factory" class="section features">
+        <div class="section-title">
+            <h2>Our Factory</h2>
+            <p>State-of-the-art manufacturing facilities</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature">
+                <div class="feature-icon">🏭</div>
+                <h3>Factory Direct</h3>
+                <p>20+ years manufacturing experience in Xiamen, Fujian. Direct factory prices, no middleman.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">⚙️</div>
+                <h3>Advanced Equipment</h3>
+                <p>50+ modern weaving machines. Automated production lines. Strict QC system.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">👥</div>
+                <h3>Professional Team</h3>
+                <p>200+ skilled workers. 20+ R&D engineers. Professional sales team.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🚢</div>
+                <h3>Global Shipping</h3>
+                <p>Shipping to 50+ countries. FOB, CIF, EXW terms. Reliable logistics partners.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🎨</div>
+                <h3>OEM/ODM Service</h3>
+                <p>Custom designs, logo printing. From sample to mass production.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">💯</div>
+                <h3>Quality First</h3>
+                <p>ISO 9001 certified. 99.8% quality pass rate. Professional inspection.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Stats Section -->
     <section class="stats">
         <div class="stats-grid">
             <div class="stat-item">
@@ -340,165 +633,137 @@
                 <h3>50+</h3>
                 <p>Export Countries</p>
             </div>
-        </div>
-    </section>
-    
-    <section id="products" class="section">
-        <div class="section-title">
-            <h2>Our Products</h2>
-            <p>High-quality ribbons and bows for global markets</p>
-        </div>
-        <div class="products-grid">
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400" alt="Printed Ribbons" loading="lazy">
-                <h3>Printed Ribbons</h3>
-                <p>Custom logo and pattern printing. Various materials available. MOQ: 1000m</p>
-            </div>
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?w=400" alt="Satin Ribbons" loading="lazy">
-                <h3>Satin Ribbons</h3>
-                <p>Smooth finish, elegant look. Perfect for weddings and gifts. 100+ colors</p>
-            </div>
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1595124240639-6ac31c977f70?w=400" alt="Jacquard Ribbons" loading="lazy">
-                <h3>Jacquard Ribbons</h3>
-                <p>Intricate patterns, premium quality. For luxury packaging. Custom designs</p>
-            </div>
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=400" alt="Custom Bows" loading="lazy">
-                <h3>Custom Bows</h3>
-                <p>Wholesale pre-made bows. Various styles and sizes. Ready to ship</p>
-            </div>
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1606293926075-69a00dbfde81?w=400" alt="Organza Ribbons" loading="lazy">
-                <h3>Organza Ribbons</h3>
-                <p>Sheer and elegant. Perfect for gift wrapping. Various colors</p>
-            </div>
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1583212292454-1fe6229603b5?w=400" alt="Grosgrain Ribbons" loading="lazy">
-                <h3>Grosgrain Ribbons</h3>
-                <p>Durable and textured. Ideal for packaging and crafts</p>
+            <div class="stat-item">
+                <h3>1000+</h3>
+                <p>Global Clients</p>
             </div>
         </div>
     </section>
     
-    <section id="factory" class="section features">
-        <div class="section-title">
-            <h2>Our Factory</h2>
-        </div>
-        <div class="features-grid">
-            <div class="feature">
-                <div class="feature-icon">🏭</div>
-                <h3>Factory Direct</h3>
-                <p>20+ years manufacturing experience in Xiamen, Fujian. Competitive factory prices, no middleman.</p>
-            </div>
-            <div class="feature">
-                <div class="feature-icon">⚙️</div>
-                <h3>Advanced Equipment</h3>
-                <p>50+ modern weaving machines, automated production lines, strict quality control system.</p>
-            </div>
-            <div class="feature">
-                <div class="feature-icon">🚢</div>
-                <h3>Global Shipping</h3>
-                <p>Shipping to 50+ countries including USA, UK, Germany, France, Japan. FOB, CIF, EXW terms.</p>
-            </div>
-            <div class="feature">
-                <div class="feature-icon">🎨</div>
-                <h3>OEM/ODM Service</h3>
-                <p>Custom designs, logo printing, packaging. From sample to mass production. Free design support.</p>
-            </div>
-        </div>
-    </section>
-    
+    <!-- Certifications -->
     <section id="certifications" class="section">
         <div class="section-title">
             <h2>Certifications</h2>
             <p>Quality certified for international markets</p>
         </div>
-        <div class="features-grid">
-            <div class="feature">
+        <div class="cert-grid">
+            <div class="cert-item">
                 <div class="feature-icon">✅</div>
                 <h3>ISO 9001</h3>
                 <p>Quality Management System</p>
             </div>
-            <div class="feature">
+            <div class="cert-item">
                 <div class="feature-icon">🌿</div>
                 <h3>OEKO-TEX</h3>
-                <p>Standard 100 (Skin Friendly)</p>
+                <p>Standard 100</p>
             </div>
-            <div class="feature">
+            <div class="cert-item">
                 <div class="feature-icon">🌲</div>
                 <h3>FSC</h3>
-                <p>Forest Stewardship Council</p>
+                <p>Forest Certification</p>
             </div>
-            <div class="feature">
+            <div class="cert-item">
                 <div class="feature-icon">💼</div>
                 <h3>BSCI</h3>
-                <p>Business Social Compliance</p>
+                <p>Social Compliance</p>
             </div>
-            <div class="feature">
+            <div class="cert-item">
                 <div class="feature-icon">✌️</div>
                 <h3>SEDEX</h3>
-                <p>Supplier Ethical Data Exchange</p>
+                <p>Ethical Trading</p>
+            </div>
+            <div class="cert-item">
+                <div class="feature-icon">🇺🇸</div>
+                <h3>FDA</h3>
+                <p>Food Contact Approved</p>
             </div>
         </div>
     </section>
     
-    <section class="section">
+    <!-- FAQ Section -->
+    <section id="faq" class="section faq">
         <div class="section-title">
             <h2>Frequently Asked Questions</h2>
         </div>
-        <div style="max-width: 800px; margin: 0 auto;">
+        <div style="max-width: 900px; margin: 0 auto;">
             <div class="faq-item">
                 <h3>What is your minimum order quantity (MOQ)?</h3>
-                <p>For custom printed ribbons: 1000 meters per color. For stock products: no MOQ. Sample orders are welcome.</p>
+                <p>For custom printed ribbons with logo: 1,000 meters per color. For stock products: no minimum order quantity (MOQ). Sample orders are always welcome. We also offer small trial orders for new clients.</p>
             </div>
             <div class="faq-item">
                 <h3>How long is your production lead time?</h3>
-                <p>Sample: 3-7 days. Mass production: 15-25 days depending on order quantity and complexity.</p>
+                <p>Sample production: 3-7 days. Mass production: 15-25 days depending on order quantity and product complexity. For large orders, we provide production schedule updates every 3-5 days.</p>
             </div>
             <div class="faq-item">
                 <h3>Do you provide free samples?</h3>
-                <p>Yes, we provide free stock samples. Custom samples with printing fee may apply.</p>
+                <p>Yes, we provide free stock samples (1-2 meters each). For custom samples with logo printing, a sample fee may apply, which will be refunded after mass production order is confirmed.</p>
             </div>
             <div class="faq-item">
                 <h3>What payment methods do you accept?</h3>
-                <p>T/T, L/C, PayPal, Western Union. For first-time clients, we usually require 30% deposit, 70% before shipment.</p>
+                <p>We accept T/T (Telegraphic Transfer), L/C (Letter of Credit), PayPal, Western Union, and Alibaba Trade Assurance. For first-time clients, we usually require 30% deposit, 70% before shipment.</p>
             </div>
             <div class="faq-item">
                 <h3>Can you ship to our freight forwarder in China?</h3>
-                <p>Yes, we can ship to any freight forwarder or warehouse in China. We also arrange shipping worldwide.</p>
+                <p>Absolutely! We can ship to any freight forwarder, warehouse, or port in China. We also offer complete shipping services worldwide through our trusted logistics partners.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Do you offer custom packaging?</h3>
+                <p>Yes, we offer various packaging options including poly bags, OPP bags, gift boxes, and custom printed packaging. Please inform us of your packaging requirements when requesting a quote.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What are your main export markets?</h3>
+                <p>We export to over 50 countries including USA, UK, Germany, France, Italy, Spain, Japan, Australia, Canada, Brazil, and many more. Major markets are North America and Western Europe.</p>
             </div>
         </div>
     </section>
     
+    <!-- News/Blog Section -->
     <section id="blog" class="section">
         <div class="section-title">
-            <h2>Latest Articles</h2>
-            <p>Industry insights and product guides</p>
+            <h2>Latest News</h2>
+            <p>Industry insights and company updates</p>
         </div>
         <div class="blog-grid">
             <div class="blog-card">
                 <div class="date">March 12, 2026</div>
                 <h3>Global Ribbon Market Trends 2026</h3>
-                <p>Analysis of the international ribbon industry market size, growth trends, and future outlook...</p>
+                <p>Analysis of the international ribbon industry market size, growth drivers, and future outlook. Key trends include sustainable materials and customization demand.</p>
                 <a href="blog1.html">Read More →</a>
             </div>
             <div class="blog-card">
                 <div class="date">March 10, 2026</div>
                 <h3>How to Choose Quality Ribbons</h3>
-                <p>Professional guide for buyers: key factors to consider when sourcing ribbons from China...</p>
+                <p>Professional guide for buyers: key factors to consider when sourcing ribbons from China. Learn about materials, printing methods, and quality standards.</p>
                 <a href="blog2.html">Read More →</a>
             </div>
             <div class="blog-card">
                 <div class="date">March 5, 2026</div>
                 <h3>Ribbon Applications in Packaging</h3>
-                <p>Creative ways to use ribbons in gift packaging and brand presentation...</p>
+                <p>Creative ways to use ribbons in gift packaging and brand presentation. Tips for maximizing visual impact and customer appeal.</p>
                 <a href="blog3.html">Read More →</a>
+            </div>
+            <div class="blog-card">
+                <div class="date">February 28, 2026</div>
+                <h3>Smith Ribbon at Global Expo 2026</h3>
+                <p>We're excited to announce our participation in upcoming international packaging exhibitions. Meet our team and discover our latest products.</p>
+                <a href="blog4.html">Read More →</a>
+            </div>
+            <div class="blog-card">
+                <div class="date">February 20, 2026</div>
+                <h3>Eco-Friendly Ribbon Solutions</h3>
+                <p>Discover our new line of sustainable ribbons made from recycled materials. Meet growing demand for environmentally responsible products.</p>
+                <a href="blog5.html">Read More →</a>
+            </div>
+            <div class="blog-card">
+                <div class="date">February 10, 2026</div>
+                <h3>Wedding Season Ribbon Trends</h3>
+                <p>Popular ribbon colors and styles for weddings in 2026. Expert tips on choosing the perfect ribbons for wedding decorations and favors.</p>
+                <a href="blog6.html">Read More →</a>
             </div>
         </div>
     </section>
     
+    <!-- Contact Section -->
     <section id="contact" class="section contact">
         <div class="section-title">
             <h2>Contact Us</h2>
@@ -524,28 +789,31 @@
                     <option value="jacquard">Jacquard Ribbons</option>
                     <option value="organza">Organza Ribbons</option>
                     <option value="grosgrain">Grosgrain Ribbons</option>
-                    <option value="bows">Custom Bows</option>
+                    <option value="velvet">Velvet Ribbons</option>
+                    <option value="hair_bows">Hair Bows</option>
+                    <option value="gift_bows">Gift Bows</option>
+                    <option value="wired">Wired Ribbons</option>
                     <option value="other">Other</option>
                 </select>
             </div>
             <div class="form-group">
-                <input type="text" name="quantity" placeholder="Quantity (e.g., 5000 meters)">
+                <input type="text" name="quantity" placeholder="Estimated Quantity (e.g., 5000 meters)">
             </div>
             <div class="form-group">
-                <textarea name="message" placeholder="Tell us about your requirements (products, colors, size, usage, etc.) *" required></textarea>
+                <textarea name="message" placeholder="Tell us about your requirements - products, colors, size, usage, target price, etc. *" required></textarea>
             </div>
             <button type="submit" class="submit-btn">Send Inquiry</button>
         </form>
         
-        <div style="text-align: center; margin-top: 2rem;">
+        <div class="contact-info">
             <p>📞 +86-592-5095373 | ✉️ xmmsd@126.com</p>
             <p>📍 No.16, Meixi Road, Xike Town, Tong'an District, Xiamen, Fujian, China</p>
-            <p>WhatsApp: +86-13779951780</p>
+            <p>WhatsApp/WeChat: +86-13779951780</p>
         </div>
     </section>
     
     <footer>
-        <p>© 2026 Smith Ribbon. All Rights Reserved.</p>
+        <p>© 2026 Smith Ribbon Co., Ltd. All Rights Reserved.</p>
         <p>Professional Ribbon & Bow Manufacturer in China</p>
     </footer>
 </body>
