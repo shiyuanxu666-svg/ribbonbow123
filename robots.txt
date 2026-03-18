@@ -2,3 +2,8 @@ User-agent: *
 Allow: /
 
 Sitemap: https://ribbonbow123.com/sitemap.xml
+
+# 百度爬虫规则
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 5
