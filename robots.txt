@@ -7,3 +7,8 @@ Sitemap: https://ribbonbow123.com/sitemap.xml
 User-agent: Baiduspider
 Allow: /
 Crawl-delay: 5
+
+# Disallow admin/private directories
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
