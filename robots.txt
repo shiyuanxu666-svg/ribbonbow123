@@ -1,14 +1,9 @@
 User-agent: *
 Allow: /
+Disallow: /api/
 
+# Sitemap
 Sitemap: https://ribbonbow123.com/sitemap.xml
 
-# 百度爬虫规则
-User-agent: Baiduspider
-Allow: /
-Crawl-delay: 5
-
-# Disallow admin/private directories
-Disallow: /cgi-bin/
-Disallow: /tmp/
-Disallow: /private/
+# Crawl-delay (polite crawl)
+Crawl-delay: 1
