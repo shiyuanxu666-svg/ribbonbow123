@@ -102,52 +102,35 @@
     <meta name="twitter:site" content="@SmithRibbon">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     
-    <!-- Structured Data -->
+
+    <!-- BreadcrumbList Schema -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Smith Ribbon Co., Ltd.",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://ribbonbow123.com"},
+            {"@type": "ListItem", "position": 2, "name": "Products", "item": "https://ribbonbow123.com/#products"},
+            {"@type": "ListItem", "position": 3, "name": "Blog", "item": "https://ribbonbow123.com/blog.html"}
+        ]
+    }
+    </script>
+    <!-- WebSite Schema with SearchAction -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Smith Ribbon - Ribbon Bow Manufacturer China",
         "url": "https://ribbonbow123.com",
-        "description": "Professional ribbon and bow manufacturer with 20+ years experience in Xiamen, China. ISO9001 and OEKO-TEX certified factory specializing in printed ribbons, satin ribbons, jacquard ribbons, and gift bows.",
-        "foundingDate": "2004",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "No.16, Meixi Road, Xike Town",
-            "addressLocality": "Xiamen",
-            "addressRegion": "Fujian",
-            "postalCode": "361100",
-            "addressCountry": "CN"
-        },
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+86-592-5095373",
-            "contactType": "Sales",
-            "email": "xmmsd@126.com"
-        },
-        "areaServed": "Global",
-        "numberOfEmployees": {
-            "@type": "QuantitativeValue",
-            "value": "200"
-        },
-        "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Ribbon Products",
-            "itemListElement": [
-              {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Printed Ribbons"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Satin Ribbons"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Jacquard Ribbons"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Gift Bows"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Velvet Ribbons"}}
-            ]
-        },
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "reviewCount": "312"
+        "description": "Professional ribbon and bow manufacturer with 20+ years experience in Xiamen, China",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://ribbonbow123.com/blog.html?q={search_term_string}",
+            "query-input": "required name=search_term_string"
         }
     }
     </script>
+    <!-- FAQ Page Structured Data -->
     <!-- FAQ Page Structured Data -->
     <script type="application/ld+json">
     {
