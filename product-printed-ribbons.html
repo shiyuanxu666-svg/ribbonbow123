@@ -540,5 +540,54 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helv
 </script>
 <!-- /WhatsApp Floating Button -->
 
+
+<!-- Enhanced Inquiry Form (Smith Assistant, 2026-07-01) -->
+<section id="inquiry" style="background: linear-gradient(135deg, #f8f9fa, #fff); border: 2px solid #002B5B; border-radius: 14px; padding: 32px 24px; margin: 40px auto; max-width: 900px; box-sizing: border-box;">
+  <h2 style="color: #002B5B; text-align: center; margin: 0 0 12px;">Request a Quote for Custom Printed Ribbons — Logo, Brand and Pattern Printing</h2>
+  <p style="text-align: center; color: #555; margin: 0 0 20px;">Most quotes returned within 24 hours. Free sample pack for verified buyers.</p>
+  <form action="https://formsubmit.co/xmmsd@126.com" method="POST" style="max-width: 700px; margin: 0 auto;">
+    <input type="hidden" name="_subject" value="Inquiry: Custom Printed Ribbons — Logo, Brand and Pattern Printing from ribbonbow123.com">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://ribbonbow123.com/contact.html?sent=1&product=printed-ribbons">
+    <input type="hidden" name="product" value="Custom Printed Ribbons — Logo, Brand and Pattern Printing">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px;">
+      <input type="text" name="name" placeholder="Your Name *" required style="padding: 12px; border: 1px solid #ccc; border-radius: 6px; font-size: 15px;">
+      <input type="email" name="email" placeholder="Work Email *" required style="padding: 12px; border: 1px solid #ccc; border-radius: 6px; font-size: 15px;">
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px;">
+      <input type="text" name="company" placeholder="Company" style="padding: 12px; border: 1px solid #ccc; border-radius: 6px; font-size: 15px;">
+      <input type="text" name="country" placeholder="Country *" required style="padding: 12px; border: 1px solid #ccc; border-radius: 6px; font-size: 15px;">
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px;">
+      <input type="text" name="quantity" placeholder="Quantity (e.g., 5,000m)" style="padding: 12px; border: 1px solid #ccc; border-radius: 6px; font-size: 15px;">
+      <input type="text" name="target_price" placeholder="Target Price (optional)" style="padding: 12px; border: 1px solid #ccc; border-radius: 6px; font-size: 15px;">
+    </div>
+    <textarea name="message" placeholder="Specifications (width, color, material, packaging, certifications needed, target delivery date) *" required style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 6px; font-size: 15px; min-height: 100px; box-sizing: border-box; margin-bottom: 12px;"></textarea>
+    <div style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: center;">
+      <button type="submit" style="background: #c2185b; color: white; border: none; padding: 14px 32px; border-radius: 50px; font-size: 16px; font-weight: 700; cursor: pointer;">Send Inquiry → Get 24h Quote</button>
+      <a href="https://wa.me/8613779951780?text=Hi%2C%20I%27m%20interested%20in%20Custom%20Printed%20Ribbons%20—%20Logo,%20Brand%20and%20Pattern%20Printing%20from%20{SITE_DOMAIN}%20factory.%20Please%20send%20me%20a%20free%20sample%20pack%20%2B%20quote." target="_blank" rel="noopener" style="background: #25D366; color: white; padding: 14px 32px; border-radius: 50px; text-decoration: none; font-size: 16px; font-weight: 700; display: inline-block;">💬 Or WhatsApp Us</a>
+    </div>
+    <p style="text-align: center; font-size: 12px; color: #999; margin: 16px 0 0;">⏱ Reply within 4 hours on weekdays | 🚚 30-day delivery | 🏭 20 years factory direct</p>
+  </form>
+</section>
+
+<script>
+// Auto-prefill WhatsApp message with current product H1
+(function(){
+  var h1 = document.querySelector('h1');
+  var productName = h1 ? h1.textContent.trim() : document.title;
+  // Update all wa.me links to use this product name
+  var waLinks = document.querySelectorAll('a[href*="wa.me/8613779951780"]');
+  waLinks.forEach(function(a){
+    var currentHref = a.getAttribute('href');
+    // Only update if it's a "generic" link without product name
+    if (currentHref && !currentHref.includes(productName.substring(0,15)) && !currentHref.includes(encodeURIComponent(productName.substring(0,15)))) {
+      var newMsg = encodeURIComponent("Hi, I'm interested in " + productName + " from Smith Ribbon. Please send me a free sample pack + 24h quote. (via " + location.hostname + location.pathname + ")");
+      a.setAttribute('href', 'https://wa.me/8613779951780?text=' + newMsg);
+    }
+  });
+})();
+</script>
+
 </body>
 </html>
