@@ -72,6 +72,12 @@ def build_article(art):
     <meta property="og:description" content="{art["description"]}">
     <meta property="og:type" content="article">
     <meta property="og:url" content="{og_url}">
+    <meta property="og:image" content="https://ribbonbow123.com/img/banner.png">
+    <meta property="og:site_name" content="Smith Ribbon">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{art["title"]}">
+    <meta name="twitter:description" content="{art["description"]}">
+    <meta name="twitter:image" content="https://ribbonbow123.com/img/banner.png">
     <meta property="article:published_time" content="{art["datetime"]}">
     <meta property="article:modified_time" content="{art["datetime"]}">
     <meta property="article:author" content="MSD Ribbon">
