@@ -2844,4 +2844,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+    <url>
+        <loc>https://smithribbon.com/blog-ribbon-oem-22-module-sustainable-ribbon-esg-procurement-architecture-global-brand-procurement-2026-08-05-am.html</loc>
+        <lastmod>2026-08-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://smithribbon.com/blog-ribbon-oem-23-module-lead-time-compression-npi-speed-to-market-architecture-global-brand-procurement-2026-08-05-pm.html</loc>
+        <lastmod>2026-08-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 </urlset>
