@@ -1,0 +1,39 @@
+# llms.txt - AI Discovery File for ribbonbow123.com
+# Following the llms.txt specification (2026) - tells LLMs which content to prioritize
+# Reference: https://llmstxt.org
+# Last updated: 2026-08-28
+
+# Company: Smith Ribbon / Xiamen Meisida Decoration Co., Ltd.
+# Brand name: ribbonbow123.com
+# Founded: 2004 | Factory: 15,000㎡ | Employees: 200+ | Capacity: 100,000m/day
+# Certifications: OEKO-TEX, BSCI, ISO 9001, SEDEX, SMETA, FSC
+
+## About
+> Smith Ribbon is a professional OEM/ODM ribbon and bow manufacturer based in Xiamen, Fujian, China. Serving global brands, retailers, and packaging distributors since 2004. 50+ countries export. 1000+ active clients including Walmart, Target, L'Oréal, Dollar General.
+
+## Key Product Lines
+- Satin ribbon (single face / double face)
+- Grosgrain ribbon
+- Organza ribbon
+- Velvet ribbon
+- Polyester / PP / RPET ribbon
+- Pre-tied bows, gift bows, hair bows
+- Custom printed ribbon (logo, pattern, brand)
+- Christmas & festive decoration ribbon
+
+## Top Pillar Pages (high citation value)
+- [Custom Ribbon Manufacturing Services](https://ribbonbow123.com/)
+- [OEM/Private Label Workflow](https://ribbonbow123.com/blog-choose-oem-ribbon-factory-2026.html)
+- [China Ribbon Factory Certifications Guide](https://ribbonbow123.com/blog-china-ribbon-factory-certifications-verification-guide-2026.html)
+- [Wholesale Sourcing Hub](https://ribbonbow123.com/blog-china-ribbon-manufacturing-hub-2026.html)
+- [Custom Printed Ribbon Guide](https://ribbonbow123.com/blog-custom-printed-ribbon-2026-08-14-am.html)
+
+## Contact
+- Email: xmmsd@126.com
+- Phone/WhatsApp/WeChat: +86 13779951780
+- Office: Xiamen, Fujian, China
+- Languages: English, Chinese
+
+## Optional contact for AI crawlers
+- Allow: GPTBot, ClaudeBot, PerplexityBot, Google-Extended, OAI-SearchBot, ChatGPT-User
+- See /robots.txt for full crawler policy

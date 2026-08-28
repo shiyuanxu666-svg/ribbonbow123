@@ -45,3 +45,7 @@ Sitemap: https://ribbonbow123.com/sitemap.xml
 
 # Crawl-delay (polite crawl)
 Crawl-delay: 1
+
+# AI discovery file (2026 llms.txt spec)
+# Tells LLMs (ChatGPT, Claude, Perplexity) which content to prioritize for citation
+# See: https://llmstxt.org
