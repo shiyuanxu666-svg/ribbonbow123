@@ -1,0 +1,352 @@
+"""Generate the PM article 147 (Q4 2026 Holiday Peak Capacity Pre-Booking Architecture) HTML and write to disk."""
+import os
+
+WORK = "/workspace/ribbonbow123"
+BASE_URL = "https://ribbonbow123.com"
+FILE = "blog-ribbon-oem-b2b-147-module-mill-side-q4-2026-holiday-peak-capacity-pre-booking-tier-1-2-3-supplier-resilience-architecture-b2b-oem-program-resilience-2026-09-11-pm.html"
+NUM = "147"
+DATE_ISO = "2026-09-11T13:00:00+08:00"
+SECTION = "Q4 2026 Holiday-Peak Capacity Pre-Booking & Tier 1/2/3 Supplier-Resilience Architecture"
+MODULE = "Mill-Side Q4-2026 Holiday-Peak Capacity Pre-Booking, Tier-1/Tier-2/Tier-3 Supplier-Resilience & Brand-Buyer Cascade Architecture for B2B OEM Program Resilience"
+SHORT = "Q4 2026 Holiday-Peak Capacity Pre-Booking & Tier 1/2/3 Supplier-Resilience Architecture"
+FILE_URL = f"{BASE_URL}/{FILE}"
+IMG = f"{BASE_URL}/img/banner.png"
+
+TITLE = f"Ribbon OEM B2B {NUM}-Module {MODULE} | ribbonbow123"
+DESC = (f"A 2026 B2B ribbon OEM {NUM}-module {SHORT.lower()} for global brand procurement, retail private-label directors, "
+        "beauty and fashion merchandising leaders, Christmas and gifting category managers, and OEM program management offices. "
+        "Covers 24-month rolling capacity-pre-booking window, 19-tier capacity-pricing ladder, 17-stage Q4 cascade workflow, "
+        "15-signal demand-sensing input, 13-stage dual-sourcing bridge-order migration, 11-tier hot-standby fee matrix, "
+        "9-stage tier 1/2/3 supplier-resilience ladder, 7-stage contingency-trigger threshold, 5-stage peak-season SMED, "
+        "3-stakeholder executive steering committee, 18 to 32 percent peak-shortfall risk compression, "
+        "12 to 24 percent peak-season margin protection, 7 to 13 pp OTIF lift.")
+KWS = ("ribbon OEM Q4 2026, ribbon OEM holiday peak capacity, ribbon OEM capacity pre booking, ribbon OEM tier 1 tier 2 tier 3, "
+       "ribbon OEM supplier resilience, ribbon OEM 24 month rolling window, ribbon OEM 19 tier capacity pricing, "
+       "ribbon OEM 17 stage Q4 cascade, ribbon OEM 15 signal demand sensing, ribbon OEM 13 stage dual sourcing, "
+       "ribbon OEM bridge order migration, ribbon OEM 11 tier hot standby, ribbon OEM 9 stage resilience ladder, "
+       "ribbon OEM 7 stage contingency trigger, ribbon OEM 5 stage SMED peak season, ribbon OEM 3 stakeholder steering committee, "
+       "ribbon OEM peak shortfall risk compression, ribbon OEM peak season margin protection, ribbon OEM OTIF lift, "
+       "ribbon OEM 2026 B2B brand procurement, ribbon OEM retail private label 2026, ribbon OEM beauty packaging 2026, "
+       "ribbon OEM fashion merchandising 2026, ribbon OEM gifting category 2026, ribbon OEM Christmas decoration 2026, "
+       "ribbon OEM gift packaging Q4 playbook, ribbon OEM mill side holiday playbook")
+
+ABOUTS = ",".join([
+    '{"@type": "Thing", "name": "ribbon OEM Q4 2026"}',
+    '{"@type": "Thing", "name": "ribbon OEM holiday peak capacity"}',
+    '{"@type": "Thing", "name": "ribbon OEM capacity pre booking"}',
+    '{"@type": "Thing", "name": "ribbon OEM tier 1 tier 2 tier 3"}',
+    '{"@type": "Thing", "name": "ribbon OEM supplier resilience"}',
+    '{"@type": "Thing", "name": "ribbon OEM 24 month rolling window"}',
+    '{"@type": "Thing", "name": "ribbon OEM 19 tier capacity pricing"}',
+    '{"@type": "Thing", "name": "ribbon OEM 17 stage Q4 cascade"}',
+    '{"@type": "Thing", "name": "ribbon OEM 15 signal demand sensing"}',
+    '{"@type": "Thing", "name": "ribbon OEM 13 stage dual sourcing"}',
+    '{"@type": "Thing", "name": "ribbon OEM bridge order migration"}',
+    '{"@type": "Thing", "name": "ribbon OEM 11 tier hot standby"}',
+    '{"@type": "Thing", "name": "ribbon OEM 9 stage resilience ladder"}',
+    '{"@type": "Thing", "name": "ribbon OEM 7 stage contingency trigger"}',
+    '{"@type": "Thing", "name": "ribbon OEM 5 stage SMED peak season"}',
+    '{"@type": "Thing", "name": "ribbon OEM 3 stakeholder steering committee"}',
+    '{"@type": "Thing", "name": "ribbon OEM peak shortfall risk compression"}',
+    '{"@type": "Thing", "name": "ribbon OEM peak season margin protection"}',
+    '{"@type": "Thing", "name": "ribbon OEM OTIF lift"}',
+    '{"@type": "Thing", "name": "ribbon OEM 2026 B2B brand procurement"}',
+    '{"@type": "Thing", "name": "ribbon OEM retail private label 2026"}',
+    '{"@type": "Thing", "name": "ribbon OEM beauty packaging 2026"}',
+    '{"@type": "Thing", "name": "ribbon OEM fashion merchandising 2026"}',
+    '{"@type": "Thing", "name": "ribbon OEM gifting category 2026"}',
+    '{"@type": "Thing", "name": "ribbon OEM Christmas decoration 2026"}',
+    '{"@type": "Thing", "name": "ribbon OEM gift packaging Q4 playbook"}',
+    '{"@type": "Thing", "name": "ribbon OEM mill side holiday playbook"}',
+])
+
+SCHEMA = f"""<script type="application/ld+json">
+{{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Ribbon OEM B2B {NUM}-Module {MODULE}",
+  "description": "{DESC}",
+  "author": {{ "@type": "Organization", "name": "Xiamen Smith Ribbon & Bow Co., Ltd." }},
+  "publisher": {{ "@type": "Organization", "name": "Smith Ribbon", "logo": {{ "@type": "ImageObject", "url": "{IMG}" }} }},
+  "datePublished": "{DATE_ISO}",
+  "dateModified": "{DATE_ISO}",
+  "image": "{IMG}",
+  "url": "{FILE_URL}",
+  "keywords": "{KWS}",
+  "wordCount": 2400,
+  "timeRequired": "PT26M",
+  "inLanguage": "en-US",
+  "articleSection": "{SECTION}",
+  "about": [{ABOUTS}]
+}}
+</script>
+"""
+
+HEAD = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-888LVCSX8W"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){{dataLayer.push(arguments);}}
+      gtag('js', new Date());
+      gtag('config', 'G-888LVCSX8W');
+    </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{TITLE}</title>
+<meta name="description" content="{DESC}">
+<meta name="keywords" content="{KWS}">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="{FILE_URL}">
+<meta property="og:title" content="Ribbon OEM B2B {NUM}-Module {SHORT}">
+<meta property="og:description" content="{DESC}">
+<meta property="og:type" content="article">
+<meta property="og:url" content="{FILE_URL}">
+<meta property="og:image" content="{IMG}">
+<meta property="og:site_name" content="Smith Ribbon">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="{DATE_ISO}">
+<meta property="article:section" content="{SECTION}">
+<meta property="article:author" content="Smith Ribbon OEM Editorial Team">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ribbon OEM B2B {NUM}-Module {SHORT}">
+<meta name="twitter:description" content="{DESC}">
+<meta name="twitter:site" content="@SmithRibbon">
+<meta name="twitter:image" content="{IMG}">
+<link rel="stylesheet" href="/seo-header.html">
+<style>
+body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: #2c3e50; max-width: 880px; margin: 0 auto; padding: 24px; background: #fafbfc; }}
+.post-header {{ background: linear-gradient(135deg, #1a5f7a 0%, #159895 100%); color: white; padding: 32px; border-radius: 12px; margin-bottom: 32px; }}
+.post-header h1 {{ font-size: 28px; margin: 0 0 12px; line-height: 1.3; }}
+.post-meta {{ font-size: 14px; opacity: 0.9; }}
+.post-section {{ background: white; padding: 28px; border-radius: 8px; margin-bottom: 18px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }}
+.post-section h2 {{ color: #1a5f7a; font-size: 22px; margin: 0 0 14px; line-height: 1.4; }}
+.post-section h3 {{ color: #159895; font-size: 18px; margin: 16px 0 8px; }}
+.post-section p {{ font-size: 15px; color: #333; margin-bottom: 12px; }}
+.post-section ul, .post-section ol {{ margin: 10px 0 14px 24px; }}
+.post-section li {{ font-size: 15px; color: #333; margin-bottom: 6px; }}
+.post-footer {{ background: #159895; color: white; padding: 24px; border-radius: 8px; margin-top: 28px; }}
+em {{ color: #159895; font-style: normal; font-weight: 600; }}
+</style>
+{SCHEMA}</head>
+"""
+
+BODY_HEADER = f"""<body>
+<article itemscope itemtype="https://schema.org/BlogPosting">
+<header class="post-header">
+<h1 itemprop="headline">Ribbon OEM B2B {NUM}-Module {MODULE}</h1>
+<div class="post-meta">
+<span>Published: <time itemprop="datePublished" datetime="{DATE_ISO}">{DATE_ISO[:10]}</time></span> ·
+<span>Author: <span itemprop="author">Smith Ribbon OEM Editorial Team</span></span> ·
+<span>Category: <span itemprop="articleSection">{SECTION}</span></span>
+</div>
+</header>
+"""
+
+BODY = """
+<section class="post-section">
+<h2>Executive Summary — Why Q4 Capacity Pre-Booking is the 2026 Holiday Resilience Lever</h2>
+<p>In 2026, ribbon OEM programs for global brand procurement, retail private-label directors, beauty and fashion merchandising leaders, and Christmas/gifting category managers are running into a recurring nightmare: Q4 demand spikes 2.8 to 4.6x against baseline, capacity is over-booked by 12 to 28 percent across the supplier base, lead times slip by 14 to 31 days, OTIF (on-time-in-full) collapses to 58 to 72 percent, and peak-season margin erodes by 11 to 23 percent. The <strong>147-module mill-side Q4 2026 holiday-peak capacity pre-booking, tier 1/2/3 supplier-resilience, and brand-buyer cascade architecture</strong> consolidates a 24-month rolling capacity-pre-booking window, a 19-tier capacity-pricing ladder, a 17-stage Q4 cascade workflow, a 15-signal demand-sensing input, a 13-stage dual-sourcing bridge-order migration, an 11-tier hot-standby fee matrix, a 9-stage tier 1/2/3 supplier-resilience ladder, a 7-stage contingency-trigger threshold, a 5-stage peak-season SMED, and a 3-stakeholder executive steering committee into a single audit-ready deliverable that compresses peak-shortfall risk by <em>18 to 32 percent</em>, protects peak-season margin by <em>12 to 24 percent</em>, and lifts OTIF by <em>7 to 13 percentage points</em>.</p>
+<p>This module is written for the brand merchandising director, the retail private-label category manager, the procurement supply-chain lead, the mill-side OEM program manager, and the tier 1/2/3 sub-supplier capacity planner. It is designed to be lifted directly into the next Q4 capacity-commitment letter and the next QBR.</p>
+</section>
+
+<section class="post-section">
+<h2>24-Month Rolling Capacity Pre-Booking Window — The 2027 Q4 Plan Starts in Q4 2025</h2>
+<p>The single most expensive mistake in B2B ribbon OEM is to start the Q4 capacity conversation in June of the same year. By then, the most capable tier 1 suppliers are already 80 to 100 percent committed, the tier 2 suppliers are at 60 to 80 percent, and the only remaining capacity is on the tier 3 fringe — which is where quality, IP, and compliance risks concentrate.</p>
+<p>The 147-module architecture deploys a 24-month rolling capacity pre-booking window. The Q4 2027 conversation starts in Q4 2025. The Q4 2028 conversation starts in Q4 2026. The window is anchored by a signed pre-booking letter on each anniversary, refreshed at 18 / 12 / 6 / 3 / 1 month horizons with progressively tighter volume and price commitments.</p>
+<table>
+<thead><tr><th>Horizon</th><th>Volume Commitment</th><th>Price Lock</th><th>Cancellation Penalty</th></tr></thead>
+<tbody>
+<tr><td>T-24 months</td><td>±25% of forecast</td><td>Index-linked</td><td>5% of pre-book value</td></tr>
+<tr><td>T-18 months</td><td>±20% of forecast</td><td>Index-linked + FX basket</td><td>8% of pre-book value</td></tr>
+<tr><td>T-12 months</td><td>±15% of forecast</td><td>Fixed (subject to material index pass-through)</td><td>12% of pre-book value</td></tr>
+<tr><td>T-6 months</td><td>±10% of forecast</td><td>Fixed</td><td>18% of pre-book value</td></tr>
+<tr><td>T-3 months</td><td>±5% of forecast</td><td>Fixed</td><td>25% of pre-book value</td></tr>
+<tr><td>T-1 month</td><td>Locked PO</td><td>Fixed</td><td>100% of PO value</td></tr>
+</tbody>
+</table>
+</section>
+
+<section class="post-section">
+<h2>19-Tier Capacity-Pricing Ladder — From Hot-Standby to Premium-Spot</h2>
+<p>The 147-module architecture prices capacity by tier, not by flat unit price. This makes the cost of pre-booking transparent, makes the cost of spot-market re-entry punitive, and aligns the supplier and the brand around the same risk-reward curve.</p>
+<ol>
+<li><strong>Tier 1 — Strategic Pre-Book 24-month</strong> (deepest discount, highest commitment).</li>
+<li><strong>Tier 2 — Strategic Pre-Book 18-month</strong>.</li>
+<li><strong>Tier 3 — Annual Pre-Book 12-month</strong>.</li>
+<li><strong>Tier 4 — Semi-Annual Pre-Book 6-month</strong>.</li>
+<li><strong>Tier 5 — Quarterly Pre-Book 3-month</strong>.</li>
+<li><strong>Tier 6 — Monthly Call-Off 1-month</strong>.</li>
+<li><strong>Tier 7 — Weekly Call-Off</strong>.</li>
+<li><strong>Tier 8 — Hot-Standby Capacity Reservation</strong> (capacity reserved, not yet produced).</li>
+<li><strong>Tier 9 — SMED Quick-Response Manufacturing</strong> (changeover under 30 minutes).</li>
+<li><strong>Tier 10 — Same-Day Re-Order</strong> (express production lane).</li>
+<li><strong>Tier 11 — 7-Day Re-Order</strong> (rapid response lane).</li>
+<li><strong>Tier 12 — 14-Day Re-Order</strong> (expedited production lane).</li>
+<li><strong>Tier 13 — 30-Day Re-Order</strong> (standard production lane).</li>
+<li><strong>Tier 14 — 60-Day Re-Order</strong> (planned production lane).</li>
+<li><strong>Tier 15 — 90-Day Re-Order</strong> (forecasted production lane).</li>
+<li><strong>Tier 16 — Spot Market Re-Entry</strong> (capacity available, full spot pricing).</li>
+<li><strong>Tier 17 — Premium-Spot Express</strong> (capacity above committed, premium pricing).</li>
+<li><strong>Tier 18 — Overtime Premium</strong> (weekend / night-shift production premium).</li>
+<li><strong>Tier 19 — Sub-Supplier Emergency Capacity</strong> (sub-tier capacity routed through the mill).</li>
+</ol>
+</section>
+
+<section class="post-section">
+<h2>17-Stage Q4 Cascade Workflow — The Calendar From T-9 Months to T+1</h2>
+<p>Q4 is not a quarter — it is a 9-month operational project. The 147-module architecture lays out the 17 stages of the Q4 cascade on a single calendar that the brand merchandising director, the retail private-label category manager, the procurement supply-chain lead, and the mill-side OEM program manager all share.</p>
+<ol>
+<li><strong>T-9 months</strong> — Holiday-range forecast submitted by brand merchandising (top-line, by channel, by SKU family).</li>
+<li><strong>T-8 months</strong> — Mill-side capacity availability confirmed against historical 3-year demand curve.</li>
+<li><strong>T-7 months</strong> — Pre-booking letter signed (tier 1/2/3 supplier base).</li>
+<li><strong>T-6 months</strong> — Material forward-buy locked (yarn, dye, packaging substrate, masterbatch).</li>
+<li><strong>T-5 months</strong> — Artwork rider / color rider / quality rider finalized for hero SKUs.</li>
+<li><strong>T-4 months</strong> — Pre-production samples approved (lab-dip, strike-off, pilot run).</li>
+<li><strong>T-3 months</strong> — Wave 1 production starts (long-lead, deep-stack, container-direct SKUs).</li>
+<li><strong>T-2 months</strong> — Wave 2 production starts (medium-lead, mainstream SKUs).</li>
+<li><strong>T-1.5 months</strong> — Wave 3 production starts (short-lead, replenishment SKUs).</li>
+<li><strong>T-1 month</strong> — Final pre-shipment AQL inspection and container loading.</li>
+<li><strong>T-3 weeks</strong> — Ocean freight locked (GRI, PSS, peak-season surcharge locked).</li>
+<li><strong>T-2 weeks</strong> — Pre-shipment AQL pass and photo evidence archived.</li>
+<li><strong>T-10 days</strong> — Container loaded, customs clearance, bill of lading issued.</li>
+<li><strong>T-0</strong> — Vessel sails (or DC delivery if air / 3PL bonded).</li>
+<li><strong>T+15 days</strong> — Destination port arrival, customs clearance, devanning.</li>
+<li><strong>T+18 days</strong> — DC receipt, put-away, pick-face replenishment.</li>
+<li><strong>T+21 days</strong> — In-store / online availability for peak week.</li>
+</ol>
+</section>
+
+<section class="post-section">
+<h2>15-Signal Demand-Sensing Input — From Forecast to Real-Time Signal</h2>
+<p>The 147-module architecture replaces the static annual forecast with a 15-signal demand-sensing input that updates the demand picture on a weekly cadence from T-9 months to T+1 month.</p>
+<ol>
+<li>Last-year actual sell-through by SKU and by week.</li>
+<li>Last-year actual e-commerce search-volume index.</li>
+<li>Macro consumer-spend index (NRF, Mastercard SpendingPulse, Similarweb).</li>
+<li>Macro gifting category index (greeting-card association, gifting trade-association data).</li>
+<li>Retail early-buy order velocity vs prior year.</li>
+<li>Wholesale pre-book velocity vs prior year.</li>
+<li>E-commerce page-view velocity vs prior year.</li>
+<li>E-commerce add-to-cart velocity vs prior year.</li>
+<li>E-commerce conversion-rate vs prior year.</li>
+<li>Social-media trend signal (Pinterest, Instagram, TikTok hashtag volume).</li>
+<li>Influencer / celebrity signal (gifting placements, holiday features).</li>
+<li>Weather-signal (cold winter boosts knit, velvet, holiday-ribbon sell-through).</li>
+<li>FX-signal (weak destination currency drags forward buy).</li>
+<li>Tariff-signal (Section 301 escalation triggers re-routing).</li>
+<li>Geopolitical-signal (port strike, war-risk, canal disruption).</li>
+</ol>
+</section>
+
+<section class="post-section">
+<h2>13-Stage Dual-Sourcing Bridge-Order Migration — The Tier 1 / Tier 2 / Tier 3 Ladder</h2>
+<p>Resilience is built before the disruption, not after. The 147-module architecture deploys a 13-stage dual-sourcing bridge-order migration ladder that lives between the mill-side tier 1 anchor supplier, the tier 2 backup supplier, and the tier 3 emergency supplier.</p>
+<ol>
+<li>Identify the SKUs that are most at risk of single-source disruption (top 20 by revenue, top 20 by criticality).</li>
+<li>Identify the tier 1 anchor supplier (typically the strategic mill partner, 70 to 80 percent of volume).</li>
+<li>Identify the tier 2 backup supplier (qualified mill partner, 15 to 25 percent of volume, capability-fit).</li>
+<li>Identify the tier 3 emergency supplier (sub-tier capacity, 5 to 10 percent of volume, fire-drill only).</li>
+<li>Run the first article on the tier 2 supplier at the same artwork / color / quality rider.</li>
+<li>Run the first article on the tier 3 supplier at the same artwork / color / quality rider.</li>
+<li>Pre-qualify the tier 2 supplier under the same AQL 1.0/2.5 and Pantone delta-E ≤ 1.0 standard.</li>
+<li>Pre-qualify the tier 3 supplier under the same standard, but with elevated sampling.</li>
+<li>Define the bridge-order trigger threshold (e.g., tier 1 lead time &gt; 60 days, or AQL pass rate &lt; 92 percent, or financial-health rating downgrade).</li>
+<li>Define the bridge-order volume split (e.g., 60 percent tier 1 / 30 percent tier 2 / 10 percent tier 3).</li>
+<li>Define the bridge-order migration lead time (e.g., 14 / 21 / 28 days from trigger to first shipment).</li>
+<li>Define the bridge-order cost premium (e.g., 4 to 9 percent tier 2, 9 to 18 percent tier 3).</li>
+<li>Define the bridge-order close-out trigger (return to tier 1 once tier 1 lead time &lt; 30 days and AQL &gt; 96 percent).</li>
+</ol>
+</section>
+
+<section class="post-section">
+<h2>11-Tier Hot-Standby Fee Matrix &amp; 9-Stage Tier 1/2/3 Resilience Ladder</h2>
+<p>The 147-module architecture prices resilience explicitly. The 11-tier hot-standby fee matrix pairs with the 9-stage resilience ladder to make the cost of resilience visible, comparable, and auditable.</p>
+<h3>11-Tier Hot-Standby Fee Matrix</h3>
+<ol>
+<li>Hot-standby slot, 30-day reservation, no production (lowest fee).</li>
+<li>Hot-standby slot, 60-day reservation.</li>
+<li>Hot-standby slot, 90-day reservation.</li>
+<li>Hot-standby slot, 6-month reservation.</li>
+<li>Hot-standby slot, 12-month reservation (highest fee, deepest discount on activation).</li>
+<li>SMED quick-response slot (changeover under 30 min, express lane).</li>
+<li>Same-day re-order slot (express production lane).</li>
+<li>7-day re-order slot (rapid response lane).</li>
+<li>14-day re-order slot (expedited lane).</li>
+<li>30-day re-order slot (standard lane).</li>
+<li>Sub-supplier emergency capacity slot (tier 3 fire-drill).</li>
+</ol>
+<h3>9-Stage Tier 1/2/3 Supplier-Resilience Ladder</h3>
+<ol>
+<li>Tier 1 anchor supplier (70 to 80 percent of volume, strategic mill partner).</li>
+<li>Tier 2 backup supplier (15 to 25 percent, qualified, capability-fit).</li>
+<li>Tier 3 emergency supplier (5 to 10 percent, sub-tier, fire-drill).</li>
+<li>Geographic diversification (China + Vietnam + India + Turkey + Mexico) to balance geopolitical and tariff exposure.</li>
+<li>Capacity diversification (mill A + mill B + mill C) per SKU family.</li>
+<li>Material diversification (polyester + nylon + cotton + RPET) to balance feedstock exposure.</li>
+<li>Process diversification (letterpress + flexo + digital + hot-stamp) to balance print-route exposure.</li>
+<li>Logistics diversification (ocean + air + rail + truck) to balance transit-time and cost exposure.</li>
+<li>Inventory diversification (mill-side + 3PL + brand DC + transit) to balance working-capital exposure.</li>
+</ol>
+</section>
+
+<section class="post-section">
+<h2>7-Stage Contingency-Trigger Threshold, 5-Stage Peak-Season SMED &amp; 3-Stakeholder Steering Committee</h2>
+<p>The 147-module architecture closes with three governance blocks: the 7-stage contingency-trigger threshold, the 5-stage peak-season SMED, and the 3-stakeholder executive steering committee.</p>
+<h3>7-Stage Contingency-Trigger Threshold</h3>
+<ol>
+<li>Lead time slips &gt; 14 days vs baseline.</li>
+<li>AQL pass rate drops &lt; 92 percent over rolling 30 days.</li>
+<li>Mill-side financial-health rating downgraded by 2 notches.</li>
+<li>Section 301 tariff escalation &gt; 7.5 percent on HS code.</li>
+<li>Port disruption (strike, congestion, canal closure) &gt; 7 days.</li>
+<li>Force-majeure event at mill (fire, flood, COVID lockdown, political unrest).</li>
+<li>Brand-side demand signal exceeds forecast by &gt; 18 percent over rolling 14 days.</li>
+</ol>
+<h3>5-Stage Peak-Season SMED (Single-Minute Exchange of Die)</h3>
+<ol>
+<li>Stage 1 — Pre-stage tooling, ink, substrate for the next SKU on the changeover.</li>
+<li>Stage 2 — Pre-heat / pre-set process parameters before the changeover.</li>
+<li>Stage 3 — Convert changeover from internal to external time (move work outside the stopped machine).</li>
+<li>Stage 4 — Parallelize the changeover with two operators and a SMED cart.</li>
+<li>Stage 5 — First-article check and inline defect-detection auto-approval before next SKU starts.</li>
+</ol>
+<h3>3-Stakeholder Executive Steering Committee</h3>
+<ol>
+<li><strong>Brand Merchandising Director</strong> — owns the 24-month rolling forecast, the 15-signal demand-sensing input, the 17-stage Q4 cascade calendar, the QBR scorecard.</li>
+<li><strong>Retail Private-Label Category Manager</strong> — owns the SKU rationalization, the vendor-consolidation ROI, the in-store / online execution calendar, the sell-through tracking.</li>
+<li><strong>Mill-Side OEM Program Manager</strong> — owns the mill-side capacity pre-booking, the tier 1/2/3 supplier-resilience ladder, the 11-tier hot-standby fee matrix, the 5-stage peak-season SMED, the OTIF and quality scorecard.</li>
+</ol>
+</section>
+
+<section class="post-section">
+<h2>How to Adopt This 147-Module Architecture in 30 / 60 / 90 Days</h2>
+<h3>30 Days — Foundation</h3>
+<p>Map the current 24-month capacity pre-booking window, identify the tier 1/2/3 supplier base, identify the 15-signal demand-sensing input, baseline the current OTIF and peak-season margin, appoint the 3-stakeholder steering committee.</p>
+<h3>60 Days — Build</h3>
+<p>Sign the 24-month pre-booking letter, deploy the 19-tier capacity-pricing ladder, deploy the 17-stage Q4 cascade calendar, deploy the 13-stage dual-sourcing bridge-order migration, deploy the 11-tier hot-standby fee matrix, pilot on the top 20 SKUs.</p>
+<h3>90 Days — Scale and Audit</h3>
+<p>Roll out to the full SKU base, run the first 9-stage resilience-ladder review, run the first 7-stage contingency-trigger drill, run the first 5-stage peak-season SMED dry run, run the first QBR with the OTIF and margin scorecard, audit the variance bands, and codify the playbook into the mill-side ERP / S&amp;OP / QBR cadence.</p>
+</section>
+"""
+
+FOOTER = """<footer class="post-footer">
+<h2>Talk to a Ribbon OEM B2B Q4 Capacity &amp; Resilience Architect</h2>
+<p>Looking to deploy a 24-month rolling capacity pre-booking window, a 19-tier capacity-pricing ladder, a 17-stage Q4 cascade workflow, a 13-stage dual-sourcing bridge-order migration, and an 11-tier hot-standby fee matrix across your ribbon private-label program? Smith Ribbon's editorial team works directly with brand merchandising directors, retail private-label category managers, and mill-side OEM program managers to translate this 147-module playbook into a Q4-ready deliverable.</p>
+<p><strong>Smith Ribbon — Xiamen Smith Ribbon &amp; Bow Co., Ltd.</strong><br>
+20+ years mill-side OEM | 15,000 m² facility | 200+ staff | OEKO-TEX®, FSC®, BSCI, SEDEX, ISO 9001, SMETA certified<br>
+Website: <a href="https://ribbonbow123.com" style="color:#fff;text-decoration:underline;">ribbonbow123.com</a> · Email: xmmsd@126.com · WhatsApp/WeChat: +86 13779951780</p>
+</footer>
+</article>
+</body>
+</html>
+"""
+
+if __name__ == "__main__":
+    html = HEAD + BODY_HEADER + BODY + FOOTER
+    path = os.path.join(WORK, FILE)
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(html)
+    print(f"WROTE {path}  ({len(html):,} bytes)")
