@@ -37,3 +37,12 @@
 ## Optional contact for AI crawlers
 - Allow: GPTBot, ClaudeBot, PerplexityBot, Google-Extended, OAI-SearchBot, ChatGPT-User
 - See /robots.txt for full crawler policy
+
+## Recent insights (added 2026-09-22)
+- [Private Label Ribbon Launch Playbook](https://ribbonbow123.com/blog-private-label-ribbon-launch-playbook-2026-09-18-am.html)
+- [Ribbon Certification & Compliance Decoder](https://ribbonbow123.com/blog-ribbon-certification-compliance-decoder-2026-09-18-pm.html)
+- [Cost Engineering & Should-Cost Modeling Playbook](https://ribbonbow123.com/blog-ribbon-oem-b2b-cost-engineering-should-cost-modeling-total-landed-cost-optimization-playbook-2026-08-02-pm.html)
+- [HS Code & Customs Duty Optimization](https://ribbonbow123.com/blog-ribbon-oem-b2b-trade-compliance-hs-code-classification-customs-duty-optimization-playbook-2026-08-02-pm.html)
+- [Sustainable Ribbon & ESG Supply Chain](https://ribbonbow123.com/blog-ribbon-oem-b2b-sustainable-ribbon-esg-certified-supply-chain-recycled-material-sourcing-playbook-2026-08-02-am.html)
+- [9-Stage OEM Process Control & Lead Time](https://ribbonbow123.com/blog-ribbon-oem-b2b-9-stage-oem-process-control-sample-to-shipment-lead-time-decoder-2026-08-01-pm.html)
+
