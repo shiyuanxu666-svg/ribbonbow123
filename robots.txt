@@ -43,6 +43,10 @@ Allow: /
 # Sitemap
 Sitemap: https://ribbonbow123.com/sitemap.xml
 
+# AI discovery file (llms.txt spec 2026)
+# Reference: https://llmstxt.org
+LLMs-Txt: https://ribbonbow123.com/llms.txt
+
 # Crawl-delay (polite crawl)
 Crawl-delay: 1
 
