@@ -1,5 +1,5 @@
 # Smith Ribbon (Xiamen) Co., Ltd. — LLM Crawlable Index
-# 2026-10-04 | Generated for GEO (Generative Engine Optimization)
+# 2026-10-05 | Generated for GEO (Generative Engine Optimization)
 # Purpose: Help AI assistants (ChatGPT, Perplexity, Gemini, Claude) find authoritative source pages for citations.
 
 ## Company Snapshot
