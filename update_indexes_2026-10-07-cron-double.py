@@ -1,24 +1,24 @@
 #!/usr/bin/env python3
-"""Update blog.html, en-blog.html and sitemap.xml with articles 241-AM + 242-PM — 2026-10-07 cron double."""
+"""Update blog.html, en-blog.html and sitemap.xml with articles 243-AM + 244-PM — 2026-10-07 cron double."""
 import os, re
 
 WORK = "/workspace/ribbonbow123"
 BASE = "https://ribbonbow123.com"
 TODAY = "2026-10-07"
 
-ART241 = {
-    "file": "blog-ribbon-oem-b2b-241-module-mill-side-q1-2027-24-stage-oem-custom-branded-ribbon-concept-to-label-brand-launch-oem-process-engineering-architecture-b2b-oem-program-resilience-2026-10-07-am.html",
-    "title": "Ribbon OEM B2B 241-Module Mill-Side Q1-2027 24-Stage OEM Custom-Branded-Ribbon Concept-to-Label Brand-Launch OEM Process-Engineering Architecture for Brand Owners and Procurement Managers",
-    "cat": "Q1-2027 24-Stage OEM Custom Branded Ribbon Concept to Label Brand Launch OEM Process Engineering Architecture",
+ART243 = {
+    "file": "blog-ribbon-oem-b2b-243-module-mill-side-q1-2027-oem-custom-branded-ribbon-concept-to-shelf-21-stage-brief-to-shipment-workflow-architecture-b2b-oem-program-resilience-2026-10-07-am.html",
+    "title": "Ribbon OEM B2B 243-Module Mill-Side Q1-2027 21-Stage OEM Custom-Branded Ribbon Concept-to-Shelf Brief-to-Shipment Workflow Architecture for Brand Owners and Procurement Managers",
+    "cat": "Q1-2027 21-Stage OEM Custom Branded Ribbon Concept to Shelf Brief to Shipment Workflow Architecture",
     "date": TODAY,
-    "desc": "241-module mill-side Q1-2027 24-stage OEM custom-branded-ribbon concept-to-label brand-launch OEM process-engineering architecture (7-pillar cognitive fabric Mill-Side 19-Layer BOM Specification-Engineering Plane + AI-Augmented Pantone-FHI Color-Stewardship Plane + Tier-1-Tier-2-Tier-3 Brand-Launch Dual-Sourcing Bridge-Order-Migration Plane + Cross-Border Tariff-Engineering Country-of-Origin Plane + 14-Stage On-Site Brand-Launch Qualification Plane + Hidden-Landed-Cost Reverse-Engineering 19-Component Quote-Decoder Plane + Smart-Mill IIoT Edge-AI 14-Photo-Evidence Brand-Launch Plane, 24-stage brief-to-shelf concept-to-label brand-launch cognitive-fabric artwork-rider sample-approval PPAP pre-shipment-AQL brand-exit-protocol, 24-stage Pantone-co-design lab-dip print-test wash-rub-light-crocking-perspiration fastness decoder, AI-augmented Pantone-FHI color-stewardship Delta-E lot-to-lot continuity) for global brand owners and Q1 2027 launch-readiness controllers. Lift: 38-64% concept-to-shelf cycle-time compression, 4-11% NPI-speed lift per program, 4-11% program-lifetime-margin-lift.",
+    "desc": "243-module mill-side Q1-2027 21-stage OEM custom-branded ribbon concept-to-shelf brief-to-shipment workflow architecture (21-stage brand-brief artwork-pre-press color-library sample-parallel-track inline-yield-tooling PPAP-pre-production AI-vision-AQL cartonization DC-routing pre-shipment-AQL brand-launch-activation launch-runway brand-exit-protocol decoder, 23-component should-cost quote-decoder, 25-signal supplier-selection framework alignment, AI-augmented Pantone-FHI color-stewardship Delta-E lot-to-lot continuity, Jetson-AGX-Orin edge-AI inline defect-detection closed-loop yield-recovery) for global brand owners and Q1 2027 launch-readiness controllers. Lift: 32-58% speed-to-market compression, 6-12% landed-cost savings lift, 4-9% program-lifetime-margin-lift.",
 }
-ART242 = {
-    "file": "blog-ribbon-oem-b2b-242-module-mill-side-q1-2027-24-stage-oem-supplier-selection-cost-analysis-hidden-landed-cost-reverse-engineering-architecture-b2b-oem-program-resilience-2026-10-07-pm.html",
-    "title": "Ribbon OEM B2B 242-Module Mill-Side Q1-2027 24-Stage OEM Supplier-Selection Cost-Analysis Hidden-Landed-Cost Reverse-Engineering Architecture for Brand Owners and Procurement Managers",
-    "cat": "Q1-2027 24-Stage OEM Supplier Selection Cost Analysis Hidden Landed Cost Reverse Engineering Architecture",
+ART244 = {
+    "file": "blog-ribbon-oem-b2b-244-module-mill-side-q1-2027-oem-supplier-selection-cost-analysis-25-signal-12-kpi-framework-architecture-b2b-oem-program-resilience-2026-10-07-pm.html",
+    "title": "Ribbon OEM B2B 244-Module Mill-Side Q1-2027 25-Signal 12-KPI OEM Supplier-Selection Cost-Analysis Framework Architecture for Brand Owners and Procurement Managers",
+    "cat": "Q1-2027 25 Signal 12 KPI OEM Supplier Selection Cost Analysis Framework Architecture",
     "date": TODAY,
-    "desc": "242-module mill-side Q1-2027 24-stage OEM supplier-selection cost-analysis hidden-landed-cost reverse-engineering architecture (7-pillar cognitive fabric Mill-Side 19-Component Quote-Decoder Plane + AI-Augmented Hidden-Cost-Radar Plane + Tier-1-Tier-2-Tier-3 Supplier-Resilience Dual-Sourcing Bridge-Order-Migration Plane + Cross-Border Tariff-Engineering Country-of-Origin FTA-HS-Code-Drawback-FTZ-Bonded-Warehouse Plane + 14-Station On-Site Supplier-Qualification Plane + AI-Augmented Supplier-Scorecard 20-KPI Plane + Smart-Mill IIoT Edge-AI 14-Photo-Evidence Cost-Audit Plane, 24-stage yarn-dye-weave-finish conversion overhead tariff freight DDP compliance quality packaging warehouse risk working-capital MOQ volume-mix tier-supplier dual-sourcing lead-time capex-amortization margin-reconciliation cost-decoder, AI-augmented hidden-cost-radar variable-cost-modeling supplier-relationship-management SRM tiered-QBR-cadence) for global brand owners and Q1 2027 finance controllers. Lift: 38-64% should-cost leak compression, 4-11% margin lift per supplier, 4-11% program-lifetime-margin-lift.",
+    "desc": "244-module mill-side Q1-2027 25-signal 12-KPI OEM supplier-selection cost-analysis framework architecture (25-signal framework covering 14-station on-site qualification, 18-signal cert compliance BSCI-SEDEX-SMETA-OEKO-TEX-FSC-GRS-GOTS-ISO-9001-14001-45001, 12-signal financial-health D&B-rating working-capital quick-ratio, 23-component should-cost quote-decoder, multi-currency FX-hedging, tariff-aware cost architecture Section-301-list-4A-4B EU-CBAM FTA-utilization, 12-KPI framework OEE greater-than-85% defect-rate-less-than-0.4% energy-productivity-less-than-4.2-kWh/m3 water-productivity-less-than-38-L/kg carbon-productivity-less-than-3.8-kgCO2e/kg color-delta-E-less-than-1.0 on-time-delivery-greater-than-96% compliance-coverage IP-protection brand-exit-protocol QBR-cadence) for global brand owners and Q1 2027 finance controllers. Lift: 36-62% should-cost leak compression, 5-11% margin lift per supplier, 4-10% program-lifetime-margin-lift.",
 }
 
 
@@ -141,9 +141,9 @@ def update_sitemap(arts):
 
 if __name__ == "__main__":
     print("--- Updating en-blog.html ---")
-    update_en_blog([ART241, ART242])
+    update_en_blog([ART243, ART244])
     print("--- Updating blog.html ---")
-    update_blog([ART241, ART242])
+    update_blog([ART243, ART244])
     print("--- Updating sitemap.xml ---")
-    update_sitemap([ART241, ART242])
+    update_sitemap([ART243, ART244])
     print("Done.")
