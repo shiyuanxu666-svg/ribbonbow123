@@ -10,40 +10,40 @@ WORKSPACE = Path("/workspace/ribbonbow123")
 # Topic configs: (module_num, am_or_pm, date, slug-suffix-keywords)
 ARTICLES = [
     {
-        "module_num": 261,
+        "module_num": 265,
         "slot": "am",
-        "date": "2026-10-13",
-        "date_long": "2026-10-13T08:00:00+08:00",
-        "title_module": "OEM Private-Label Custom-Branded Ribbon Program 21-Stage Brief-to-Replenishment Workflow",
-        "title_short": "OEM Private-Label Custom-Branded Ribbon Program 21-Stage Brief-to-Replenishment Workflow",
-        "article_section": "Q1-2027 Oem Private Label Custom Branded Ribbon Program 21 Stage Brief To Replenishment Workflow",
-        "module_full": "261-module mill-side Q1-2027 21-stage OEM private-label custom-branded ribbon program brief-to-replenishment workflow",
-        "lift_metrics": "18 to 32 percent speed-to-shelf compression, 22 to 38 percent stock-out incident compression, 42k to 168k USD avoidable-cost recovery",
-        "lift_metrics_detail": "Lift: 18-32 day speed-to-shelf compression, 22-38 percent stock-out incident compression, 42k-168k USD avoidable-cost recovery.",
-        "headline": "OEM Private-Label Custom-Branded Ribbon Program 21-Stage Brief-to-Replenishment Workflow Architecture for Q1-2027 B2B Private-Label Program Resilience",
-        "alt_headline": "OEM Private-Label Custom-Branded Ribbon Program 21-Stage Brief-to-Replenishment Workflow",
-        "desc": "A 2026 B2B ribbon OEM 261-module mill-side Q1-2027 21-stage oem private label custom branded ribbon program brief to replenishment workflow architecture for global brand procurement directors, retail private-label merchandising controllers, OEM mill-side program managers, Q1 2027 finance controllers, brand-buyer private-label program owners, and executive-board sponsors. Engineered to deliver 18 to 32 percent speed-to-shelf compression, 22 to 38 percent stock-out incident compression, and 42,000 to 168,000 USD avoidable-cost recovery across the FY2026 to FY2028 horizon.",
-        "stages": "21-stage across concept-stage-gate-0 brief-lock-artwork-start-Pantone-triage, sample-stage-gate-1 lab-dip-strike-off-cylinder-engrave-die-cut, pre-production-stage-gate-2 PPAP-bulk-yarn-dye-lot-greige-weave-finish, launch-stage-gate-3 first-article-inspection-AQL-pack-EDI-VMI-handoff, replenishment-stage-gate-4 demand-sensing-DRP-reorder-point-safety-stock, scale-stage-gate-5 SKU-rationalization-mix-shift-color-extension, evergreen-stage-gate-6 annual-tender-QBR-supplier-scorecard-refresh",
-        "stations_deep": "21-station across yarn-forward / dyeing / weaving / finishing / converting / packaging / warehouse / lab / pre-treatment / color-kitchen / quality-control / pilot-line / R&D / sample-atelier / capacity / Q4-cascade / smart-factory / energy-water-carbon / sub-supplier-risk / trade-compliance / DPP-ESPR",
-        "filename": "blog-ribbon-oem-b2b-261-module-mill-side-q1-2027-oem-private-label-custom-branded-ribbon-program-21-stage-brief-to-replenishment-workflow-architecture-b2b-oem-program-resilience-2026-10-13-am.html",
+        "date": "2026-10-14",
+        "date_long": "2026-10-14T08:00:00+08:00",
+        "title_module": "OEM Tariff-Engineering 28-Lever Country-of-Origin Landed-Cost Optimization 27-Signal Custom-Packaging 19-Layer BOM Decoder",
+        "title_short": "OEM Tariff-Engineering 28-Lever Landed-Cost + 19-Layer BOM Decoder",
+        "article_section": "Q1-2027 Oem Tariff Engineering 28 Lever Country Of Origin Landed Cost Optimization 27 Signal Custom Packaging 19 Layer Bom Decoder",
+        "module_full": "265-module mill-side Q1-2027 28-lever tariff-engineering country-of-origin landed-cost optimization 27-signal custom-packaging 19-layer BOM decoder",
+        "lift_metrics": "22 to 46 percent Section-301 and EU-CBAM duty exposure compression, 28 to 64 percent FTA-utilization savings lift, 46k to 198k USD avoidable-cost recovery",
+        "lift_metrics_detail": "Lift: 22-46 percent Section-301 and EU-CBAM duty exposure compression, 28-64 percent FTA-utilization savings lift, 46k-198k USD avoidable-cost recovery.",
+        "headline": "OEM Tariff-Engineering 28-Lever Country-of-Origin Landed-Cost Optimization 27-Signal Custom-Packaging 19-Layer BOM Decoder Architecture for Q1-2027 B2B OEM Program Resilience",
+        "alt_headline": "OEM Tariff-Engineering 28-Lever Landed-Cost + 19-Layer BOM Decoder",
+        "desc": "A 2026 B2B ribbon OEM 265-module mill-side Q1-2027 28-lever tariff-engineering country-of-origin landed-cost optimization 27-signal custom-packaging 19-layer BOM decoder architecture for global brand procurement directors, retail private-label merchandising controllers, OEM mill-side program managers, Q1 2027 finance controllers, brand-buyer private-label program owners, and executive-board sponsors. Engineered to deliver 22 to 46 percent Section-301 and EU-CBAM duty exposure compression, 28 to 64 percent FTA-utilization savings lift, and 46,000 to 198,000 USD avoidable-cost recovery across the FY2026 to FY2028 horizon.",
+        "stages": "28-lever across HS-code reclassification-engineering / country-of-origin substantial-transformation / FTA-utilization RCEP CPTPP USMCA EU-Vietnam / Section-301 List-4A-4B exclusion engineering / bonded-warehouse FTZ utilization / first-sale-for-export valuation / multi-currency FX-hedging / anti-dumping circumvention defense / first-article tariff-strategy / 19-layer BOM direct-cost reverse-engineering / packaging layer cost stack down / ribbon-bow-tassel-trim material yield / labor-and-overhead allocation / testing-and-cert amortization / trim-and-finish cost / freight-and-drayage duty-paid / customs-broker fee / tariff-engineering IGRA IGRS / 27-signal custom-packaging 19-layer BOM decoder signal-stack",
+        "stations_deep": "27-signal across landed-cost / HS-code / tariff-engineering / FTA-utilization / RPET-GRS / FSC-CoC / soy-ink / water-based-coating / hot-stamp-emboss / retail-shelf-ready / gift-box / mailer / display-POP / brand-buyer-reference / sustainability / packaging-engineer / cost-engineer / freight-engineer / customs-broker / 19-layer BOM / direct-cost / hidden-cost / Q4-cascade / capex-plan / R&D-invest / sub-supplier-risk / carbon-adjusted-TCO",
+        "filename": "blog-ribbon-oem-b2b-265-module-mill-side-q1-2027-oem-tariff-engineering-28-lever-country-of-origin-landed-cost-optimization-27-signal-custom-packaging-19-layer-bom-decoder-architecture-b2b-oem-program-resilience-2026-10-14-am.html",
     },
     {
-        "module_num": 262,
+        "module_num": 266,
         "slot": "pm",
-        "date": "2026-10-13",
-        "date_long": "2026-10-13T13:00:00+08:00",
-        "title_module": "OEM Private-Label Supplier-Selection 24-Signal 14-KPI TCO Scorecard Architecture",
-        "title_short": "OEM Private-Label Supplier-Selection 24-Signal 14-KPI TCO Scorecard",
-        "article_section": "Q1-2027 Oem Private Label Supplier Selection 24 Signal 14 Kpi Tco Scorecard",
-        "module_full": "262-module mill-side Q1-2027 24-signal 14-KPI OEM private-label supplier-selection TCO scorecard",
-        "lift_metrics": "16 to 30 percent tender-win-rate lift, 14 to 28 percent supplier-qualification cycle compression, 44k to 188k USD avoidable-cost recovery",
-        "lift_metrics_detail": "Lift: 16-30 percent tender-win-rate lift, 14-28 percent supplier-qualification cycle compression, 44k-188k USD avoidable-cost recovery.",
-        "headline": "OEM Private-Label Supplier-Selection 24-Signal 14-KPI TCO Scorecard Architecture for Q1-2027 B2B Private-Label Program Resilience",
-        "alt_headline": "OEM Private-Label Supplier-Selection 24-Signal 14-KPI TCO Scorecard",
-        "desc": "A 2026 B2B ribbon OEM 262-module mill-side Q1-2027 24-signal 14-KPI OEM private-label supplier-selection TCO scorecard architecture for global brand procurement directors, retail private-label merchandising controllers, OEM mill-side program managers, Q1 2027 finance controllers, brand-buyer private-label program owners, and executive-board sponsors. Engineered to deliver 16 to 30 percent tender-win-rate lift, 14 to 28 percent supplier-qualification cycle compression, and 44,000 to 188,000 USD avoidable-cost recovery across the FY2026 to FY2028 horizon.",
-        "stages": "24-signal across AQL-pass-rate / OTD / cost-competitiveness / compliance-cert / financial-health / capacity / innovation / communication / risk / sustainability / HS-code / FTA-utilization / anti-counterfeit / Pantone-match / sub-tier-audit / geographic-diversification / FX-hedging / trade-finance / capex-plan / R&D-invest / brand-buyer-reference / sample-cycle / lab-cycle / lab-dip-mapped to 14-KPI tender-eval scorecard",
-        "stations_deep": "14-KPI across direct-cost / hidden-landed-cost / cross-border-trade-compliance / working-capital / risk-ESG / brand-equity / supplier-risk / scope-3 / cert-compliance / innovation-pipeline / capacity-flex / Q4-cascade / DRP-replenishment / SCOR-mapped-maturity",
-        "filename": "blog-ribbon-oem-b2b-262-module-mill-side-q1-2027-oem-private-label-supplier-selection-24-signal-14-kpi-tco-scorecard-architecture-b2b-oem-program-resilience-2026-10-13-pm.html",
+        "date": "2026-10-14",
+        "date_long": "2026-10-14T13:00:00+08:00",
+        "title_module": "OEM Supplier-Certification 26-Credential ROI Decoder Hidden-Cost Radar 21-Signal Risk-Adjusted TCO Scorecard",
+        "title_short": "OEM Supplier-Certification 26-Credential ROI + 21-Signal TCO Scorecard",
+        "article_section": "Q1-2027 Oem Supplier Certification 26 Credential Roi Decoder Hidden Cost Radar 21 Signal Risk Adjusted Tco Scorecard",
+        "module_full": "266-module mill-side Q1-2027 26-credential OEM supplier-certification ROI decoder hidden-cost radar 21-signal risk-adjusted TCO scorecard",
+        "lift_metrics": "18 to 36 percent cert-compliance audit-cycle compression, 24 to 48 percent recall-risk compression, 48k to 204k USD avoidable-cost recovery",
+        "lift_metrics_detail": "Lift: 18-36 percent cert-compliance audit-cycle compression, 24-48 percent recall-risk compression, 48k-204k USD avoidable-cost recovery.",
+        "headline": "OEM Supplier-Certification 26-Credential ROI Decoder Hidden-Cost Radar 21-Signal Risk-Adjusted TCO Scorecard Architecture for Q1-2027 B2B OEM Program Resilience",
+        "alt_headline": "OEM Supplier-Certification 26-Credential ROI + 21-Signal TCO Scorecard",
+        "desc": "A 2026 B2B ribbon OEM 266-module mill-side Q1-2027 26-credential OEM supplier-certification ROI decoder hidden-cost radar 21-signal risk-adjusted TCO scorecard architecture for global brand procurement directors, retail private-label merchandising controllers, OEM mill-side program managers, Q1 2027 finance controllers, brand-buyer private-label program owners, and executive-board sponsors. Engineered to deliver 18 to 36 percent cert-compliance audit-cycle compression, 24 to 48 percent recall-risk compression, and 48,000 to 204,000 USD avoidable-cost recovery across the FY2026 to FY2028 horizon.",
+        "stages": "26-credential across OEKO-TEX-Standard-100 / GOTS-Organic / GRS-RPET / BCI-Better-Cotton / BSCI / SEDEX-SMETA / ISO-9001-14001-45001 / FSC-CoC / REACH-SVHC / CPSIA-PROP-65 / RSL-ZDHC-MRSL / C-TPAT-AEO / GSV-TAPA / WRAP-SAE-8000 / SA8000 / CE-UKCA-EN71 / ASTM-F963-CPSIA / CA-Prop-65 / FDA-food-contact / GOTS-OCS / BLUESIGN / ZDHC-Foundational / HIGG-FEM / SBTi-validation / CDP-disclosure / EU-CBAM-readiness / DPP-ESPR-passport-readiness mapped to 21-signal risk-adjusted TCO scorecard",
+        "stations_deep": "21-signal across cert-ROI / audit-cycle / hidden-cost-radar / chargeback-rate / recall-risk / defect-rate / compliance-officer / SCOR-mapped-maturity / QBR-rigor / JSC-governance / brand-buyer-reference / sub-supplier-tier-2-3 / carbon-adjusted-TCO / Scope-3-cradle-to-gate / LCA-disclosure / DPP-ESPR-readiness / EU-CBAM-readiness / Section-301-List-4A-4B-readiness / FTA-utilization / FX-hedging / working-capital",
+        "filename": "blog-ribbon-oem-b2b-266-module-mill-side-q1-2027-oem-supplier-certification-26-credential-roi-decoder-hidden-cost-radar-21-signal-risk-adjusted-tco-scorecard-architecture-b2b-oem-program-resilience-2026-10-14-pm.html",
     },
 ]
 
@@ -212,11 +212,11 @@ def build_about_json():
 
 def main():
     for art in ARTICLES:
-        # Lift ranges
-        if art["module_num"] == 261:
-            lift_split = "94k to 168k USD for programs in the 50k to 250k meter range"
+        # Lift ranges — branch by slot for AM/PM pair
+        if art["slot"] == "am":
+            lift_split = "98k to 198k USD for programs in the 50k to 250k meter range"
         else:
-            lift_split = "92k to 188k USD for programs in the 50k to 250k meter range"
+            lift_split = "96k to 204k USD for programs in the 50k to 250k meter range"
 
         body = BODY_TEMPLATE.format(
             module_num=art["module_num"],
