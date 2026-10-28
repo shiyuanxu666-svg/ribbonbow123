@@ -1,7 +1,7 @@
 # Pending Manual Push
 
-- **Commit**: 0e4bd7d "B2B SEO 2026-10-26: 2 new OEM ribbon articles (300 technical specification & tech pack guide, 301 trim performance testing by end-use) + blog.html and sitemap.xml updates"
-- **Status**: committed locally in /workspace/ribbonbow123 on branch `main`; NOT yet on GitHub remote.
-- **Reason**: push-retry.py uploaded 8/8 blobs but failed to create the final tree (`ERR -1 (952 entries)`); a follow-up `git push origin main` failed with "Failed to connect to github.com port 443 after 129844 ms" (network timeout).
-- **Action**: do NOT re-push manually in a loop. The next scheduled cron run should attempt the push once; the commit is already in place and no regeneration is needed.
-- **Articles pending**: #300 and #301 (both already written, verified, and committed; blog.html + sitemap.xml already updated).
+- **Status**: CLEAR — no pending items.
+- **Last successful push**: commit `0ecad9b2` → remote ref `a26072a3` (✅ SUCCESS, 2026-10-28 cron run).
+- **Articles published in this run**: #315 (elastic/stretch/recovery/compression specification guide) and #316 (fragrance & beauty packaging trim — atomiser collars, cap ties, compliance), plus blog.html and sitemap.xml updates.
+- **Prior item resolved**: the earlier pending commit (`0e4bd7d`, articles #300 and #301) is now superseded — it was included in the tree pushed by this run.
+- **Action**: none. The next scheduled cron run should push only if it creates new commits.
