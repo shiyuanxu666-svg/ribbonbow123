@@ -18,6 +18,7 @@ SITE = "ribbonbow123.com"
 META = {
     320: ("_content_320.json", "2026-10-29T08:00:00+08:00", "October 29, 2026", "am"),
     321: ("_content_321.json", "2026-10-29T13:00:00+08:00", "October 29, 2026", "pm"),
+    324: ("_content_324.json", "2026-10-29T15:00:00+08:00", "October 29, 2026", "pm"),
 }
 
 
