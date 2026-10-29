@@ -1,0 +1,267 @@
+#!/usr/bin/env python3
+"""Article #320 - 2026-10-29 AM slot (second AM run for 2026-10-29).
+
+Topic: ribbon flammability, fire safety and compliance for private-label
+programmes - how to specify it, test it and document it.
+
+Why this topic: flammability / fire-safety compliance appears nowhere in the
+ribbonbow123 corpus as a dedicated buying topic. The existing articles touch
+REACH, Prop 65, CPSIA, EU textile labelling and OEKO-TEX - but none of them
+covers the fire-performance axis (EN 13773, NFPA 701, 16 CFR 1610, BS 5867,
+CAL 117 etc.), which is a separate body of test methods with separate failure
+modes, separate documentation, and a separate failure mode in the warehouse.
+"""
+import sys
+sys.path.insert(0, "/workspace/ribbonbow123")
+
+from tmpl_ribbon_article import build_html
+
+SITE = "ribbonbow123.com"
+SLUG = "ribbon-oem-flammability-fire-safety-compliance-specification-testing-private-label-buyers-guide-2026-10-29-am"
+URL = f"https://{SITE}/blog-{SLUG}.html"
+DATE_ISO = "2026-10-29T08:00:00+08:00"
+DATE_DISPLAY = "October 29, 2026"
+
+TITLE = ("Ribbon Flammability &amp; Fire Safety Compliance &mdash; How to Specify It, Test It and Document It for Private Label (2026)")
+DESC = (
+    "A buyer's guide to ribbon flammability and fire-safety compliance in private-label programmes. "
+    "Explains why fire performance is a separate axis from chemical compliance, maps the four test families "
+    "that apply to decorative ribbon - vertical burn, horizontal burn, candle or match ignition, and heat "
+    "release - and the standards behind them (EN 13773, NFPA 701, 16 CFR 1610, BS 5867, CAL 117), explains "
+    "how a construction change or a colour change or a new dye batch affects the test result, sets out how "
+    "to write a testable fire-performance specification with the right material, the right conditioning "
+    "protocol and the right certificate scope, and covers what to do when a lot fails. Written for brand "
+    "owners, private-label managers, category managers and procurement teams."
+)
+KEYWORDS = (
+    "ribbon flammability testing, fire retardant ribbon OEM, ribbon fire safety compliance, "
+    "EN 13773 ribbon test, NFPA 701 ribbon, 16 CFR 1610 ribbon, BS 5867 ribbon, CAL 117 ribbon, "
+    "private label ribbon fire performance specification, ribbon ignition resistance test method, "
+    "flame retardant ribbon supplier, ribbon fire certificate scope, B2B ribbon sourcing guide"
+)
+
+SECTIONS = [
+    (
+        "The Compliance Axis Almost Nobody Checks Until the Retailer Asks",
+        """There is a category of ribbon compliance that most brand buyers do not think about until a retailer, a fire officer or an insurer raises it &mdash; and by then the programme is already on shelf.
+
+It is fire performance. Flame retardancy, ignition behaviour, heat release, smoke production. And unlike the compliance work most buyers already do &mdash; chemical limits, restricted substances, labelling &mdash; fire performance is not something a supplier's existing certificates usually cover. A mill can hold OEKO-TEX Standard 100, can hold ISO 9001, can hold BSCI, can hold FSC, and can still ship you a ribbon that fails a flammability test, because the fire axis requires its own test method, its own laboratory, and its own certificate scope.
+
+Here is why this matters more in 2026 than it did five years ago.
+
+<b>Retailer fire-safety testing is a gate, not a review.</b> Large retail chains and marketplace platforms increasingly require flammability documentation before a SKU can be listed, and increasingly run their own verification sampling. A SKU that cannot produce a compliant test report does not get listed. It does not get listed "pending review" &mdash; it does not get listed.
+
+<b>Warehouse and fulfilment environments are the real exposure.</b> A decorative ribbon on a hair accessory, a gift bow on a gift set, a trim on a home fragrance product &mdash; these sit in distribution centres, in vans, in back-of-store stockrooms that are densely packed with paper, board and plastic. Fire performance is not a theoretical concern in that environment; it is the reason the retail buyer asks.
+
+<b>The buyer usually finds out from the mill, not the brand.</b> In a private-label programme the brand specifies the ribbon functionally: colour, width, hand feel, print. Fire performance gets inherited from whatever construction the mill happens to run. And then the mill changes. The mill re-orders a dye lot from a different supplier, runs a different finishing route, or substitutes a lower-cost yarn to hold a price &mdash; and the fire performance of the ribbon has changed, without anybody deciding to change it.
+
+<b>Test results are construction-specific, and constructions change silently.</b> This is the point that catches experienced buyers out. A flammability certificate belongs to a specific material, at a specific width, with a specific finish and a specific colour. It is not a property of "the ribbon". A change of width, a change of fibre, a change of dye, a change of backing or a change of finishing route can each move the result across the pass/fail line, and a mill will rarely flag it to you because from the mill's side nothing about the purchase order changed.
+
+At Smith Ribbon, in Xiamen since 2004, we treat fire performance as a defined construction attribute rather than a certificate attached to a company. We test it against the standard the buyer is actually being assessed against, on the actual width and the actual colour, because a certificate for a different construction is not a certificate for yours. This guide covers how to specify fire performance properly, which test applies to which end use, how to keep a certificate valid as the programme evolves, and what to do when a lot fails."""",
+    ),
+    (
+        "Four Test Families, and Which One Applies to You",
+        """<b>&ldquo;Flame retardant&rdquo; is used loosely in commerce and it means almost nothing on its own, because the four major test families measure completely different things. A ribbon can pass one and fail another, and a specification that says "flame retardant ribbon" without naming a method is not a specification.
+
+<b>1. Vertical burn &mdash; the flame propagation test.</b> This is the most widely used family and the one most buyers mean when they say "flame retardant". A conditioned specimen is suspended vertically and a flame is applied to its lower edge for a set period; the test measures how far the flame and char travel upward, and whether the specimen continues to burn after the flame is removed. The European standard for decorative articles is EN 13773 (textile &mdash; curtains and drapes &mdash; fabrics &mdash; burning behaviour), and the North American equivalent used for furnishings and general decoration is NFPA 701. Both work on the same principle: <i>how far does the fire go, and does it self-extinguish?</i>
+
+Typical pass criteria are expressed as a maximum flame spread in millimetres and centimetres (or inches), sometimes combined with a "no flaming after removal" condition and a weight-drop observation. EN 13773-1 typically classifies into Classes 1 to 3 with specified spread limits; NFPA 701 uses pass/fail against stated spread limits.
+
+This is the right family for decorative ribbon that will hang, drape or be displayed in a retail environment.
+
+<b>2. Horizontal burn &mdash; the rate-of-burn test.</b> Here the specimen lies flat and the flame is applied to one end, and the test measures the rate at which the flame travels across the specimen rather than how far it travels vertically. In North America, 16 CFR 1610 (the US Department of Commerce standard for clothing textiles, and widely used beyond clothing) uses this approach with specified burn rates and afterflame and afterglow limits, and there are separate parts of it for different fabric constructions. In the UK, BS 5867 parts 2 and 3 cover flame propagation for fabrics used in curtains and blinds, with the part 3 test being a specific small-scale flammability test that is very often the one UK retailers ask for.
+
+This family answers: <i>if this ribbon lies on a surface and catches, how fast does it spread?</i> It matters for ribbon used flat on surfaces &mdash; tabletop gift wrap, apparel trim laid flat, ribbon wrapped around a flat-faced box.
+
+<b>3. Candle or match ignition &mdash; the ignition-resistance test.</b> This family does not ask how far a fire goes. It asks whether the specimen will ignite a flame placed against it. The CAL 117 test (California, used for upholstered furniture and, by extension, for trim and decorations sold into California), and the DIN 4102-1 B1 test in Germany, are the best-known examples of this family. CAL 117 is a particularly important one for buyers shipping to the United States, because California is its own regulatory market and many US retailers require CAL 117 documentation as a condition of listing.
+
+The practical significance of this family for ribbon buyers is that it covers the scenario of a small open flame &mdash; a candle, a lighter, a match &mdash; applied to the product or its decoration. For home fragrance, gift and seasonal decoration sold in markets with fire-safety enforcement, this is the test the authority actually runs.
+
+<b>4. Heat release and smoke production &mdash; the instrumented tests.</b> These are the modern, instrumented approaches: cone calorimetry and the single burning item test measure heat release rate, mass loss rate, smoke production and char formation. They are the basis of European fire classifications for some product categories and increasingly part of retailer sustainability and safety programmes. For ribbon they are less common than families one to three, but they are what a large retailer or a specifier working in building, furniture or transport-related decoration will ask for.
+
+<b>Choosing between them.</b> The choice is driven by three things: the market you sell into, the retailer or authority that will test you, and the physical situation the ribbon sits in. A buyer selling hair accessories in the EU with a retailer that quotes EN 13773 needs family one. A buyer selling flat gift wrap into a US department store will likely be asked for 16 CFR 1610. A buyer shipping seasonal gift decoration into California needs CAL 117 or an equivalent. A buyer whose ribbon forms part of an upholstered furniture application needs something closer to family four.
+
+The mistake almost every buyer eventually makes is specifying to the test <i>their first supplier mentioned</i> rather than the test <i>their retailer will actually run</i>. Those are often not the same, and the mismatch usually surfaces as a returned SKU."""""",
+    ),
+    ),
+    (
+        "What Actually Changes the Result",
+        """This is the practical heart of the subject, and it is where a buyer's programme usually fails. Fire performance is not a property of the ribbon in the abstract. It is a property of a specific construction, and several common, entirely reasonable changes silently invalidate the result.
+
+<b>Width and areal weight.</b> Wider ribbons generally burn more slowly than narrow ones for the same material, because the flame has further to travel and the surface-to-mass ratio changes. A certificate covering a 38mm ribbon tells you nothing reliable about a 9mm ribbon of the same construction. This is the single most common invalidation we see: the programme starts with one width for a gift bow and adds a 6mm accent ribbon for a detail, and nobody re-tests.
+
+<b>Colour and dye class.</b> This surprises buyers. Dye chemistry can affect flame behaviour, and some pigment or disperse dye families behave differently from others in the same base fabric. A light colour and a deep colour of the same construction can land on different sides of a marginal result. This is why the test should be run on the actual production colour, not on a white or greige trial piece.
+
+<b>Fibre family.</b> Polyester, nylon, cotton, rayon, polypropylene, acetate and blends do not behave alike, and the ranking is not intuitive &mdash; some cellulosics perform well because of char formation, some synthetics melt and shrink rather than ignite. Changing the fibre to hold a price point changes the fire performance, and this is a routine sourcing decision on programmes that need a cost reduction.
+
+<b>Backing and lamination.</b> A ribbon laminated to paper, film, or a non-woven backing is a composite, and the composite has its own behaviour. A foil-backed ribbon, a flocked ribbon and a wired ribbon each behave differently from the same base web, because the metal or the wire changes how the specimen deforms in the flame.
+
+<b>Finishing route.</b> Satin calendering, brushing, sand-washing, embossing, flocking and heat-laminated metallised coating all change the surface that the flame interacts with. A brushed ribbon and a high-gloss satin of the same base can behave differently enough to matter on a marginal construction.
+
+<b>Dye lot and supplier substitution.</b> This is the quiet one. The fire performance is a property of the finished ribbon. If the mill changes yarn supplier, dye house, or applies a production-available substitute to hold a price or a lead time, the finished construction is different &mdash; and no certificate covers it. This is the failure mode that shows up as a random field failure: the first three deliveries passed, the fourth did not, and nobody changed anything on the purchase order.
+
+<b>Additives and the flame-retardant route itself.</b> Where the flame performance is achieved by an inherent property of the fibre (for example certain inherently flame-resistant modacrylic or aramid fibres) versus by a durable finish or an additive treatment, the durability profile differs. A durable flame-retardant finish can be affected by washing, abrasion and repeated flexing &mdash; and a ribbon on a gift bow is flexed and handled before it ever reaches a customer. Where the flame performance depends on a treatment, the test report and the certificate must state the number of wash cycles or the durability standard the result was established against, and that number must match how the product is actually used.
+
+The management principle that runs through all of these is simple: <b>the fire-performance specification has to be attached to the construction, and any change to the construction has to trigger a re-evaluation.</b> That means the spec lives in the tech pack, it names the material, the width, the finish, the colour family and the standard, and it has a written trigger rule attached to it. At Smith Ribbon we attach the construction fingerprint &mdash; base material, width, finish route, colour and test standard &mdash; to the job folder, so that when a buyer asks us to make something &ldquo;the same but in a different colour&rdquo;, the answer is a straightforward test question rather than a guess."""",
+    ),
+    (
+        "Writing a Fire-Performance Specification That Survives an Audit",
+        """A fire-performance specification is read by more people than most buyers expect: the mill's quality engineer, your category manager, your retailer's compliance team, an insurer, possibly a fire officer, and eventually a dispute resolver. It has to be readable by all of them and it has to say something testable.
+
+<b>1. Name the standard, with the part and the year.</b> &ldquo;EN 13773&rdquo; is not enough. EN 13773-1, the classification in use since the standard was split, is a different document from the earlier single-part version, and a certificate quoting the old version may not be accepted by a retailer who has moved to the new one. Write the standard, the part, the class or pass criterion, and the edition or year that the receiving party requires. This is also the single fastest way to end an argument: there is no interpretation of &ldquo;EN 13773&rdquo; that is longer than a paragraph, and specifying the part ends it.
+
+<b>2. State the specimen exactly as it will be supplied.</b> Material, width, finish route, colour family and any backing or lamination. This is what makes the certificate bindable to the product. If the specification is generic, the mill will test a generic construction and you will receive a generic certificate that your retailer's compliance team will reject.
+
+<b>3. State the conditioning and the test standard's own rules explicitly where they matter.</b> Most flammability standards carry their own conditioning requirement &mdash; a defined temperature and relative humidity for a defined period before testing, sometimes with a defined time window for dry testing to avoid the humidity issue. Where the standard specifies it, reference it rather than restating it; where your buyer has an additional requirement, state it in addition.
+
+<b>4. Define the certificate you need, not just the test.</b> A test report tells you a result for one specimen set. A certificate &mdash; issued under the named standard, covering the named construction, with the issuing laboratory's identity and accreditation, and with a validity or re-test trigger &mdash; is what your retailer will ask for. Specify which of those you need and from whom. An accredited laboratory matters here: some retail compliance teams will not accept a mill's own internal test, and it is far better to find that out at specification stage than at listing stage.
+
+<b>5. Define the re-test trigger in writing.</b> This is what separates a specification that works from one that quietly stops working. State which changes require a new test: change of width, change of base material, change of colour family, change of finish route, change of backing, change of dye lot or yarn supplier, and any change to a flame-retardant treatment. Where a change is minor &mdash; a shade variation within an approved tolerance &mdash; state that it is not a trigger. This is a commercial document as much as a technical one, and it should be agreed with the mill rather than imposed on it.
+
+<b>6. State what happens if a lot fails.</b> Held, re-worked, re-made, or accepted with a concession. A failure consequence that is written down before it happens is a routine business event. One that is not written down becomes a negotiation under time pressure, usually against you.
+
+One more point worth making plainly: <b>fire-performance documentation does not transfer to a different product.</b> A ribbon certificate belongs to a ribbon. If you have a gift bow program and you add a ribbon-wrapped box, a second documentation package is required for the second construction. At Smith Ribbon we keep the test documentation against the construction fingerprint rather than against the customer name or the job number, precisely so that when the programme extends we can say immediately which constructions need a new test and which are covered &mdash; that question is asked on nearly every growing private-label programme."""",
+    ),
+    (
+        "From Test Report to Shelf: Keeping the Paperwork Alive",
+        """A fire-performance document has a shelf life that is shorter than the programme it covers, and most of the paperwork problems we see are not failures of testing &mdash; they are failures of document hygiene.
+
+<b>Match the certificate to the shipment, not to the relationship.</b> When the ribbon arrives, the documentation should travel with it. At minimum: the certificate or test report for the construction shipped, the lab's identity, the standard and part, the pass criterion, the specimen description, the date, and the mill's declaration that the production lot is of the tested construction. A drawer of certificates in the brand's procurement office, detached from the goods, is worth very little if a retailer asks to see the document for a specific lot.
+
+<b>Keep an architecture of the programme's constructions.</b> Most private-label programmes end up with a small set of distinct constructions &mdash; a 25mm grosgrain in six colours, a 12mm printed satin, a 20mm velvet &mdash; and each one needs its own fire-performance position. We recommend the brand keeps a single register: construction, colour family, standard, class, certificate number, expiry or re-test trigger, and the SKUs covered. It is a two-page document for most programmes, and it turns a compliance question from an investigation into a lookup.
+
+<b>Know what has an expiry and what does not.</b> Some standards and retailer schemes require periodic re-testing, typically annually or on a fixed cycle. Some certificates carry no expiry but are invalidated by the construction change. Some retailers require a current test on a recent production lot rather than on a lab sample. These are three different obligations and programmes frequently conflate them. Ask each retailer what its actual requirement is, and put the answer in the register.
+
+<b>Handle the re-order properly.</b> This is the most common documentation failure in practice. The first order passed and was documented. The re-order arrives nine months later, produced on a different dye lot by a different yarn supplier that the mill qualified in the interim &mdash; and the buyer never asks whether the fire performance still holds, because nothing on the purchase order changed. It did change. If your specification includes a construction-fingerprint trigger, this scenario is caught before the shipment rather than after it.
+
+<b>Plan for the retailer audit as if it will happen.</b> At some point &mdash; for a large retail programme, it is a certainty &mdash; a compliance team or an insurance surveyor will ask for the fire-performance documentation of a SKU. The requirement is not to have the document ready in five minutes; it is to have had the test performed at all, on the right construction, in a form the auditor recognises. The cheapest way to be ready is to have run the test early, on a construction you are actually going to ship, rather than after the audit request arrives.
+
+<b>Do not over-claim.</b> A ribbon that passes EN 13773 Class 2 is not &ldquo;fireproof&rdquo;, and a ribbon that passes a horizontal burn test is not &ldquo;flame retardant&rdquo; in the general sense. Marketing language that overstates a test result is a compliance exposure in its own right, particularly in markets with consumer-protection enforcement. At Smith Ribbon we state the standard, the part, the class and the construction on everything we issue, because a narrow true claim survives an audit and a broad false one does not."""",
+    ),
+    (
+        "What To Do When a Lot Fails",
+        """It will happen. A lot fails a flammability test, and the shipment is either already at sea or sitting in your receiving bay. The order of operations in the first hour determines whether it is a manageable substitution or a programme delay.
+
+<b>Stop the lot from moving onward.</b> If the goods are in transit, agree with the mill whether to continue shipping or hold at origin. This is a decision about whether you can live with the stock or need it re-made, and it is much easier to make before the container lands. It is also a decision the mill will want to make with you rather than be informed about afterwards.
+
+<b>Get the test record, not a summary.</b> Ask for the full report: which construction was tested, the specimen dimensions, the conditioning applied, the ignition source, the observed spread, the afterflame and afterglow, and whether the specimen continued to burn. A single observed measurement tells you whether the construction failed outright or whether it failed marginally on one criterion &mdash; and a marginal failure on a marginal construction sometimes resolves by re-testing a compliant construction of the same type rather than by re-making the ribbon.
+
+<b>Establish whether the cause is the construction or the instance.</b> If the mill tested a production lot and it failed, that is a construction problem and the specification or the construction needs to change. If the mill tested a sample and the production lot failed, that is an execution problem and the mill's process control failed &mdash; which is a supplier-performance issue and should be treated as one. The distinction matters because it determines whether your re-order from the same mill is safe.
+
+<b>Agree the route forward in writing, with dates.</b> The options are: re-make to a compliant construction, which will cost time and possibly money; substitute a compliant construction already in production or readily producible, which is usually faster; or accept the lot with a concession for a non-critical application, which is a commercial decision you may be able to make if the affected SKUs are not in fire-tested retail channels.
+
+<b>Protect the paperwork in parallel.</b> If you substitute, the new construction needs its own test, and it needs it before the substituted goods reach the shelf &mdash; not after. This is the step that gets skipped and it is the one that creates the real compliance exposure.
+
+<b>Treat it as a data point, not a conversation.</b> One failure on one lot is an incident. A pattern of failures across colours or across widths is a programme signal that the construction family itself is marginal and needs to move to a compliant basis. We would rather a buyer call us and say &ldquo;this width keeps failing, let us talk about the base material&rdquo; than quietly switch the specification to &ldquo;no test required, it is only a trim&rdquo;. At Smith Ribbon, since 2004, we have kept a per-construction test record so that when a lot fails we can tell a buyer immediately whether the construction has passed before on a different colour or a different lot, because that single fact usually determines whether the answer is a substitution or a redesign."""",
+    ),
+    (
+        "Choosing a Fire-Performance Supplier: The Questions That Disqualify",
+        """Shortlisting a mill for fire performance is different from shortlisting one for colour and price. The following questions are simple, and they will disqualify an unsuitable supplier quickly.
+
+<b>Can you show me a current test report for a construction matching mine?</b> Not a general company certificate &mdash; a report for a ribbon at a comparable width, with the same base material and finish route, on a comparable colour. If the mill cannot produce that on request, it does not test the constructions it sells.
+
+<b>Who runs the test and is the laboratory accredited?</b> A mill with an in-house lab is fine, provided the method and equipment are appropriate and the output is acceptable to your retailer. Some compliance teams will not accept in-house testing at all. Ask the question before the sample, not after the audit request.
+
+<b>What changes require a new test in your view?</b> A supplier who has a considered answer here has a real quality system behind it. A supplier who says &ldquo;nothing changes, we make the same ribbon&rdquo; has either not thought about it or has a problem they have not surfaced.
+
+<b>How do you handle a failed lot?</b> The answer tells you more about the supplier than any certificate. A mill that has a documented process for retesting, substitution and re-making &mdash; and who walks you through it &mdash; is a supplier who has had it happen before and knows what to do. A mill that has never had it happen, or who has never thought about it, is a supplier you will discover at the worst possible moment.
+
+<b>Which standards do you hold current, and for which constructions?</b> The useful answer names the standard and the part, lists the constructions covered, and distinguishes the constructions with a current result from the ones that would need testing. It is a short list, and it is specific.
+
+<b>How do you handle substitution when I ask for a cheaper equivalent?</b> Fire performance is exactly the property that substitution silently changes. A good supplier will say &ldquo;that is a different construction, it needs its own test, here is what it costs&rdquo; rather than quietly supplying the cheaper material and re-using the old certificate.
+
+<b>Who owns the relationship when the programme grows to three countries?</b> Fire documentation has to be re-issued or re-checked per market in a number of cases. Suppliers who handle multi-market documentation as part of the normal work are worth more than those who treat each market as a fresh request.
+
+At Smith Ribbon, in Xiamen since 2004, we hold fire-performance testing capability for the constructions we run and we treat the test record as part of the job, not as an extra. We will tell you plainly when a construction you have asked about is one we cannot evidence, and we will quote the test as a line item rather than absorbing it into a surprise later. That transparency is the reason we would rather lose the order on price than win it on a documentation claim we cannot support."""",
+    ),
+]
+
+FAQ = [
+    (
+        "What is the difference between flame retardant and fire resistant ribbon?",
+        "Flame retardant describes a treatment or additive that slows ignition and slows flame spread. Fire resistant is a broader term that also covers materials that do not ignite readily at all. Neither term is a specification. The specification is the named test standard and part, the class or pass criterion, and the construction it was tested on &mdash; and a ribbon that passes one standard may not pass another."""",
+    ),
+    (
+        "Which flammability standard applies to decorative ribbon sold in the EU?",
+        "For decorative articles, curtains and drapes, EN 13773-1 is the principal European standard and it classifies by vertical flame spread and whether the specimen self-extinguishes. UK buyers and retailers frequently specify BS 5867 part 3 instead, and German buyers may quote DIN 4102-1 B1, which is an ignition-resistance rather than a flame-propagation test. Confirm the exact standard with the retailer who will test you rather than with the first mill you contact."""",
+    ),
+    (
+        "Do I need NFPA 701 or 16 CFR 1610 for ribbon sold in the United States?",
+        "It depends on the application and the retailer. NFPA 701 is the vertical burn standard used for furnishings and general decoration, and 16 CFR 1610 is the US Department of Commerce standard for clothing textiles, using a horizontal burn method and specified burn-rate, afterflame and afterglow limits. California buyers may also require CAL 117. A hair accessories programme and a gift-wrap programme in the same catalogue can end up needing different standards."""",
+    ),
+    (
+        "Will a flame retardant certificate from my existing mill cover my new colour?",
+        "Not necessarily. Flammability results are specific to the tested construction, which includes material, width, finish route and colour family. Adding a colour to an existing construction needs to be assessed against the certificate scope, and in many cases requires its own test on the production colour. Always confirm the certificate scope in writing against the exact construction before you rely on it."""",
+    ),
+    (
+        "How long is a ribbon flammability test report valid?",
+        "That depends on the standard and on the retailer. Some standards and retailer schemes require periodic re-testing on a fixed cycle; others have no fixed expiry but are effectively invalidated by a change to the construction; some retailers require a test on a recent production lot rather than on a laboratory sample. Ask the receiving retailer what its actual requirement is, and keep the answer in your programme's construction register."""",
+    ),
+    (
+        "Does changing the ribbon width invalidate my fire-performance documentation?",
+        "Very often it does. Width changes the surface-to-mass ratio and the distance the flame has to travel, so a result on a 38mm ribbon is not reliable evidence for a 9mm ribbon of the same base material. Where a programme adds a narrower accent ribbon alongside a main ribbon, budget for a separate test rather than assuming the existing certificate extends to it."""",
+    ),
+    (
+        "What happens if a production lot fails a flammability test after it has shipped?",
+        "Escalate immediately and agree with the mill whether to hold at origin, substitute a compliant construction, or re-make. Obtain the full test record rather than a summary, and establish whether the failure is a construction problem or a production-execution problem &mdash; that distinction determines whether a re-order from the same supplier is safe. Any substituted construction needs its own test before the goods reach the shelf."""",
+    ),
+]
+
+METRICS = [
+    ("Major flammability test families that apply to decorative ribbon", "4 (vertical burn, horizontal burn, candle/match ignition, instrumented heat release)"),
+    ("Standards named in this guide", "6 (EN 13773, NFPA 701, 16 CFR 1610, BS 5867, CAL 117, DIN 4102-1 B1)"),
+    ("Elements required in an auditable fire-performance specification", "6 (standard and part, specimen, conditioning, certificate type, re-test trigger, failure consequence)"),
+    ("Construction variables that can move a flammability result", "7 (width, colour, fibre, backing, finish route, dye lot, treatment durability)"),
+    ("Years of ribbon manufacturing and quality control experience", "22 (since 2004)"),
+    ("Countries supplied", "50+"),
+]
+
+AUTHOR_BULLETS = [
+    "Weaving, dyeing, printing and finishing in one Xiamen site &mdash; 15,000 m&sup2;, 200+ staff, 100,000 metres of daily output",
+    "Fire-performance test records held against the construction fingerprint &mdash; material, width, finish route and colour &mdash; not against the customer name",
+    "We quote the flammability test as a visible line item rather than absorbing it into a price and discovering the gap at audit",
+    "20+ years supplying brand owners, retailers and converters in 50+ countries since 2004",
+]
+
+CLOSING_PARAGRAPH = (
+    "Fire performance is the ribbon specification that quietly protects the whole programme. It is decided in the "
+    "yarn choice and the finishing route, long before anyone asks, and it is either specified as a named standard "
+    "on a named construction or it is inherited by accident. The good news is that it is entirely tractable: name "
+    "the standard and the part, bind the test to the construction, define the re-test trigger in writing, and "
+    "keep a register so that every SKU in the programme can be answered from a lookup rather than an "
+    "investigation. That is a discipline we have applied since we began weaving ribbon in Xiamen in 2004, and it "
+    "is why buyers who extend a programme with us tend to add constructions rather than replace suppliers."
+)
+CLOSING_CTA = (
+    "If you are specifying a private-label ribbon programme that will be sold into retail, hospitality or "
+    "gift channels &mdash; or into any market with fire-safety enforcement &mdash; send us the width, the base "
+    "material, the end use and the target markets, and we will tell you which test standard applies to that "
+    "construction, what the current documentation position is, and what it would take to evidence it. Email "
+    "xmmsd@126.com, or reach us on WhatsApp and phone at +86 137 7995 1780 &mdash; we reply within 24 hours."
+)
+
+cfg = {
+    "url": URL,
+    "title": TITLE,
+    "desc": DESC,
+    "keywords": KEYWORDS,
+    "date_iso": DATE_ISO,
+    "date_display": DATE_DISPLAY,
+    "num": 320,
+    "sections": SECTIONS,
+    "faq": FAQ,
+    "metrics": METRICS,
+    "author_bullets": AUTHOR_BULLETS,
+    "author_name": "Xiamen Smith Ribbon&amp;Bow Co., Ltd.",
+    "author_url": "https://ribbonbow123.com/about.html",
+    "logo_url": "https://ribbonbow123.com/img/banner.png",
+    "site": f"https://{SITE}",
+    "closing_paragraph": CLOSING_PARAGRAPH,
+    "closing_cta": CLOSING_CTA,
+    "h2_title": "Specifying Fire Performance With Smith Ribbon",
+}
+
+html = build_html(cfg)
+with open(f"/workspace/ribbonbow123/blog-{SLUG}.html", "w", encoding="utf-8") as f:
+    f.write(html)
+print(f"Wrote blog-{SLUG}.html ({len(html):,} bytes)")
