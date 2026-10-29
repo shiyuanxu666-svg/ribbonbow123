@@ -131,6 +131,70 @@
         footer { background: var(--dark); color: white; padding: 2rem; text-align: center; margin-top: 3rem; }
         footer a { color: #fff; margin: 0 8px; }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How tight is a realistic printed-ribbon registration tolerance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For a woven satin or grosgrain substrate with a well-controlled print route, cross-roll registration of plus or minus 0.3 mm measured edge-to-centre and longitudinal repeat-length drift of plus or minus 1.0 mm per 30 cm repeat are routinely achievable and are the tolerances we recommend for most private-label programmes. Velvet and high-elongation organza require a wider band, typically plus or minus 0.5 mm cross-roll, because the substrate surface and elongation limit achievable registration. The tolerance must be set against the substrate, not against the best-looking sample, and the measurement method must be named in the specification."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between colour match and print registration, and why do buyers conflate them?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Colour match is how close the printed colour is to the approved standard, measured in Delta-E. Registration is where the print sits relative to the ribbon &mdash; centred, aligned across the width, and repeating at the correct length. They are independent: a print can be a perfect colour match and completely out of register, and a print can be perfectly in register and the wrong colour. Buyers conflate them because both are described as &lsquo;the print problem' and because a proof that looks correct usually happens to be both, until one of them drifts first."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should the brand own the cylinder-engraving specification, or is that a mill responsibility?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The brand should own the master artwork and approve the separation proof and engraving specification, but the mill should own the physical engraving process, cylinder sourcing and engraving QC. In our experience the most reliable model is shared authority with explicit split: the brand approves what the print must look like, the mill guarantees it can produce that within the stated tolerance, and the brand holds the disposition authority on out-of-tolerance lots. A buyer who leaves all print authority with the mill will get excellent prints on the samples and no leverage when the season drifts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you tell substrate stretch from cylinder misalignment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Print at zero tension on the production substrate and measure, then compare to the production-tension print. If the offset scales with applied tension and returns when tension is released, it is substrate stretch and the fix is a tension-control and substrate-selection change. If the offset is present at zero tension and is consistent per cylinder, it is mechanical cylinder registration and the fix is cylinder alignment or re-engraving. Running this two-point test before deciding on a corrective action prevents the common mistake of re-engraving cylinders to solve what is actually a tension problem."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is paper proofing acceptable for a private-label printed ribbon programme?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Paper proof is acceptable for artwork composition and colour intent, but it is not a valid registration proof, because woven ribbon substrate absorbs, stretches and presents surface texture differently from paper. A programme approved on a paper proof will still need a production-substrate proof, and skipping that step is the most common cause of a first-production-lot surprise. We recommend approving colour intent on paper and approving registration and final appearance only on production substrate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How should a buyer handle a reorder when the mill has re-engraved the cylinder since the original run?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Treat it as a controlled change, not as a routine reorder. The buyer should require a master-sample comparison against the retained physical sample from the original run, on production substrate, with registration measured against the original tolerance, before the revised cylinder runs production quantity. In our experience most cylinder revisions are colour-consistent and pattern-inconsistent, and the discrepancy is only detectable by physical comparison against the retained master. This is why the Stage 6 master-sample retention step is not administrative overhead."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does this architecture apply to woven-printed ribbon only, or to embroidery and other decoration routes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The 5-tier authority ladder and the pattern-drift decoder generalise to any decorated ribbon route, because both address authority and diagnosis rather than a specific process. The 6-stage interlock chain is written for woven substrate with rotary screen or gravure print, which is the most common private-label route. Embroidered, heat-transfer and woven-jacquard decorations have different interlock points but the same structural requirement: a verification gate between every pair of processes that can introduce pattern error, plus a retained master sample per design revision."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
     <nav>

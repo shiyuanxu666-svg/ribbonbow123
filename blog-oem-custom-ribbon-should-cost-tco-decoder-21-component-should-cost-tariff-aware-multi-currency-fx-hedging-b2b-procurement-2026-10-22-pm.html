@@ -131,6 +131,70 @@
         footer { background: var(--dark); color: white; padding: 2rem; text-align: center; margin-top: 3rem; }
         footer a { color: #fff; margin: 0 8px; }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why does a per-metre quote vary across suppliers by 12-26 percent when the should-cost is stable?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Because suppliers differ on (a) the components 1-12 they include in their quote, (b) whether supplier margin is published or hidden, (c) how they handle freight and documentation (component 13-16), and (d) whether they assume Section 301 or MFN tariff (component 17). The 21-component should-cost model makes the source-of-difference explicit, so the brand can negotiate the leg that is genuinely negotiable rather than the leg that is fixed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should the should-cost model be refreshed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Monthly for active programmes, with a full re-roll every 12 months. Components 1-5 (raw polymer through dye) move on commodity cycles and should be refreshed at least monthly. Components 6-12 (production through supplier margin) move on contract cycles and should be refreshed quarterly. Components 13-21 (logistics, tariff, FX) move on policy and FX cycles and should be refreshed monthly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Section 301 still apply to ribbon in 2026 and forward?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, but the HTSUS code matters. Most woven polyester ribbon falls under HTSUS 5806, which remains on the Section 301 List 4A at 7.5 percent. Some specialty ribbon (e.g., narrow fabric with elastomeric content) falls under different codes where exclusions or different rates apply. The 5-tier tariff-and-trade-mitigation map is updated annually and is the recommended source for SKU-level Section 301 status."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does CBAM affect ribbon landed into the EU?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CBAM currently applies to a defined set of carbon-intensive goods (steel, aluminium, cement, fertilisers, hydrogen, electricity). Textile ribbon is not in CBAM scope for the transitional phase through 2026. We include CBAM in the model because the regulation expands to additional product categories over time, and the brand should know which components of the supply chain will become reportable."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the right hedging ratio for a CNY-denominated ribbon PO settled in USD?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "50-70 percent of expected exposure on a 3-6 month forward. The exact ratio depends on the FX volatility regime: in low-volatility CNY/USD periods, 50 percent is appropriate; in high-volatility periods, 70 percent. The residual 20-30 percent is NDF-hedged for buyers who cannot settle CNY directly. The forward plus NDF plus operational hedge yields 12-24 percent landed-cost protection against FX slippage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can the brand run the 289 architecture without naming a finance lead?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Technically yes; practically no. The 21-component model and the 4-rung FX ladder both require a finance counterpart. Without one, components 14-21 are run on customs paperwork rather than controllable should-cost, and the brand loses the 88,000-246,000 USD recovery the architecture is engineered to deliver. The finance lead does not need to be full-time on the programme; an 8-12 hour per month engagement covers components 14-21."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the 289 architecture compatible with an existing supplier relationship?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The 289 architecture does not require a new supplier; it requires the brand to roll a 21-component should-cost model, build a 5-tier tariff map, and run a 4-rung FX ladder over the existing relationship. The outcome is often a renegotiated price band and a structurally better awareness of where landed-cost variance is coming from. We have run 289 audits on existing relationships and recovered 6-12 percent of landed cost without changing supplier."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
     <nav>
