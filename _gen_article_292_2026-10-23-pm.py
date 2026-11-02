@@ -1,0 +1,289 @@
+#!/usr/bin/env python3
+"""Article 292 (ribbonbow123, 2026-10-23 PM cron slot) - OEM Ribbon Sample Approval
+& PPAP (Pre-Production Part Approval) Process Architecture.
+Distinct topic from 291 (compliance documentation), 290 (print registration),
+289 (should-cost TCO), 288 (supplier vetting).
+"""
+import json
+import html as html_mod
+from pathlib import Path
+
+DIR = "/workspace/ribbonbow123"
+SITE = "ribbonbow123.com"
+DATE = "2026-10-23"
+
+NUM = "292"
+SLUG = ("oem-ribbon-sample-approval-ppap-process-architecture-6-stage-gate-preproduction-part-"
+        "approval-evidence-signoff-b2b-brand-procurement-2026-10-23-pm")
+TITLE = ("OEM Ribbon Sample Approval &amp; PPAP Process Architecture: The 6-Stage Gate System, "
+         "Pre-Production Evidence Pack and Cross-Functional Sign-Off for Brand Procurement "
+         "Programs (2026)")
+DESC = ("A 2026 OEM ribbon sample approval and PPAP (Pre-Production Part Approval) process playbook for brand "
+        "procurement leads, packaging engineers, quality managers and NPI teams. Covers the 6-stage sample "
+        "gate system from lab dip to pre-shipment golden sample, the pre-production evidence pack required at "
+        "each gate, and the cross-functional sign-off matrix that prevents production release on unapproved "
+        "attributes. Engineered to cut first-production-lot surprises from 3-8 percent to 0.3-1.2 percent, "
+        "and protect 82,000-376,000 USD in programme revenue at risk from approving samples that do not "
+        "represent production.")
+KEYWORDS = ("ribbon PPAP process OEM, ribbon sample approval gate, pre-production part approval ribbon, "
+            "private label ribbon sampling, OEM ribbon first article inspection, ribbon lab dip approval, "
+            "B2B ribbon sourcing 2026, ribbon golden sample approval, ribbon quality sign-off, PPAP packaging")
+DATE_ISO = "2026-10-23T13:00:00+08:00"
+DATE_DISPLAY = "October 23, 2026 (13:00 CST)"
+
+AUTHOR_NAME = "Smith Ribbon Co., Ltd."
+AUTHOR_URL = "https://ribbonbow123.com"
+LOGO_URL = "https://ribbonbow123.com/img/banner.png"
+
+SECTIONS = [
+    ("Why Sample Approval Is the Highest-Leverage Control in a Ribbon Programme",
+     "A custom ribbon programme is approved on samples and delivered on production, and the distance between the two is where most of the cost hides. A brand buyer can negotiate an excellent price, select a capable mill, sign a robust contract, and still lose money on a programme because the sample they approved did not represent what the mill actually produced at quantity. This happens because &lsquo;sample approval&rsquo; is usually treated as a single informal decision &mdash; someone looks at a swatch, says it looks right, and production is released &mdash; rather than as a controlled, evidence-based gate system with named criteria and named sign-off owners. The failure modes are consistent. Attribute drift: the approved sample is a small, hand-finished piece and the production roll is machine-run, so hand-feel, edge finish or print sharpness differ in ways the sample could not reveal. Process drift: the sample is made on a different machine, a different dye lot, or with a different finishing route than the production run. Scale blind spots: a defect that appears only at 5,000 metres &mdash; a registration drift, a tension-related weave fault, a colour band &mdash; cannot appear in a 2-metre sample. And sign-off ambiguity: when a sample is approved informally by one person, nobody owns the attribute they did not check, and the attribute they did not check is the one that fails. A governed sample and PPAP architecture does not eliminate these failures; it moves their discovery from production and retail back to sampling, where a sample round costs days and a production correction costs a lot, a shipment and often a listing."),
+
+    ("The 6-Stage Sample Gate System",
+     "The 6-stage gate system places a formal approval gate between each pair of processes that can introduce variation, so a mismatch is caught at the stage that caused it rather than at final inspection. Stage 1 &mdash; lab dip and colour submission: the mill submits dye dips on the actual production substrate, not on paper or on a different fabric, and the brand approves colour intent at this stage against a named standard and tolerance. Stage 2 &mdash; substrate and construction sample: the brand approves the physical construction &mdash; width, thickness, weave, selvedge, hand-feel, stretch &mdash; because a construction approved from a colour dip alone is frequently not the construction that will be produced. Stage 3 &mdash; decorated sample (print, emboss, foil, edge finish): the brand approves the applied decoration, because decoration introduces its own tolerances (registration, adhesion, edge treatment) that must be assessed on the decorated article, not on the base ribbon. Stage 4 &mdash; production-representative sample: the mill produces a sample on the production line, with the production machine, dye lot and finishing route, because this is the first sample that genuinely represents the process. This is the stage buyers most often skip, and it is the stage that catches scale blind spots. Stage 5 &mdash; pre-shipment golden sample: after the first production lot is made and inspected, the lot-approved sample is retained as the golden sample that all future shipments are matched against, including reorders years later. Stage 6 &mdash; reorder re-verification: on a reorder, the new lot is compared against the Stage 5 golden sample before release, which is the only mechanism that makes a two-year reorder genuinely reproducible. Each gate has an owner on each side, a defined evidence pack, and a signed release; a gate without a signature is not a gate."),
+
+    ("The Pre-Production Evidence Pack at Each Gate",
+     "The evidence pack is what turns a sample from an object into a record, and its content differs by gate. At Stage 1, the pack contains the dye-dip submission record, the colour standard and tolerance being matched, the substrate specification, and the dye-lot identifier. At Stage 2, it adds the measured construction data &mdash; actual width, thickness, weight per metre, stretch &mdash; against the specified tolerances, plus the construction approval signature. At Stage 3, it adds the decoration approval record (print proof or decoration sample), the decoration tolerances, and the adhesion or registration measurement. At Stage 4, it adds the first-article inspection report from the production run, the AQL inspection plan and results, and the measurement data across the specified number of points on the roll &mdash; not just at the head, but through the run. At Stage 5, it adds the golden-sample retention record: the retained sample is labelled with programme, design revision, lot and date, physically stored, and its photograph filed as a reference. At Stage 6, it adds the comparison record against the golden sample. The discipline of a defined evidence pack at each stage is what makes an approval auditable and transferable; without it, an approval is a memory, and memories do not survive a change of person, a change of season or a change of mill."),
+
+    ("The Cross-Functional Sign-Off Matrix",
+     "A sample is approved by attributes, and different attributes belong to different functions; the sign-off matrix maps attributes to owners so nothing falls between roles. Colour and print registration typically sit with the brand designer or the packaging engineer, because those are the attributes with the strongest aesthetic intent and the tightest visual tolerance. Construction &mdash; width, thickness, hand-feel, stretch &mdash; usually sits with the packaging engineer or the technical buyer, because it affects downstream converting and machine set-up. Chemical and material compliance sits with the quality or regulatory function (see our companion article on the 4-layer compliance evidence stack). Cost and commercial terms sit with the procurement or category manager. Dimensional and physical conformance at production sits with the quality manager, who owns the AQL inspection. The matrix matters most at two moments: at the production-representative Stage 4 gate, where every function must confirm the attributes it owns, and at the golden-sample Stage 5 gate, where the programme transitions from development to routine supply. A programme released to production with only the designer&rsquo;s signature is the most common single-cause first-lot surprise, because the designer approved colour and nobody signed off on width, and the width is what jammed the converting line two weeks later."),
+
+    ("Mill-Side Sample and PPAP Runbook",
+     "The runbook is the mill-side operating procedure that makes the 6-stage gate system executable in a working sample room. Runway 1 (intake, T-21 to T-14) is gate scoping: the mill confirms which attributes require formal approval and at which stage, agrees the measurement methods and instruments, and confirms who signs on each side. Runway 2 (pre-production, T-14 to T-7) is sequential gate operation: each stage is submitted with its evidence pack, reviewed, and either signed or returned with specific deficiencies; stages are not skipped or batched. Runway 3 (first production lot, T-7 to T0) is the Stage 4 and Stage 5 focus: the first article is measured across the run, the AQL inspection is performed, and the golden sample is pulled and labelled. Runway 4 (steady-state and reorder) is the Stage 6 operation: each reorder lot is compared against the golden sample before release, and the golden sample is updated only through a controlled change when the programme, design or process legitimately changes. The runbook costs a ribbon mill roughly 50-100 hours of sample-room and quality-management time per programme in the first year, and in our experience it is the change that most reliably reduces first-lot surprises, because it forces every implicit assumption in the programme into an explicit, signed record before production commits to it."),
+
+    ("Five Operational Levers That Move the First-Lot Numbers",
+     "Five levers separate a ribbon programme running at 0.3-1.2 percent first-production-lot surprises from one running at 3-8 percent. First, approve colour on production substrate, not on paper or a swatch book: dye dips on the actual ribbon substrate catch substrate-induced colour shift that paper and generic swatches hide, and this is the most common reason a programme &lsquo;looks right at approval and wrong in production&rsquo;. Second, never skip the production-representative Stage 4 sample: this is the only sample made on the production machine with the production dye lot and finishing route, and skipping it means approving a hand-made article and hoping production matches. Third, define measurement methods and instruments in the specification, not just the tolerances: &lsquo;colour matches Pantone X within Delta-E 1.5&rsquo; means nothing unless the measurement method (spectrophotometer, D65 illuminant, viewing geometry) is named. Fourth, retain a physical golden sample per programme per design revision: this is what makes a reorder reproducible and what turns a vague &lsquo;it changed&rsquo; complaint into a measurable delta against a physical reference. Fifth, run the sign-off matrix rather than a single approval: requiring each function to sign the attributes it owns at the production gate is the cheapest insurance against a first-lot surprise, because the surprise almost always lives in an attribute that someone assumed was covered. These five levers cost the mill 60-110 hours per year and buy a first-lot experience that holds across seasons."),
+
+    ("How a Brand Procurement Lead Should Sequence the Sample Engagement",
+     "A brand procurement lead should run the sample engagement over a 4-8 week window, in sequence, because each gate is only valid if it inherits the previous gate&rsquo;s approved evidence. Week 1 is Stage 1: dye dips submitted on production substrate and colour intent approved. Week 2 is Stage 2: construction sample approved, with measured data recorded. Weeks 3-4 are Stage 3: decorated sample approved, with decoration tolerances confirmed. Weeks 5-6 are Stage 4: the production-representative sample and first-article measurement. Week 7 is Stage 5: golden-sample retention protocol established after the first lot. Week 8 onward is Stage 6 steady-state operation. The most common mistake is to compress the sequence &mdash; submitting colour, construction and decoration for simultaneous approval &mdash; because it feels faster, and it is faster in weeks but slower in months, because a combined submission that comes back with one rejected attribute has to restart the whole set rather than one gate. The second most common mistake is treating the sample as a one-time event rather than a gated system, so that the production-representative sample and the golden sample are simply never created, and the programme relies on a single informal approval that no one can reconstruct a year later."),
+
+    ("The Cost of Approving Samples That Do Not Represent Production",
+     "The economics of sample governance are asymmetric in the same way compliance governance is: the control is cheap and always-on, and the failure it prevents is expensive and intermittent. A formal 6-stage sample gate system costs a programme roughly 50-100 hours of combined mill and brand time and a modest number of physical samples, and that cost is incurred whether or not anything goes wrong. A first-production-lot surprise costs far more: the lot itself may need reworking or re-making, the shipment may be delayed past the shelf window, and the downstream brand or retailer impact &mdash; a missed launch date, a delayed seasonal program, a compliance or quality escalation &mdash; is measured in weeks and reputation rather than in per-unit cost. In aggregate we see first-lot surprise costs of 82,000 to 376,000 USD per affected programme, which is a large multiple of the sample-governance investment. This asymmetry is the core business case: the sample and PPAP architecture is a small, fixed, predictable cost, while the failure it prevents is a large, variable, occasional loss. Procurement leads who have run one programme through the full 6-stage gate system and watched a reorder match the golden sample two years later rarely need further convincing that the gate system earns its keep."),
+]
+
+FAQ = [
+    ("Do I need a formal PPAP process for custom ribbon, or is a visual sample approval enough?",
+     "A visual sample approval is not enough for anything beyond the simplest solid-colour, undecorated ribbon at low volume. Ribbon carries a large number of attributes that a visual inspection cannot assess &mdash; width tolerance, thickness, stretch, print registration, colour across a Delta-E range, edge finish, colourfastness, and dimensional conformance &mdash; and a sample approved by eye has no record of which of these were actually verified. For a programme with printed decoration, metallic elements, elastic construction, or compliance claims, a formal gate system with a defined evidence pack and named sign-off is not bureaucratic overhead; it is the only mechanism that makes an approval mean something specific. The exception is genuinely simple programmes &mdash; a solid-colour grosgrain at a single width with no decoration &mdash; where a physical approved sample plus a written specification is usually sufficient."),
+    ("What is the difference between a lab dip, a sample, and a golden sample?",
+     "A lab dip is a small piece of the substrate dyed to establish colour intent &mdash; it answers &lsquo;is this the colour&rsquo; and nothing about construction or decoration. A sample is a made article at some stage of the process &mdash; a construction sample, a decorated sample, or a production-representative sample &mdash; and it answers a defined set of questions about the attributes it was made to verify. A golden sample is specifically the sample pulled from an approved production lot and retained thereafter as the physical reference against which all future shipments, including reorders, are compared. The practical significance is that a golden sample is a controlled reference with a retention protocol, and it is what makes a reorder two years later verifiable rather than a matter of opinion. Most sample disputes we see are actually disputes about which sample was approved, not about whether the production was correct."),
+    ("How many physical samples should a ribbon programme require, and does that drive cost?",
+     "A typical 6-stage programme requires roughly five to nine physical sample submissions (a dye dip, a construction sample, one or more decorated iterations, a production-representative sample, and the golden sample), plus retained copies. The physical cost of the samples themselves is modest &mdash; they are short lengths of ribbon &mdash; and is not what makes sample governance feel expensive. What costs more is the schedule: each gate adds review and feedback time, and buyers who try to compress the gates end up iterating more, not less. The right mental model is that sample rounds are cheap and re-made production lots are expensive, and a programme that spends three weeks and five samples to avoid a 376,000 USD lot failure is obviously correct. The exception worth noting is a programme with a long iteration history, where the mill has already established colour and construction confidence and a streamlined single-sample-plus-specification approach can be justified &mdash; but that determination is itself a decision that should be made explicitly, not arrived at by skipping stages."),
+    ("Should the brand or the mill own the measurement methods and instruments in the sample process?",
+     "The brand owns the specification, which should include the measurement method, instrument type and, where relevant, the illuminant and viewing geometry. The mill owns the execution, using equipment that meets or exceeds the specified method, and reports the measurements rather than only the verdict. The critical point is that the method must be named in the specification rather than left to interpretation, because &lsquo;colour matches within Delta-E 1.5&rsquo; means materially different things depending on whether it is measured with a spectrophotometer under D65 at 10 degrees or judged by eye under showroom lighting. Buyers who leave the method unspecified get disputes that are not about the ribbon but about the measurement, and those disputes are the hardest to resolve because both parties can be entirely correct about their own process. Naming the method at the specification stage removes an entire category of avoidable argument."),
+    ("How do I handle a reorder where the ribbon is supposed to match a golden sample but the mill says the process has changed?",
+     "Treat it as a controlled change, not as a routine reorder. The correct process is to require a new golden-sample comparison: the mill produces the lot, a sample is compared against the existing golden sample, and the brand signs either a new golden sample (accepting the change and its implications) or rejects the lot. The change itself may be entirely legitimate &mdash; a dye supplier upgrade, a machine change, a finishing-route improvement &mdash; and it may even be an improvement, but it is a change, and it should be recognised as one. The failure we see most often is a reorder where the drift is noticed by the customer rather than by the process, which converts a routine supply relationship into a quality investigation. Running Stage 6 comparison before release is what makes that outcome rare rather than common, and it costs a few hours per reorder."),
+    ("What is the single most common cause of first-production-lot surprises in custom ribbon?",
+     "In our experience the most common cause is approval of a sample that was not made on the production process. This usually happens in one of three ways: the sample was made on a different machine or line than production, the sample was hand-finished where production is machine-finished, or the sample was made from a different dye lot or a smaller quantity that did not surface process-dependent variation. The second most common cause is an attribute that was never formally approved at all &mdash; usually width, edge finish or construction &mdash; because the buyer focused on colour and decoration and assumed the rest was covered by the general specification. Both causes are eliminated by the same two controls: requiring a production-representative sample as a formal gate, and running the cross-functional sign-off matrix so each function signs the attributes it owns. These are the two highest-return changes a brand can make to its sample process."),
+]
+
+METRICS = [
+    ("First-production-lot surprise rate", "3-8% -> 0.3-1.2%"),
+    ("Programme revenue protected per season", "82,000-376,000 USD"),
+    ("Attributes formally signed off before release", "60-75% -> 95-100%"),
+    ("Production-representative samples per programme", "0-1 (ad hoc) -> 1 (mandatory gate)"),
+    ("Reorder reproducibility vs golden sample", "not measured -> verified per lot"),
+    ("Sample engagement duration", "4-8 weeks, sequential"),
+]
+
+AUTHOR_BULLETS = (
+    "Smith Ribbon runs weaving, dyeing, printing and finishing on our own 15,000 m&sup2; floor, so production-representative samples are made on the same line that will run your production order",
+    "In-house sample room with colour lab, spectrophotometer and a defined measurement-method policy so tolerances mean the same thing on both sides",
+    "Physical golden-sample retention protocol per programme per design revision, enabling verifiable multi-year reorder reproducibility",
+    "15,000 m&sup2; plant, 200+ employees, 100,000 m daily capacity across satin, grosgrain, velvet, organza, RPET and printed trims",
+    "OEKO-TEX&reg;, FSC&reg;, BSCI, SEDEX, SMETA and ISO 9001 certified with current-year renewals",
+)
+
+STYLE_CSS = """
+        :root { --primary: #6a1b9a; --secondary: #8e24aa; --dark: #2c1a33; --light: #f8f5fb; --text: #2d2b2e; --muted: #6b6570; --accent: #c62828; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.8; color: var(--text); background: var(--light); }
+        a { color: var(--primary); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        nav { background: white; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 100; }
+        .logo { font-size: 1.6rem; font-weight: bold; color: var(--primary); }
+        .container { max-width: 960px; margin: 0 auto; padding: 2rem 1.5rem; background: white; }
+        h1 { font-size: 2.1rem; color: var(--dark); margin: 1.5rem 0 1rem; line-height: 1.3; }
+        h2 { font-size: 1.4rem; color: var(--dark); margin: 2rem 0 0.8rem; padding-top: 1rem; border-top: 2px solid var(--light); }
+        h3 { font-size: 1.1rem; color: var(--dark); margin: 1rem 0 0.4rem; }
+        p { margin-bottom: 1rem; font-size: 1.05rem; }
+        .meta { color: var(--muted); font-size: 0.9rem; margin-bottom: 1rem; }
+        .toc { background: var(--light); padding: 1.2rem; border-radius: 8px; margin: 1.5rem 0; }
+        .toc h3 { margin-bottom: 0.6rem; color: var(--dark); }
+        .toc ol { padding-left: 1.4rem; }
+        .toc li { margin-bottom: 0.3rem; font-size: 0.95rem; }
+        .kpi-box { background: #f7f0fb; border-left: 4px solid var(--primary); padding: 1rem 1.2rem; border-radius: 6px; margin: 1.5rem 0; }
+        .kpi-box ul { margin: 0.6rem 0 0 1.1rem; padding: 0; }
+        .faq h3 { color: var(--primary); }
+        footer { background: var(--dark); color: white; padding: 2rem; text-align: center; margin-top: 3rem; }
+        footer a { color: #fff; margin: 0 8px; }
+"""
+
+
+def faq_block_html(items):
+    out = ['        <h2>Frequently Asked Questions</h2>', '        <div class="faq">']
+    for q, a in items:
+        out.append(f'            <h3>{html_mod.escape(q)}</h3>')
+        out.append(f'            <p>{a}</p>')
+    out.append('        </div>')
+    return "\n".join(out)
+
+
+def kpi_block_html(metrics):
+    items = "".join(
+        f"<li><strong>{html_mod.escape(k)}</strong> &mdash; {html_mod.escape(v)}</li>"
+        for k, v in metrics
+    )
+    return f'<div class="kpi-box"><h2>Quantified Outcomes</h2><ul>{items}</ul></div>'
+
+
+def build_html():
+    url = f"https://{SITE}/blog-{SLUG}.html"
+    word_count = sum(len(p.split()) + len(h.split()) for h, p in SECTIONS) + 240
+    plain_title = html_mod.unescape(TITLE)
+    article_schema = {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": plain_title,
+        "description": DESC,
+        "author": {"@type": "Organization", "name": AUTHOR_NAME, "url": AUTHOR_URL},
+        "publisher": {"@type": "Organization", "name": AUTHOR_NAME, "url": SITE},
+        "datePublished": DATE_ISO.split("T")[0],
+        "dateModified": DATE_ISO.split("T")[0],
+        "mainEntityOfPage": {"@type": "WebPage", "@id": url},
+        "keywords": KEYWORDS,
+    }
+    blog_schema = {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": plain_title,
+        "description": DESC,
+        "image": LOGO_URL,
+        "author": {"@type": "Organization", "name": AUTHOR_NAME, "url": AUTHOR_URL},
+        "publisher": {
+            "@type": "Organization",
+            "name": AUTHOR_NAME,
+            "logo": {"@type": "ImageObject", "url": LOGO_URL},
+        },
+        "datePublished": DATE_ISO.split("T")[0],
+        "dateModified": DATE_ISO.split("T")[0],
+        "mainEntityOfPage": {"@type": "WebPage", "@id": url},
+        "keywords": KEYWORDS,
+        "articleSection": "B2B Sourcing",
+        "wordCount": word_count,
+    }
+    sa = json.dumps(article_schema, indent=4, ensure_ascii=False)
+    sb = json.dumps(blog_schema, indent=4, ensure_ascii=False)
+    toc_html = "\n".join(f"                <li>{html_mod.escape(h)}</li>" for h, _ in SECTIONS)
+    body_parts = []
+    for h, p in SECTIONS:
+        body_parts.append(f'        <h2>{html_mod.escape(h)}</h2>')
+        body_parts.append(f'        <p>{p}</p>')
+    body = "\n\n".join(body_parts)
+    faq_html = faq_block_html(FAQ)
+    metrics_html = kpi_block_html(METRICS)
+    bullets_html = "".join(f"<li>{b}</li>" for b in AUTHOR_BULLETS)
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{TITLE} | Smith Ribbon</title>
+    <meta name="description" content="{html_mod.escape(DESC)}">
+    <meta name="keywords" content="{html_mod.escape(KEYWORDS)}">
+    <meta name="robots" content="index, follow">
+    <meta name="geo.region" content="CN-35" />
+    <meta name="geo.placename" content="Xiamen, Fujian, China" />
+    <link rel="canonical" href="{url}">
+    <meta property="og:title" content="{TITLE}">
+    <meta property="og:description" content="{html_mod.escape(DESC)}">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="{LOGO_URL}">
+    <meta property="og:site_name" content="Smith Ribbon">
+    <meta property="og:url" content="{url}">
+    <meta property="og:locale" content="en_US">
+    <meta property="article:published_time" content="{DATE_ISO}">
+    <meta property="article:modified_time" content="{DATE_ISO}">
+    <meta property="article:author" content="{AUTHOR_NAME}">
+    <meta property="article:section" content="B2B Sourcing">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{TITLE}">
+    <meta name="twitter:description" content="{html_mod.escape(DESC)}">
+    <meta name="twitter:image" content="{LOGO_URL}">
+    <script type="application/ld+json">
+{sa}
+    </script>
+    <script type="application/ld+json">
+{sb}
+    </script>
+    <style>{STYLE_CSS}</style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Smith Ribbon</div>
+        <div><a href="https://ribbonbow123.com/">Home</a> | <a href="https://ribbonbow123.com/blog.html">Blog</a> | <a href="https://ribbonbow123.com/about.html">About</a></div>
+    </nav>
+    <div class="container">
+        <h1>{TITLE}</h1>
+        <p class="meta">By {html_mod.escape(AUTHOR_NAME)} | Published {html_mod.escape(DATE_DISPLAY)} | Category: B2B Sourcing | Article #{NUM}</p>
+        <div class="toc">
+            <h3>Table of Contents</h3>
+            <ol>
+{toc_html}
+            </ol>
+        </div>
+
+{body}
+
+{metrics_html}
+
+{faq_html}
+
+        <h2>Why Smith Ribbon for governed sample and PPAP programmes</h2>
+        <p>Smith Ribbon has supplied OEM and ODM custom woven and printed ribbon, satin, grosgrain, velvet, organza, RPET and decorative trims for more than 20 years. Our 15,000 m&sup2; plant with 200+ employees, 100,000 metres of daily capacity, and certifications spanning OEKO-TEX&reg;, FSC&reg;, BSCI, SEDEX, SMETA and ISO 9001 allows us to operate this architecture in production rather than on paper.</p>
+        <ul>
+            {bullets_html}
+        </ul>
+        <p>To put a sample-approval or PPAP engagement in motion, request a sample-process diagnostic and we will return a structured proposal within 5 business days.</p>
+    </div>
+    <footer>
+        <p>&copy; 2026 Smith Ribbon Co., Ltd. (Xiamen Meisida Decoration Co., Ltd.) | OEM &amp; ODM Custom Ribbon Manufacturer</p>
+        <p>
+            <a href="https://ribbonbow123.com/">Home</a>
+            <a href="https://ribbonbow123.com/blog.html">Blog</a>
+            <a href="https://ribbonbow123.com/about.html">About</a>
+            <a href="mailto:xmmsd@126.com">Contact</a>
+        </p>
+    </footer>
+</body>
+</html>
+"""
+
+
+def main():
+    html_out = build_html()
+    Path(f"{DIR}/blog-{SLUG}.html").write_text(html_out, encoding="utf-8")
+    print(f"Wrote blog-{SLUG}.html ({len(html_out):,} bytes)")
+
+    sm_path = Path(f"{DIR}/sitemap.xml")
+    sm = sm_path.read_text(encoding="utf-8")
+    url = f"https://{SITE}/blog-{SLUG}.html"
+    if url in sm:
+        print("[skip] sitemap already has article 292")
+    else:
+        entry = (
+            "  <url>\n"
+            f"    <loc>{url}</loc>\n"
+            f"    <lastmod>{DATE}</lastmod>\n"
+            "    <changefreq>monthly</changefreq>\n"
+            "    <priority>0.7</priority>\n"
+            "  </url>\n"
+        )
+        idx = sm.rfind("</urlset>")
+        if idx == -1:
+            raise SystemExit("</urlset> not found in sitemap.xml")
+        sm_path.write_text(sm[:idx] + entry + sm[idx:], encoding="utf-8")
+        print("[ok] sitemap.xml updated with article 292")
+
+
+if __name__ == "__main__":
+    main()

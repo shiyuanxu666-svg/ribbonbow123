@@ -1,0 +1,255 @@
+#!/usr/bin/env python3
+"""Article #322 - 2026-10-29 AM slot.
+
+Topic: ribbon for jewellery, watch and luxury gift packaging - the small-format
+high-value trim problem.
+
+Why this topic: the ribbonbow123 corpus has extensive coverage of gift bows,
+packaging trim, fragrance/beauty trim, cosmetics secondary packaging and
+subscription-box trims. It has nothing on jewellery and watch packaging, which
+is a distinct technical regime: widths below 6mm, very high perceived value per
+gram, retail-presentation requirements, and a customer who will reject on
+appearance long before they reject on cost.
+"""
+import sys
+sys.path.insert(0, "/workspace/ribbonbow123")
+
+from tmpl_ribbon_article import build_html
+
+SITE = "ribbonbow123.com"
+SLUG = "ribbon-oem-jewellery-watch-luxury-gift-packaging-trim-small-format-high-value-specification-private-label-buyers-guide-2026-10-29-am"
+URL = f"https://{SITE}/blog-{SLUG}.html"
+DATE_ISO = "2026-10-29T08:00:00+08:00"
+DATE_DISPLAY = "October 29, 2026"
+
+TITLE = ("Ribbon for Jewellery, Watch &amp; Luxury Gift Packaging &mdash; Small-Format, High-Value Trim and How to Specify It (2026)")
+DESC = (
+    "A buyer's guide to ribbon trim for jewellery boxes, watch packaging and luxury gift sets. Covers why jewellery "
+    "trim sits in a different technical regime from general gift packaging - sub-6mm widths, very high perceived "
+    "value per gram, appearance-led rejection risk - how to specify ribbon width, weave and edge for a box insert "
+    "or a tied closure, how to specify colour on a small-format surface where tolerance errors are visible, how "
+    "paper-backed, satin, grosgrain and jacquard constructions compare for this use, how to avoid the common "
+    "failure modes of curling, edge fray, print registration and closure fit, and how to plan repeat orders when "
+    "the material is a small share of a high-value box. Written for brand owners, packaging designers and "
+    "procurement teams working on premium and luxury programmes."
+)
+KEYWORDS = (
+    "jewellery packaging ribbon OEM, watch packaging ribbon supplier, luxury gift box trim, "
+    "satin ribbon for jewellery box, grosgrain ribbon luxury packaging, narrow width ribbon 3mm 5mm supplier, "
+    "jacquard ribbon jewellery pouch, ribbon trim luxury packaging private label, "
+    "jewellery box insert ribbon specification, B2B ribbon sourcing guide luxury trim"
+)
+
+SECTIONS = [
+    (
+        "Why Jewellery Trim Is a Different Problem",
+        """A buyer moving from gift packaging into jewellery packaging often assumes the trim requirements are simply scaled down. They are not, and the assumption causes expensive rework.
+
+<b>The value density inverts.</b> On a gift set, the ribbon might represent one or two percent of the product's retail price. On a jewellery box, the ribbon can be a visually load-bearing part of an object costing several hundred dollars, sitting in a display case under bright light, handled by a customer who paid a great deal for the contents. The cost of the ribbon is irrelevant. The cost of a rejected presentation is not. This changes the entire negotiation dynamic: a buyer who optimises a jewellery ribbon on unit price will lose money on the returns.
+
+<b>The width regime is different.</b> Jewellery trim typically runs from about 1.5mm to 6mm. Below roughly 4mm you are no longer dealing with a ribbon in the ordinary sense - you are dealing with a narrow tape or a cord-like product with real width tolerance problems, real selvedge questions and real handling difficulties. Width tolerance on a 3mm ribbon is usually specified tighter than on a 38mm ribbon, because the absolute error that is acceptable on a wide trim looks proportionally enormous on a narrow one, and because a narrow trim is frequently used to wrap around an object several times, so any width error accumulates.
+
+<b>Surface defects are visible.</b> On a wide ribbon used to wrap a large gift, a slub, a missed weft or a print registration error is a minor blemish in a large field. On a 4mm ribbon crossing a watch cushion, the same defect occupies a much larger fraction of the visible area. The inspection standard for a narrow trim is effectively the inspection standard for the finished piece.
+
+<b>Colour has a different failure mode.</b> Luxury packaging is unforgiving about colour because there is usually a brand colour element and the ribbon sits near it. A ribbon that is "close" to the brand colour will be judged against the brand colour every time it is seen, and will lose. On a large printed sheet, a small colour deviation is invisible. On a 3mm satin ribbon wound around a cream or black interior, it is the first thing a customer sees.
+
+<b>And the handling is different.</b> Narrow ribbon is difficult to wind, to feed, to tie and to package. A buyer who has specified a 3mm jacquard in a large volume and then has to knot it by hand at the packing line will discover the labour cost, which is frequently larger than the material cost, and it will arrive after the programme is live.
+
+At Smith Ribbon, in Xiamen since 2004, we produce narrow satin, grosgrain, organza, jacquard and wired ribbon alongside the wider ranges, and we produce specifically for jewellery and luxury packaging programmes. This guide covers how to specify trim for this use case properly, and how to plan the programme so the trim supports the value of the box rather than becoming the weak point in it."""),
+    (
+        "Choosing the Construction for the Job",
+        """Four constructions account for the great majority of ribbon trim used in jewellery and luxury gift packaging. Each behaves differently in a small format, and each has a failure mode that shows up in a different place.
+
+<b>1. Satin ribbon.</b> The default choice for jewellery boxes, and for good reason: it is smooth, has a good surface for a printed message, takes a fold and a knot well, and it reads as premium without being expensive. Satin's failure mode in small format is its <b>sheen and its slipperiness</b>. A satin with a high-gloss face catches the retail lighting very differently at different angles, so a satin that looks acceptable flat on the factory table can look blotchy in a lit display case. The second failure mode is <b>edge fray</b> - a satin cut on the bias or with a soft selvedge will fray at the ends, and on a tied closure the ends are cut. Specify the selvedge condition and, if the ends will be visible, specify a heat-sealed or cut-and-sealed finish. Satin also has a strong memory: a satin that has been wound tightly on a small core and then stored will hold that curvature, and when it is pulled out of the box it can sit as a visible coil rather than lying flat. This is a packaging-design issue as much as a material issue, and it is worth specifying a maximum winding core diameter and a minimum flat-pack conditioning requirement.
+
+<b>2. Grosgrain.</b> The ribbed weave, and the choice where the ribbon has to hold a shape - a tray wrap, a rigid box band, a fixed decorative strap. Grosgrain's ribbed texture is stable, it holds a fold crisply, it does not slide, and it reads as more structured than satin. Its failure mode is <b>width and rib definition</b>. Grosgrain is available in very narrow widths and the rib count per centimetre matters at small formats: a coarse rib that reads as texture at 25mm can read as an irregular edge at 4mm. Specify the rib density along with the width. Grosgrain also has a noticeably firmer hand and will crease permanently if folded sharply along one line, which is a real consideration on a box insert where the ribbon crosses a corner.
+
+<b>3. Organza.</b> Sheer and translucent, used where the brand wants a layer of softness or a visible colour wash, and commonly used as an over-tie on top of a satin or grosgrain. Organza's defining characteristic in a small format is <b>transparency</b>, and it changes colour perception completely. A colour that looks correct as an opaque swatch can look entirely different when it is laid over a satin of another colour, and it will look different again over the box board. If the organza is doing work in the design, the design must be reviewed in the assembled state, not on a swatch. Organza's edge is also the most fragile of the four - it frays readily and needs a sealed or over-tied edge, which is why it is nearly always the outer layer over something solid.
+
+<b>4. Jacquard.</b> Woven pattern - a brand motif, a monogram, a repeating geometric or a narrative pattern. Jacquard is the strongest choice when the ribbon itself needs to carry the brand rather than the colour, and it is common in watch packaging and premium gift sets. Jacquard's failure mode in small format is <b>pattern legibility</b>: a motif designed for a 20mm ribbon may be unreadable at 5mm, and a repeat pitch that works on a wide ribbon will look crowded. This is a design-stage problem that must be solved before sampling, not after, because a jacquard weave is set on a loom and changing the pattern means new tooling and a new setup. And a jacquard ribbon's edge is a plain selvedge regardless of the pattern, so edge treatment still applies.
+
+<b>Paper-backed ribbon</b> is a fifth option worth naming separately, and it is used where the brand wants a completely flat, matte, non-reflective surface - a common look in contemporary fine-jewellery packaging. Paper-backed ribbon has a paper face bonded to a ribbon substrate, which makes it stable, matte and easy to print on, but it introduces a hard edge that will crease sharply rather than fold, and it must be stored in controlled humidity because the paper face is hygroscopic and will cockle. It is also the least forgiving to handle and usually the most expensive per metre at small widths.
+
+<b>Which to choose.</b> Satin for a tied closure on a conventional box. Grosgrain for structure and for anything that has to stay in position. Organza only as a deliberate over-layer, reviewed assembled. Jacquard when the ribbon must carry the motif itself. Paper-backed for a deliberately matte, flat, contemporary surface. And if the design uses two of them, say so in the specification, because the combination determines the edge treatment, the layer order, and the closure method."""),
+    (
+        "Width, and Why It Is the Hardest Number on the Spec",
+        """Width is the specification buyers most often get wrong, and it is the one most likely to cause a programme to stop.
+
+<b>Nominal width is not the tolerance.</b> Ribbon is sold by nominal width, and the actual width varies - within the mill's own tolerance, and also because of the effects of the finishing the ribbon receives. A satin that has been heat-set, calendered or coated can change dimension. A woven ribbon that has been finished with a heavy starch or sizing will behave differently at different humidities. A jacquard with a pattern structure can bow in the warp direction, which shows as a variation in apparent width along the length.
+
+<b>The tolerance that matters is the one on the finished part.</b> A 5mm ribbon wound three times around a 40mm box cushion does not need to be 5mm; it needs to be the width that makes three turns fill 15mm and sit correctly. The useful way to write the specification is as a nominal width plus a tolerance, plus a statement of the finished context, so the mill is optimising for the right thing. And specify the width tolerance asymmetrically where it helps: <i>5mm +0.3mm / -0.1mm</i> is a materially different commercial proposition from 5mm +/-0.2mm, and it is often achievable because the weaving can be biased deliberately.
+
+<b>For widths below about 4mm, the question is not tolerance so much as feasibility.</b> Below a certain width, weaving economics change: the loom has to run with a modified reed or a special setup, the selvedge condition degrades, and the ribbon becomes more fragile. A good mill will tell you honestly whether a 2mm jacquard is producible and what it will cost, rather than quoting a number and delivering something that tears in the packaging line.
+
+<b>Closed-loop and non-standard widths need to be raised early.</b> Anything outside the standard range is a setup change with a cost and a lead time, and it should be quoted with the setup cost shown separately, exactly as tooling is.
+
+<b>Winding core and roll length matter in a small format.</b> A narrow ribbon on a large core is awkward to handle and creates a bulky pack. A narrow ribbon on a small core takes a set, and that set is what produces the curled ribbon in the box. Specify the maximum core diameter, and if the ribbon will be wound onto the client's own card or spool, specify that core too and confirm the ribbon is wound to a tension that will unwind without distortion on their equipment.
+
+<b>And specify the finished length.</b> A ribbon cut to a specific length, or supplied on a specific spool with a stated usable metreage, is a different product from a ribbon supplied on a reel. For jewellery programmes, cut lengths are common because they are placed by hand at the packing line, and a length tolerance of plus or minus 2mm on a 300mm cut length is often what the packing team actually needs."""),
+    (
+        "Colour, Print and the Limits of Small Formats",
+        """Colour and decoration in jewellery trim follow the same principles as everywhere else in ribbon, but the tolerances and the failure modes are amplified by scale.
+
+<b>Colour matching should be against a physical standard, with a stated method.</b> In small formats the usual method - a lab dip or a printed colour card - is more relevant than in wide trim, because the ribbon's own surface has a sheen that shifts the perceived colour. A satin matched under D65 in a light booth will read differently under warm retail lighting, and for a luxury programme that difference is visible. Where the brand has a defined brand colour on another material - printed board, a card, a moulded component - specify the ribbon to be matched <i>against that physical component in the assembled state</i>, and ask the mill to be supplied with a piece of it. Specify the colour difference tolerance as an agreed value, and specify the measurement geometry - a satin has to be measured on the face, not on the selvedge, and a textured jacquard has to be measured in a consistent position within the repeat.
+
+<b>Print in small format has a hard constraint that buyers often miss.</b> A printed pattern on a 3mm ribbon is not a scaled-down version of a printed pattern on a 38mm ribbon. The print plate, the repeat pitch, the registration tolerance and the ink deposit all interact with the physical width, and the printable field on a narrow ribbon is smaller than it appears on a screen. Establish the artwork at the real width from the start. If the message is text, expect to use a single short line, and expect the character height to be the limiting dimension rather than the message length.
+
+<b>Registration on a narrow ribbon is a visibility problem before it is a tolerance problem.</b> A registration error that would be within tolerance on a wide trim is simply visible on a narrow one, because the error is a larger fraction of the visible width. Where foil or metallic ink is used on a narrow ribbon, the substrate is often not well suited to hot foil and the result may be an incomplete or dull impression - the answer is usually to use a ribbon construction with a suitable surface, or to move to a jacquard with the metallic effect woven in rather than printed on.
+
+<b>Embossing and debossing on narrow ribbon is a design question first.</b> A foil-blocked brand name on a narrow ribbon is only possible if the ribbon is wide enough to hold the block and stiff enough to take the impression without distortion. Below about 8mm this usually means the branding has to move elsewhere in the design, and it is better to discover that at artwork stage than at sample stage.
+
+<b>Metallics, glitter and specialty yarns need a wear statement.</b> A glitter ribbon in a jewellery box is a rubbing risk against the box board and against neighbouring pieces. If the trim will sit in contact with a high-value surface, the rubbing fastness of the metallic or glitter layer should be specified and tested, not assumed.
+
+<b>And the sustainability claim has to be provable.</b> Many luxury programmes now make a recycled-content or responsibly-sourced claim on the packaging, and the ribbon has to support it. Ask for the certificate scope and the certificate number, check the issuing body, and confirm that the scope covers the specific ribbon construction and the specific site producing it - not a group-level certificate for a different product."""),
+    (
+        "The Failure Modes That Actually Show Up in Luxury Packaging",
+        """These are the recurring problems we see on jewellery and luxury packaging programmes, in rough order of how often they appear.
+
+<b>1. Curling and set in the pack.</b> A narrow satin wound too tightly on a small core, or stored in a warm warehouse, arrives as a coil that does not lie flat in the box. The fix is on the specification and the pack design: core diameter, conditioning before packing, and a flat-fold or a gentle curve in the presentation. Sometimes the fix is the design itself - a ribbon that is not meant to be flat.
+
+<b>2. Edge fray at cut ends.</b> Visible, immediate, and treated as a manufacturing defect by the customer even though it is a material characteristic. Specify the selvedge condition and specify the end treatment. A sealed end is a small cost and removes the issue entirely. Where the ribbon is cut into short lengths for hand-tie, the end treatment is effectively mandatory.
+
+<b>3. Closure fit - the ribbon does not tie or hold.</b> Usually a width and hand-feel mismatch. A ribbon that is too stiff to tie, or too slippery to hold a knot, will be discovered on the packing line and will cost labour at exactly the wrong moment. Specifying the construction - satin versus grosgrain, and the specific hand - solves most of this before the first sample.
+
+<b>4. Shade drift across a production run.</b> A luxury box contains a lot of ribbon compared to a gift box, often on every unit, so any visible lot-to-lot variation is seen by every customer. Multi-lot programmes need a lot-to-lot approval standard and a retained sample from each lot.
+
+<b>5. Print registration and ink defects at small scale.</b> Covered above.
+
+<b>6. Bow or closure geometry inconsistency.</b> Where the trim includes a pre-tied bow, a knot or a fixed arrangement, the consistency of the tie is what the customer sees. Hand-tied bows vary; machine-tied bows are consistent but require tooling and setup. Specify which, and if hand-tied, specify the acceptable variation in wing symmetry and tail length and agree it before the programme runs.
+
+<b>7. Storage damage on a long lead-time programme.</b> A luxury programme is often ordered months ahead of the season and stored. Ribbon is hygroscopic and a paper-backed ribbon is more so. Specify packing that limits stack pressure, specify a storage condition, and specify that the ribbon be re-inspected and re-conditioned if the programme slips by more than a defined period.
+
+<b>8. Documentation mismatch.</b> The compliance paperwork for the ribbon and the paperwork for the box are often assembled by different people and do not match - different material descriptions, different fibre content, different country of origin. For a luxury programme with a compliance or a sustainability claim attached, this is a real risk and it is cheap to prevent by requiring a single specification sheet, signed once, that everything else references."""),
+    (
+        "Planning the Order: Volumes, MOQ and Repeat Ordering",
+        """Jewellery trim programmes have an awkward shape: high perceived value, small physical trim content per unit, and a long seasonal cycle.
+
+<b>Set the minimum order against the programme, not against the ribbon.</b> Most mills set a minimum order in metres, and for narrow widths that minimum can be surprisingly large relative to the programme's actual need, because the mill has to run a full setup for a narrow width. The right question to ask is not "what is your MOQ" but "what is the setup structure at my width and construction, and what does a repeat order cost". A good quote separates the one-time setup from the running price.
+
+<b>Order in programme-sized tranches rather than one large order.</b> For a seasonal luxury programme, ordering the full season at once creates both a cash problem and a quality-at-storage problem. Ordering in tranches against a frozen specification with an agreed price band is usually better: it reduces inventory exposure, reduces the time between manufacture and use, and it keeps the quality closer to the point of use. The price protection should be explicit, because the buyer's main objection to tranching is that the price could move.
+
+<b>Build the repeat order mechanism into the first order.</b> The single biggest source of cost overrun in a repeat ribbon order is that the specification was not frozen completely at the first order. Every open question - a colour tolerance that was agreed verbally, a width tolerance that was never written down, an end treatment that was assumed - becomes a negotiation on the second order. A complete written specification with the mill's own record of it attached removes that entirely.
+
+<b>Ask for retained production samples and standards.</b> For a programme where colour consistency matters, ask for a sealed standard from the first production lot, and for a retained sample from each subsequent lot held for the duration of the programme. This is the only practical defence when a shade question is raised twelve months later.
+
+<b>And plan the pre-season timing properly.</b> Luxury programmes often have a longer approval cycle than general packaging because the box, the insert, the ribbon and the assembly are all approved together, and because the client may need physical presentation samples rather than a swatch. That means the ribbon lead time has to start earlier than the packaging lead time, not at the same time. At Smith Ribbon, we run weaving, dyeing, printing, finishing and converting under one roof in Xiamen since 2004, which means a narrow-satin programme can be sampled, approved and produced on a single timeline rather than handed across three or four suppliers with a transfer delay at each step."""),
+    (
+        "A Specification That Actually Works",
+        """Below is the structure we recommend for a jewellery or luxury packaging ribbon specification. It is deliberately short, because a specification that cannot be read by a quality inspector on a receiving dock is not doing its job.
+
+<b>Identity.</b> Programme name, buyer, mill reference, end use, and the finished assembly the ribbon is part of.
+
+<b>Construction.</b> Material family (satin, grosgrain, organza, jacquard, paper-backed), fibre content, and whether the programme is woven, knitted or non-woven.
+
+<b>Dimensions.</b> Nominal width, width tolerance (and whether it is measured flat or relaxed), finished length or reel specification, maximum core diameter.
+
+<b>Colour.</b> Pantone or physical standard reference, the standard the mill is matching against, colour difference tolerance, measurement geometry, and the lighting condition for visual assessment.
+
+<b>Surface and finish.</b> Selvedge condition, sheen level if the retail lighting is critical, edge treatment on cut ends, and any required finish such as heat-sealing.
+
+<b>Decoration.</b> Print or no print, artwork reference and repeat pitch, registration tolerance, method (screen, heat transfer, foil, woven), and any wear or rubbing requirement on metallics or glitter.
+
+<b>Physical and performance requirements.</b> Whatever the end use genuinely requires - and only those. Fastness if it will be washed or handled, rubbing if it sits against a high-value surface, dimension stability if the box is assembled in a different climate from the one it was made in.
+
+<b>Compliance and sustainability.</b> Required certificates with scope, certificate numbers and issuing body, fibre content declaration, country of origin, and any restricted-substance declaration.
+
+<b>Packaging and marking.</b> Roll length, carton quantity, carton marking, and any customer-assigned carton or pallet markings.
+
+<b>Inspection standard.</b> AQL or an equivalent acceptance level, the inspection points, and what evidence is provided - inspection report, photographs, or both.
+
+<b>Retention.</b> Retained standard from the first lot, retained sample from each lot, and the duration.
+
+That last line is the one most often left out and the one that saves the programme when a question is asked a year later.
+
+The point of a specification at this scale is not bureaucracy. It is that on a luxury programme, the ribbon is small, the margin is large, and the buyer can neither afford to argue about shade after the fact nor afford to re-order the whole programme."""),
+]
+
+FAQ = [
+    (
+        "What is the minimum ribbon width you can produce for jewellery packaging?",
+        "Below about 4mm the production route changes - the loom setup, the reed, the selvedge and the economics all shift - so we treat it as a different product rather than a narrower version of the same one. Below 3mm, jacquard patterns in particular stop being reliably legible and we say so at quotation stage rather than after sampling. For widths in the 4-6mm band, which is where most jewellery box trim actually sits, the production is straightforward and we quote it routinely. The honest answer is that we will quote the width you ask for and tell you whether it is the right construction for it.",
+    ),
+    (
+        "How should I specify width tolerance for a narrow ribbon?",
+        "State the nominal width, the tolerance, and the context. If the ribbon wraps an object more than once, the tolerance that matters is the one on the finished part, so say what the ribbon is wrapping and how many turns it makes. An asymmetric tolerance is often the practical answer - for example 5mm with a positive tolerance on one side and a negative on the other - because weaving can be biased to achieve it where a symmetric band cannot. We will confirm what is achievable on your construction rather than quoting a generic band.",
+    ),
+    (
+        "How do you prevent colour drifting across production lots on a luxury programme?",
+        "Three things, all specified. First, we match against a physical standard - ideally a piece of your own branded component, not just a Pantone chip - because a satin surface shifts perceived colour. Second, we agree a colour difference tolerance and a measurement geometry in advance, so the comparison is repeatable. Third, we seal a standard from the first production lot and retain a sample from every lot for the duration of the programme. That last point is what makes a shade conversation twelve months later resolvable instead of adversarial.",
+    ),
+    (
+        "Should I use satin, grosgrain or organza for a jewellery box?",
+        "Satin if it is a tied closure on a conventional box - it reads premium, folds well and carries a printed message. Grosgrain if the ribbon has to hold a shape or stay in position, because it does not slide and it holds a fold crisply. Organza only as a deliberate over-layer, and it must be reviewed in the assembled state because its transparency changes the colour completely depending on what is underneath. If the design needs the ribbon itself to carry a brand motif, that is a jacquard decision, and the pattern should be designed at the real width before sampling because the weave setup is the constraint.",
+    ),
+    (
+        "How do I stop the ribbon from fraying at cut ends?",
+        "Specify the end treatment explicitly rather than accepting the material default. A heat-sealed or cut-and-sealed end is inexpensive and removes the issue, and for short cut lengths supplied for hand-tying at a packing line it is effectively required. Separately, specify the selvedge condition - a cut that runs along a firm selvedge frays far less than a cut through the body of the weave. Where the ends will be visible in the finished pack, both are worth the small cost.",
+    ),
+    (
+        "What causes ribbon to curl or sit in a coil when it arrives?",
+        "Almost always winding tension and core diameter. A narrow satin wound tightly onto a small core takes a permanent set, and it then arrives as a coil that will not lie flat in the box. The fix is to specify a maximum core diameter and a conditioning period before packing, and to confirm the winding tension if you are putting the ribbon onto your own card or spool. In some cases the answer is a packaging-design change - a flat fold or a deliberate gentle curve - because some ribbon is simply not meant to lie flat and looks wrong fighting that constraint.",
+    ),
+    (
+        "How do I plan repeat orders so the second order matches the first?",
+        "Freeze the specification completely on the first order and make sure the mill holds a signed copy of it. The most common source of repeat-order friction is not price - it is open questions that were agreed verbally on the first order, such as a colour tolerance, a width band or an assumed end treatment, which return as negotiations on the second. If you are ordering in tranches for a seasonal programme, ask for price protection in writing so that tranching does not create price exposure. We would also recommend a retained production sample from each lot, which resolves almost any subsequent shade question immediately.",
+    ),
+]
+
+METRICS = [
+    ("Typical jewellery trim width band", "1.5mm to 6mm, with 4-6mm the most common"),
+    ("Below this width, production route changes", "4mm - reed, selvedge and setup economics shift"),
+    ("Recommended retained-sample duration", "Full programme life, plus one season"),
+    ("Setup handling at 4mm and below", "Quoted separately from running price"),
+    ("Lead time for a narrow satin programme", "20-30 days production after sample approval"),
+    ("MOQ guidance for a new narrow programme", "Confirm against the setup structure, not a generic metre figure"),
+    ("Programmes we have supplied since 2004", "20+ years of OEM ribbon production in Xiamen"),
+]
+
+AUTHOR_BULLETS = [
+    "Full in-house capability in Xiamen since 2004: weaving, dyeing, printing, finishing and converting",
+    "Narrow widths from 1.5mm to 6mm in satin, grosgrain, organza, jacquard and paper-backed constructions",
+    "OEKO-TEX, FSC, BSCI, SEDEX, ISO 9001 and SMETA documentation available for private-label programmes",
+    "Sampling, colour approval and production under one roof, so a narrow programme runs on a single timeline",
+]
+
+CLOSING_PARAGRAPH = (
+    "Jewellery packaging is a small-trim, high-value problem, and the specification discipline it needs is not the "
+    "discipline of wide gift trim scaled down. It is a different set of numbers - width, selvedge, end treatment, "
+    "colour tolerance measured against a physical component, retention of standards - aimed at a different objective: "
+    "making sure the trim supports a high-value object instead of becoming the reason it comes back."
+)
+
+CLOSING_CTA = (
+    "If you are specifying ribbon for jewellery boxes, watch packaging or premium gift sets, send us your width, "
+    "construction and colour reference and we will tell you honestly what is producible, what it will cost as a "
+    "one-time setup versus a running price, and where the specification needs more detail before sampling. "
+    "We will also tell you if your current design is asking for something that will not hold up in a lit display case."
+)
+
+cfg = {
+    "url": URL,
+    "title": TITLE,
+    "desc": DESC,
+    "keywords": KEYWORDS,
+    "date_iso": DATE_ISO,
+    "date_display": DATE_DISPLAY,
+    "num": 322,
+    "sections": SECTIONS,
+    "faq": FAQ,
+    "metrics": METRICS,
+    "author_bullets": AUTHOR_BULLETS,
+    "author_name": "Xiamen Smith Ribbon&amp;Bow Co., Ltd.",
+    "author_url": "https://ribbonbow123.com/about.html",
+    "logo_url": "https://ribbonbow123.com/img/banner.png",
+    "site": f"https://{SITE}",
+    "closing_paragraph": CLOSING_PARAGRAPH,
+    "closing_cta": CLOSING_CTA,
+    "h2_title": "Specifying Jewellery &amp; Luxury Packaging Ribbon With Smith Ribbon",
+}
+
+html = build_html(cfg)
+with open(f"/workspace/ribbonbow123/blog-{SLUG}.html", "w", encoding="utf-8") as f:
+    f.write(html)
+
+wc = sum(len(p.split()) for _, p in SECTIONS) + sum(len(a.split()) for _, a in FAQ)
+print(f"Wrote blog-{SLUG}.html ({len(html):,} bytes), ~{wc} words, {len(SECTIONS)} sections, {len(FAQ)} FAQ")

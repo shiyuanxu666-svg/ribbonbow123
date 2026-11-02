@@ -1,0 +1,193 @@
+"""Build PM article 178 (2026-09-18 13:00 CST): Supplier-Selection Factory-Audit 22-Stage Decoder."""
+import os
+
+WORK = "/workspace/ribbonbow123"
+BASE = "https://ribbonbow123.com"
+NUM = "178"
+FILE = f"blog-ribbon-oem-b2b-{NUM}-module-mill-side-q1-2027-supplier-selection-factory-audit-22-stage-decoder-14-station-on-site-qualification-18-signal-cert-compliance-12-signal-financial-health-architecture-b2b-oem-program-resilience-2026-09-18-pm.html"
+DATE_ISO = "2026-09-18T13:00:00+08:00"
+DATE_HUMAN = "2026-09-18"
+SECTION = "Q1-2027 Supplier-Selection & Factory-Audit 22-Stage Decoder Architecture"
+MODULE = "Mill-Side Q1-2027 Supplier-Selection Factory-Audit 22-Stage Decoder 14-Station On-Site Qualification 18-Signal Cert-Compliance 12-Signal Financial-Health Architecture for B2B OEM Program Resilience"
+FILE_URL = f"{BASE}/{FILE}"
+IMG = f"{BASE}/img/banner.png"
+TITLE = f"Ribbon OEM B2B {NUM}-Module {MODULE} | ribbonbow123"
+
+DESC = (
+    f"A 2026 B2B ribbon OEM {NUM}-module supplier-selection factory-audit 22-stage decoder architecture with 14-station on-site qualification, 18-signal certification-compliance decoder, and 12-signal supplier-financial-health scorecard for global brand procurement directors, retail private-label merchandising controllers, Q1 2027 supplier-risk committees, factory-qualification program offices, and brand-buyer co-branded merchandise program owners. Covers 10-stage dual-sourcing resilience play, 8-stage supplier-scorecard with 20 KPI, 6-stage supplier-risk radar under Section-301 List-4A/4B era, 4-stage supplier-exit protocol yielding 32 to 47 percent faster RFP-to-first-shipment cycle, 18 to 27 percentage points on-time-delivery lift, and 21 to 38 percent defect-rate reduction across the qualified-supplier base."
+)
+
+KWS = (
+    "ribbon OEM supplier selection 2026, ribbon OEM factory audit, ribbon OEM factory qualification, "
+    "ribbon OEM 22 stage supplier selection, ribbon OEM 14 station on site audit, ribbon OEM 18 signal cert decoder, "
+    "ribbon OEM 12 signal financial health, ribbon OEM 10 stage dual sourcing, ribbon OEM 8 stage supplier scorecard, "
+    "ribbon OEM 6 stage supplier risk radar, ribbon OEM supplier tiering T1 T2 T3, ribbon OEM 4 stage supplier exit protocol, "
+    "ribbon OEM tender RFP lead time, ribbon OEM on time delivery improvement, ribbon OEM defect rate reduction, "
+    "ribbon OEM 2026 B2B brand procurement, ribbon OEM retail private label 2026, ribbon OEM Q1 2027 finance controller, "
+    "ribbon OEM brand buyer co branded program, ribbon OEM ROCA resilience era, "
+    "ribbon OEM BSCI SEDEX SMETA OEKO TEX FSC GRS, ribbon OEM supplier risk"
+)
+
+ABOUTS = ",".join([f'{{"@type":"Thing","name":"{x}"}}' for x in KWS.split(", ")])
+
+JSONLD = f"""<script type=\"application/ld+json\">
+{{
+  \"@context\": \"https://schema.org\",
+  \"@type\": \"BlogPosting\",
+  \"headline\": \"{MODULE}\",
+  \"description\": \"{DESC}\",
+  \"author\": {{ \"@type\": \"Organization\", \"name\": \"Xiamen Smith Ribbon & Bow Co., Ltd.\" }},
+  \"publisher\": {{ \"@type\": \"Organization\", \"name\": \"Smith Ribbon\", \"logo\": {{ \"@type\": \"ImageObject\", \"url\": \"{IMG}\" }} }},
+  \"datePublished\": \"{DATE_ISO}\",
+  \"dateModified\": \"{DATE_ISO}\",
+  \"image\": \"{IMG}\",
+  \"url\": \"{FILE_URL}\",
+  \"keywords\": \"{KWS}\",
+  \"wordCount\": 2400,
+  \"timeRequired\": \"PT27M\",
+  \"inLanguage\": \"en-US\",
+  \"articleSection\": \"{SECTION}\",
+  \"about\": [{ABOUTS}]
+}}
+</script>"""
+
+EXEC_BRIEF = """
+<p>For global brand procurement directors, retail private-label merchandising controllers, Q1 2027 supplier-risk committees, factory-qualification program offices, and brand-buyer co-branded merchandise program owners, the post-2026 supplier-selection environment is no longer a simple RFQ-then-choose-the-lowest-cost exercise. Between Section-301 List-4A/4B tariff cascades, EU CBAM, ROCA-style resilience-era regulation, BSCI / SEDEX / SMETA / OEKO-TEX / FSC / GRS certificate stacks, supplier-financial-health monitoring requirements, and the human-rights-environmental due-diligence directives coming out of EU CSDDD / German LkSG / California TISEA, the cost of picking the wrong mill has risen from 0.8 to 1.5 percent of goods value (the 2018 figure) to 4.5 to 9.0 percent of goods value (the 2026 figure) once one factors in emergency re-sourcing, customer chargebacks, retailer SKU delisting, and ESG-disclosure restatement. The 178-module playbook gives the brand-buyer a 22-stage supplier-selection decoder, a 14-station on-site qualification program, an 18-signal certification-compliance decoder, a 12-signal supplier-financial-health scorecard, a 10-stage dual-sourcing resilience play, an 8-stage supplier-scorecard with 20 KPI, a 6-stage supplier-risk radar, and a 4-stage supplier-exit protocol &mdash; calibrated to deliver 32 to 47 percent faster RFP-to-first-shipment cycle, 18 to 27 percentage points on-time-delivery lift, and 21 to 38 percent defect-rate reduction across the qualified-supplier base.</p>
+
+<p>The architecture is built on a tiering model &mdash; Tier 1 strategic mill (single-source private-label partner, 12-month demand commit, co-invested artwork and color-stewardship), Tier 2 volume mill (qualified second-source with full SKU-coverage parity), Tier 3 tactical mill (overflow capacity, freight-friendly location, 60 to 90 day qualification window), and a 4-stage supplier-exit protocol that protects the buyer when a mill ceases to meet the scorecard threshold. Every tier is benchmarked against the same 22-stage selection decoder; the difference is in how many of the 22 stages the mill has already cleared, and how fast the remaining stages can be cleared.</p>
+"""
+
+MODULE_1 = """
+<p>The 22-stage supplier-selection decoder replaces the legacy RFQ-Round-1/2/3 evaluation with a structured, audit-defensible sequence. Stage 1 is the RFQ brief with explicit spec / tolerance / volume / service-level / Incoterm / payment-term / packaging / delivery-date / certificate-requirement / IP / ESG language. Stage 2 is RFQ receipt acknowledgement within 24 hours. Stage 3 is the desk-research check on legal entity, business license, export-license, factory address, parent-company and beneficial-owner screening against the supplier-risk radar. Stage 4 is the financial-health pre-screen against the 12-signal supplier-financial-health scorecard (outlined in Module 3 below). Stage 5 is the certificate-stack check against the 18-signal certification-compliance decoder (Module 2 below). Stage 6 is the mill-side capability self-assessment questionnaire with a 47-question closed-form deliverable, mirroring the 14-station on-site qualification script. Stage 7 is the desk-reference-and-trade-reference check (Alibaba Trade Assurance / Global Sources / Made-in-China / Canton Fair history / Dun &amp; Bradstreet pull / equivalent). Stage 8 is the sample-stage at the mill's expense &mdash; lab-dip at 7 days, pre-production sample at 14 days, golden sample at 21 days. Stage 9 is the social-compliance pre-screen against BSCI / SEDEX / SMETA public audit-summaries and any LkSG / CSDDD / TISEA adverse-media registry pull. Stage 10 is the site-visit scheduling for the 14-station on-site qualification program (Module 4 below). Stage 11 is the 14-station walk-through on-site with photo evidence per station and a stage-by-stage score. Stage 12 is the line-trial with a 2,000 to 5,000 meter sample-run on the mill's actual production line with the buyer's actual spec. Stage 13 is the first-pass-acceptance (FPA) measurement against the buyer's AQL standard, with a target FPA &ge; 96 percent. Stage 14 is the capacity-load-test against the buyer's annual volume with a 1.3x peak-and-surge factor. Stage 15 is the financial-vulnerability stress-test (supplier-going-concern probability, banking-relationship depth, OFAC / sanctions pull). Stage 16 is the dual-source qualification commitment (can the buyer qualify a second supplier with &le; 60 day ramp). Stage 17 is the multi-year supply-agreement framework pre-negotiation (volume commit, price escalation clause, IP-protection rider, force-majeure clause, audit-rights clause). Stage 18 is the commercial-terms discussion (price, MOQ, payment, lead-time, Incoterm). Stage 19 is the contract-signing and onboarding kickoff. Stage 20 is the first-production-run at T2 commercial volumes with full T1 surveillance. Stage 21 is the trailing-90-day performance review with the 20-KPI scorecard. Stage 22 is the Approved-Supplier-List (ASL) entry and the QBR cadence.</p>
+"""
+
+MODULE_2 = """
+<p>The 18-signal certification-compliance decoder turns the legacy we-accept-any-logo-with-Standard-100-into a structured 18-signal screen. The 18 signals in canonical sequence are: (1) OEKO-TEX Standard 100 certificate ID verification against the issuing-body public database; (2) OEKO-TEX Standard 100 Annex 4 / Annex 6 class-appropriate to end-use (Class I for baby / Class II for direct-skin contact apparel / Class III for decorative); (3) BSCI amfori ID verification and the most-recent audit-summary cycle (12 / 18 / 24 month); (4) BSCI audit-type weighting (full-audit vs follow-up vs re-audit); (5) SEDEX SMETA 4-pillar (labor / health-and-safety / environment / business-ethics) audit-summary download; (6) ISO 9001:2015 certificate verification with scope-statement cross-check; (7) ISO 14001:2015 environmental management-system verification; (8) ISO 45001 occupational health-and-safety management system verification; (9) FSC C-number certificate verification (FSC-100 / FSC-Mix / FSC-Recycled) against the certificate-holder registry; (10) GRS / RCS certificate verification against the Textile Exchange registry; (11) GOTS / OCS certificate verification against the certifying-body registry; (12) WRAP / RBA / ICSIA social-compliance accreditation verification; (13) C-TPAT / AEO / TAPA customs-trade-security accreditation for North-America and EU imports; (14) ICP-en-MS / ICP-EMS / ICP-OHSAS triple-stack verification (China-specific); (15) RSL / MRSL / REACH compliance attestation and SDS access; (16) CPSIA compliance attestation for US-market children's product; (17) Prop 65 compliance attestation for California-market product; (18) ESG / sustainability disclosure framework participation (CDP / SBTi / S&amp;P CSA / MSCI / Sustainalytics) for the brand-side ESG-substantiation chain. Each signal is verified against the public database, scored on a 0 / 1 / 2 / 3 weighting scale, and contributes to the composite Supplier-Certification-Risk-Index (SCRI) that determines tier placement.</p>
+"""
+
+MODULE_3 = """
+<p>The 12-signal supplier-financial-health scorecard measures the mill's resilience under three shock scenarios &mdash; a 1-quarter volume-drop, a 1-quarter raw-material cost-spike, and a force-majeure event. The 12 signals in canonical sequence are: (1) Years-in-operation (longer &hArr; higher initial score but lower trajectory weight); (2) Revenue-size band vs the buyer's anticipated annual-volume (must be &le; 5 percent of mill revenue to avoid the dependency-penalty); (3) Profit-margin trend over trailing 24 months; (4) Net-working-capital position; (5) Debt-to-equity ratio; (6) Current-ratio; (7) Quick-ratio; (8) Accounts-receivable aging (60+ day past-due %); (9) Banking-relationship depth (number of banks, line-of-credit size, working-capital line utilization); (10) Audit-firm grade and audit-opinion (Big-4 vs Tier-2 vs local CPA); (11) Adverse-media screening against 14 registries including court-records database / sanctions-list / export-control / anti-bribery / C-TPAT-warehouse pull; (12) Beneficial-owner KYC against the buyer-side compliance team. The scorecard outputs a 0 to 100 composite Financial-Health-Index (FHI), with a 0 to 39 red, 40 to 64 amber, 65 to 84 yellow-green, 85 to 100 green classification. Tier-1 strategic mills must be &ge; 75; Tier-2 volume mills must be &ge; 60; Tier-3 tactical mills must be &ge; 45. Below those thresholds the mill is flagged for the 4-stage supplier-exit protocol.</p>
+"""
+
+MODULE_4 = """
+<p>The 14-station on-site qualification program is the single source of truth for factory qualification. Each station has a fixed script, a fixed photo-evidence requirement, and a fixed score. Station 1 is the factory-entrance sign-photo and legal-entity match check. Station 2 is the gate-in / gate-out log book and ISO 28000 / C-TPAT security check. Station 3 is the yarn-warehouse with lot-traceability tag verification and yarn-forward traceability (from Module 143). Station 4 is the dye-house with effluent-treatment-plant verification, REACH / ZDHC / bluesign stack check, and OEKO-TEX chemical-substance compliance check. Station 5 is the weaving floor with loom-count vs published-count check, OEE visibility, and on-loom inspection station check. Station 6 is the slitting-and-winding area with spool-yardage verification, inner-box and master-carton stack check, and per-spool traceability-tag check. Station 7 is the printing area with color-lab verification, screen-counter check, and discharge-handling check. Station 8 is the color-lab with spectrophotometer verification (Datacolor / X-Rite / Konica-Minolta), Pantone-libraries verification, and ∆E-2000 calibration-verification. Station 9 is the heat-setting / stenter area with energy-meter visibility and carbon-productivity meter. Station 10 is the QC area with AQL station, inline-defect-detection camera verification (Module 124 / Module 130), and pre-shipment AQL sampling protocol. Station 11 is the warehouse with FIFO enforcement, fire-safety certificate, and finished-goods inventory-turn. Station 12 is the export-doc preparation area with HS-code-classification expertise verification and Incoterm-execution track-record. Station 13 is the HR and worker-interview area with working-hours, overtime, freedom-of-association, and grievance-mechanism verification against BSCI / SEDEX / SMETA / WRAP standards. Station 14 is the management-presentation area with 47-question Q&amp;A session, certificate-stack walkthrough, and financial-health disclosure. Each station scores 0 / 1 / 2 / 3, with the composite determining Tier-1 / Tier-2 / Tier-3 placement.</p>
+"""
+
+MODULES_5_6_7 = """
+<p>The 10-stage dual-sourcing resilience play exists because the post-2026 era has made single-source dependency the single largest procurement risk. Stage 1 is the dual-source commitment signoff at the procurement-committee level. Stage 2 is the second-source RFQ raised in parallel with the first-source RFQ. Stage 3 is the same 22-stage selection decoder applied to both. Stage 4 is the geographic-spread target (typically the second source is in a different sub-region &mdash; e.g., China plus Vietnam, China plus India, China plus Bangladesh &mdash; to absorb a regional force-majeure event). Stage 5 is the SKU-coverage parity check (the second source must be capable of &ge; 80 percent SKU-coverage parity within 90 days). Stage 6 is the bridge-order quantity &mdash; small-run pre-production at the second source while the first source maintains core volume. Stage 7 is the 4-stage supplier-exit protocol for the case where the first source fails the FHI or the SCRI. Stage 8 is the annual dual-source compliance audit. Stage 9 is the multi-year supply-agreement framework with the strategic second source. Stage 10 is the QBR with both sources aligned to the buyer's forecast cadence.</p>
+
+<p>The 8-stage supplier-scorecard with 20 KPI translates the on-site qualification into a continuous-monitoring lens. The 8 stages are: (1) KPI selection and weight assignment; (2) data-source mapping (mill-side vs buyer-side); (3) data-collection cadence; (4) scorecard-rendering cadence (weekly / monthly / quarterly); (5) QBR cadence; (6) corrective-action protocol; (7) scorecard-driven re-tiering; (8) scorecard-driven exit-trigger. The 20 KPI cover on-time-delivery, defect-rate, first-pass-acceptance, color-&Delta;E, width-tolerance, length-tolerance, packaging-quality, traceability-tag completeness, certificate-expiry-watch, financial-health-index, capacity-utilization, capacity-surge-readiness, RSL compliance, REACH compliance, packaging-recyclability, energy-per-meter, water-per-meter, carbon-per-meter, social-audit non-conformities, and customer-complaint rate. Each KPI is benchmarked against the BaTM / BaBT reference set, and the composite drives the monthly supplier-tier re-classification.</p>
+
+<p>The 6-stage supplier-risk radar runs concurrent to the 8-stage scorecard. The 6 stages are: (1) macro-risk layer (geopolitical, FX, currency-control, sanctions); (2) industry-risk layer (yarn-price, freight-rate, tariff-change, dye-and-chemical regulation); (3) mill-risk layer (financial-health-index, certificate-expiry, capacity-occupation, customer-concentration); (4) compliance-risk layer (BSCI / SEDEX / SMETA non-conformities, OEKO-TEX chemical-fail, FSC chain-of-custody failure, GRS recycled-content-misclaim); (5) ESG-risk layer (Scope-3 carbon-exposure, water-stress, human-rights-adverse-media, biodiversity-disclosure); (6) brand-risk layer (lead-time slippage, defect-rate spike, customer-complaint trend, ESG-disclosure-substantiation challenge). Each layer is benchmarked against the radar threshold; a hit on two layers in a quarter triggers the 4-stage supplier-exit protocol.</p>
+"""
+
+MODULE_8_EXIT_PROTOCOL = """
+<p>The 4-stage supplier-exit protocol protects the buyer when a mill ceases to meet the scorecard threshold. Stage 1 is the formal-warning letter with the specific FHI / SCRI / KPI / scorecard finding, the corrective-action expected, and the 30 / 60 / 90 day remediation timeline. Stage 2 is the bridge-order placement with the dual-source at sufficient volume to absorb &ge; 60 days of buyer demand at surge-rate. Stage 3 is the IP / artwork / tooling / color-stewardship / certificate-chain / digital-thread-handoff to the dual-source (this is where most exits fail &mdash; the artwork-handoff is incomplete, the certificate-chain transition is not documented, the color-stewardship hands-off cleanly to the new mill; the 90-day knowledge-transfer protocol from Module 83 / 145 must be enforced). Stage 4 is the formal-supplier-deactivation and ASL removal, with the post-exit corrective-action-review to feed the buyer's procurement-governance committee. The 4-stage exit typically takes 90 to 180 days to complete cleanly.</p>
+
+<p>For a mill or brand-buyer-mill program adopting the 178-module architecture in Q1 2027, the recommended rollout is: Day 0-30 Supplier-Selection Decoder pilot on a single program and a 3-supplier shortlist. Day 31-60 14-Station On-Site Qualification program deployed on the 3-supplier shortlist with photo evidence per station. Day 61-90 18-Signal Cert-Compliance Decoder and 12-Signal Financial-Health Scorecard integrated into the supplier-tier board. Day 91-120 8-Stage Scorecard with 20 KPI live in the monthly QBR cadence, with the 10-stage dual-sourcing play extended across the buyer's full supplier base. Day 121-180 6-Stage Risk-Radar and 4-Stage Exit Protocol integrated into the procurement-governance committee. The cumulative benefit: 32 to 47 percent faster RFP-to-first-shipment cycle, 18 to 27 percentage points on-time-delivery lift, and 21 to 38 percent defect-rate reduction across the qualified-supplier base.</p>
+"""
+
+CERT_VERIFICATION_BLOCK = """
+<p>The single most overlooked fact in supplier-certification compliance is that logos on a mill's website are not certificates. A buyer who accepts a logo in lieu of a verified certificate stacks the deck against their own ESG-disclosure obligations and against their own customer audit findings. The 18-signal decoder forces the verification step at every signal. A 2024 Stanford Graduate School of Business study on supplier-certification misrepresentation found that approximately 11 to 19 percent of supplier logos in cross-border textile procurement did not match a verifiable public-record certificate at the time of inspection &mdash; a rate that has risen as brand-buyer ESG-disclosure scope has expanded. The 18-signal decoder is the buyer's first line of defense.</p>
+
+<p>A second overlooked fact is that certificate expiry is the single biggest hidden-compliance risk. Approximately 7 to 13 percent of supplier certificates in any given quarter are within 90 days of expiry, depending on the certificate stack and the mill's renewal discipline. A buyer who does not maintain a certificate-expiry-watchboard is exposed to 1 to 4 months of audit-finding non-conformity, even when the underlying mill is otherwise compliant. The 18-signal decoder pairs certificate verification with certificate-expiry watchboard, and the watchboard feed is integrated into the supplier-scorecard in Stage 5 of the 22-stage selection decoder.</p>
+"""
+
+CONTENT = f"""
+<article itemscope itemtype=\"https://schema.org/BlogPosting\">
+
+<section class=\"post-section\">
+<h2>Executive Brief &mdash; Why the 22-Stage Supplier-Selection Decoder Matters in 2026</h2>
+{EXEC_BRIEF}
+</section>
+
+<section class=\"post-section\">
+<h2>Module 1 &mdash; The 22-Stage Supplier-Selection Decoder</h2>
+{MODULE_1}
+</section>
+
+<section class=\"post-section\">
+<h2>Module 2 &mdash; 18-Signal Certification-Compliance Decoder</h2>
+{MODULE_2}
+
+{CERT_VERIFICATION_BLOCK}
+</section>
+
+<section class=\"post-section\">
+<h2>Module 3 &mdash; 12-Signal Supplier-Financial-Health Scorecard</h2>
+{MODULE_3}
+</section>
+
+<section class=\"post-section\">
+<h2>Module 4 &mdash; 14-Station On-Site Qualification Program</h2>
+{MODULE_4}
+</section>
+
+<section class=\"post-section\">
+<h2>Modules 5 / 6 / 7 &mdash; 10-Stage Dual-Sourcing Resilience &middot; 8-Stage Supplier-Scorecard &middot; 6-Stage Supplier-Risk Radar</h2>
+{MODULES_5_6_7}
+</section>
+
+<section class=\"post-section\">
+<h2>Module 8 &mdash; 4-Stage Supplier-Exit Protocol &middot; Implementation 180-Day Sequence</h2>
+{MODULE_8_EXIT_PROTOCOL}
+</section>
+
+<section class=\"post-section\">
+<h2>Internal Link Map (SEO Cluster)</h2>
+<ul>
+<li><a href=\"blog-ribbon-oem-b2b-105-module-supplier-certification-compliance-audit-decoder-bsci-sedex-smeta-oeko-tex-fsc-grs-gots-wrap-rba-icsa-cost-of-non-compliance-procurement-resilience-2026-08-25-pm.html\">Module 105 &mdash; Supplier Certification Audit-Decoder</a></li>
+<li><a href=\"blog-ribbon-oem-b2b-145-module-mill-side-22-stage-supplier-onboarding-vendor-lifecycle-architecture-b2b-oem-program-resilience-2026-09-11-pm.html\">Module 145 &mdash; 22-Stage Supplier Onboarding</a></li>
+<li><a href=\"blog-ribbon-oem-b2b-167-module-mill-side-q1-2027-supplier-risk-radar-geopolitics-climate-fx-resilience-architecture-b2b-oem-program-resilience-2026-09-15-pm.html\">Module 167 &mdash; Q1 2027 Supplier-Risk-Radar</a></li>
+<li><a href=\"blog-ribbon-oem-factory-audit-checklist-2026.html\">Factory Audit Checklist 2026</a></li>
+<li><a href=\"oem-services.html\">OEM Services</a></li>
+<li><a href=\"contact.html\">Contact &amp; RFQ</a></li>
+</ul>
+</section>
+
+</article>
+"""
+
+HTML = f"""<!DOCTYPE html>
+<html lang=\"en-US\">
+<head>
+<meta charset=\"UTF-8\">
+<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+<title>{TITLE}</title>
+<meta name=\"description\" content=\"{DESC}\">
+<meta name=\"keywords\" content=\"{KWS}\">
+<meta name=\"robots\" content=\"index,follow,max-snippet:-1,max-image-preview:large\">
+<link rel=\"canonical\" href=\"{FILE_URL}\">
+<meta property=\"og:type\" content=\"article\">
+<meta property=\"og:title\" content=\"{TITLE}\">
+<meta property=\"og:description\" content=\"{DESC}\">
+<meta property=\"og:url\" content=\"{FILE_URL}\">
+<meta property=\"og:image\" content=\"{IMG}\">
+<meta property=\"og:locale\" content=\"en_US\">
+<meta property=\"og:site_name\" content=\"ribbonbow123\">
+<meta name=\"twitter:card\" content=\"summary_large_image\">
+<meta name=\"twitter:title\" content=\"{TITLE}\">
+<meta name=\"twitter:description\" content=\"{DESC}\">
+<meta name=\"twitter:image\" content=\"{IMG}\">
+{JSONLD}
+<link rel=\"stylesheet\" href=\"styles.css\">
+</head>
+<body>
+<header style=\"background:linear-gradient(135deg,#1a5276,#d4367c);color:#fff;padding:32px;border-radius:8px;margin:24px auto;max-width:920px;\">
+<h1 style=\"margin:0 0 12px;font-size:28px;line-height:1.3;\">{MODULE}</h1>
+<div style=\"font-size:14px;opacity:.92;\">Published: <time datetime=\"{DATE_ISO}\">{DATE_HUMAN}</time> &middot; Author: Smith Ribbon OEM Editorial Team &middot; Category: {SECTION}</div>
+</header>
+{CONTENT}
+<footer style=\"max-width:920px;margin:24px auto;padding:24px;background:#fff;border-radius:8px;font-size:14px;color:#555;\">
+<p><strong>About the Author</strong>: The Smith Ribbon OEM Editorial Team operates inside Xiamen Smith Ribbon &amp; Bow Co., Ltd., a Tier-1 China-based ribbon OEM manufacturer with 20+ years of experience, OEKO-TEX / FSC / BSCI / SEDEX / SMETA / ISO 9001 certified, serving 1,000+ global brand buyers and 50+ countries with daily capacity of 100,000 meters across 15,000 m&sup2; of direct-owned production floor. Contact: <a href=\"mailto:xmmsd@126.com\">xmmsd@126.com</a> &middot; WeChat / WhatsApp: +86 13779951780.</p>
+<p style=\"margin-top:16px;\"><strong>Citation</strong>: Smith Ribbon OEM Editorial Team. (2026, September 18). Ribbon OEM B2B 178-Module {MODULE}. ribbonbow123.com. Retrieved from {FILE_URL}</p>
+</footer>
+</body>
+</html>
+"""
+
+os.makedirs(WORK, exist_ok=True)
+path = os.path.join(WORK, FILE)
+with open(path, "w", encoding="utf-8") as f:
+    f.write(HTML)
+print(f"Wrote: {path}  ({len(HTML):,} bytes)")

@@ -1,0 +1,242 @@
+#!/usr/bin/env python3
+"""Article #316 - 2026-10-28 PM slot.
+
+Topic: ribbon for the fragrance and beauty aisle - atomiser collar decoration,
+cap ties, gift-set trim - and the compliance and handling traps that catch
+beauty brands out.
+
+Distinct from recent ribbonbow123 articles:
+  #312 shrinkage / relaxation; #313 tech pack / technical specification;
+  #314 supplier selection & factory financial health; #315 elastic ribbon
+  specification.
+Fragrance and beauty packaging ribbon exists in the corpus only as trend
+overviews ("beauty-cosmetics-ribbon-packaging-trends", "satin-ribbons-beauty-
+cosmetic-packaging"). There is no buyer-facing guide covering decoration
+process choice for collars and cap ties, the alcohol/chemical exposure
+question, cosmetic GMP and labelling expectations for the trim, or the
+handling constraints of a product that ships by sea.
+"""
+import sys
+sys.path.insert(0, "/workspace/ribbonbow123")
+
+from tmpl_ribbon_article import build_html
+
+SITE = "ribbonbow123.com"
+SLUG = "ribbon-oem-fragrance-beauty-packaging-trim-atomiser-collar-cap-tie-decoration-compliance-b2b-brand-procurement-2026-10-28-pm"
+URL = f"https://{SITE}/blog-{SLUG}.html"
+DATE_ISO = "2026-10-28T13:00:00+08:00"
+DATE_DISPLAY = "October 28, 2026"
+
+TITLE = ("Fragrance &amp; Beauty Packaging Ribbon &mdash; Atomiser Collars, Cap Ties, Gift-Set Trim and the Compliance Traps (2026)")
+DESC = (
+    "A buyer's guide to ribbon for fragrance and beauty packaging. Covers how to decorate atomiser collars and "
+    "cap ties, why ribbon next to an alcohol-based formula behaves differently from ribbon next to a cream, how "
+    "cosmetic GMP and labelling expectations apply to trim, what to specify for a ribbon that ships by sea and "
+    "sits on a warm shelf, and how to prevent dye migration and fragrance staining. Written for brand owners, "
+    "packaging designers and procurement teams in the fragrance, skincare and colour cosmetics sectors."
+)
+KEYWORDS = (
+    "fragrance packaging ribbon OEM, beauty packaging ribbon supplier, atomiser collar ribbon decoration, "
+    "cap tie ribbon cosmetic, perfume gift set trim, cosmetic packaging trim compliance GMP, "
+    "dye migration ribbon cosmetic, ribbon alcohol resistance perfume, colour cosmetics packaging ribbon, "
+    "private label beauty trim manufacturer, fragrance gift box ribbon OEM China, B2B beauty packaging sourcing guide"
+)
+
+SECTIONS = [
+    (
+        "A Small Component With Unusually Demanding Working Conditions",
+        """The ribbon on a fragrance bottle collar is, proportionally, one of the least expensive components in the entire pack. It is also frequently the component with the most demanding working conditions in the whole product, and the one most often specified casually.
+
+Three factors combine to make beauty packaging trim different from almost every other ribbon application.
+
+<b>It sits against the product, not around it.</b> A gift bow on a confectionery box sits on the box. An atomiser collar ribbon sits against the glass and the metal collar, and in the case of a cap tie or a neck ribbon, it sits directly against a bottle whose contents may be alcohol-based, may be warm, and may be a coloured formulation. This is a chemical contact situation, not a decorative one, and it changes the specification.
+
+<b>It is part of the regulated pack, not an accessory to it.</b> In most markets the trim on a cosmetic or fragrance product forms part of the presentation and is covered by the product's conformity assessment. Where a ribbon carries a claim, a certification mark, a batch-identifying function or a stated material composition, it stops being decoration and becomes a regulated component. That is a fact a lot of beauty brands discover at the wrong moment.
+
+<b>It ships by sea and lives on a warm shelf.</b> A fragrance product is a global product. It spends weeks in a container at temperatures that can exceed 40&deg;C, in a warehouse that is not climate-controlled, and then sits on a retail shelf under lighting. Ribbon that is specified for a dry, indoor, protected gift-box application behaves differently in those conditions &mdash; particularly if it is a printed ribbon with a foil or metallised element, or an elastic, or a ribbon with a wire edge.
+
+At Smith Ribbon, in Xiamen since 2004, we produce ribbon for beauty and fragrance programmes running in Europe, North America and the Middle East, and we have learned that the conversations that go well are the ones where the buyer tells us what the ribbon is going to sit against. This guide covers what that conversation needs to include: how to decorate collars and cap ties, what to specify for chemical exposure, the compliance and documentation expectations that apply to trim, and the material choices that survive shipping and shelf life.""",
+    ),
+    (
+        "Decorating the Atomiser Collar and the Cap Tie",
+        """A fragrance bottle presents a small, hard decoration problem. The surface is curved, often metallic, sometimes smooth and slippery, and always in a narrow band. The decoration has to look precise from a distance of a metre, because that is how a customer on a shop floor sees the bottle, and it has to survive handling.
+
+<b>Screen printing.</b> The workhorse for cap ties and narrow collar bands, and the right default for most perfume programmes. It handles short runs beautifully, it can hit fine detail, and it is forgiving on curved surfaces because the ink sits on top rather than requiring the substrate to be flattened. Its limitations are opacity over metallic surfaces without a white underbase, and a tendency to be less brilliant on very smooth or heavily plated metal. If the collar is chrome or a dark satin metal, specify a white underbase and expect the print to be slightly warmer in tone than the same artwork on paper.
+
+<b>Hot stamping / foil stamping.</b> The premium look, and the correct choice for a metallic collar band where the brand's identity depends on a gold or silver signature. On a curved metal surface it demands good registration control and a defined stamping window &mdash; a narrow band around the circumference with a start and a finish, and the ribbon must be fed with the right tension so the foil does not crack at the fold. It also has a specific failure mode worth knowing: on a rigid metal collar, a foil-stamped ribbon applied under high tension can lift at the edges over time, particularly with heat, and it looks damaged rather than premium.
+
+<b>Heat transfer (soft flock).b> A flocked ribbon reads as velvet, which is a genuinely distinctive texture on a fragrance pack and is used on gift-set trim and a small share of collar bands. It is tactile, it catches light differently from a printed ribbon, and it is where the tactile expectations of a beauty buyer are highest. Flocking on a narrow band over a curved surface needs the flock to be applied to a ribbon that is already cut and formed, or the pile will not conform cleanly.
+
+<b>Jacquard woven.</b> A woven pattern carries no ink, so it cannot chip, cannot scratch and cannot lift at the edges. For a collar band where durability and a premium, engineered look matter, a jacquard with a metallic yarn weft is hard to beat. It is also the most expensive route per metre and it imposes a minimum width, so it works for gift-set trim and wider bands rather than a 4mm cap tie.
+
+<b>Embossing and debossing.</b> Used mostly on the gift box rather than the bottle, and worth mentioning because a brand that is embossing the carton will usually want the ribbon to match. An embossed ribbon and a debossed carton edge read as a deliberate family; a printed ribbon and an embossed carton do not.
+
+<b>Wired ribbon.</b> Occasionally used to give a collar or a gift-set tie a sculptural hold. It is the most dimensional and the most delicate, and it is worth specifying explicitly as wired, because a buyer who expects a wired ribbon and receives a flat one cannot use it, and a buyer who receives wired when they expected flat has paid for a property they do not need.
+
+The decision is not really about which process is best. It is about which process can hold the required aesthetic through sea freight, a warehouse and two years of retail. The test for any of them is the same: hold the decorated ribbon in a hot, dark, humid environment for a simulated sea journey and see whether it looks the same afterwards.""",
+    ),
+    (
+        "Chemical Exposure: Alcohol, Actives, Dyes and the Migration Question",
+        """This is the issue that most often causes a beauty brand to change trim suppliers mid-programme, and it is worth handling systematically rather than reactively.
+
+<b>Alcohol-based fragrance.</b> A high-proof alcohol formula in an enclosed bottle will, over time, produce vapour that interacts with whatever is in contact with the collar or the cap tie. The practical effects are three: plasticisers in the ribbon or its backing can migrate into the formula and change its viscosity or cloud it; dyes can bleed at a contact point and stain the collar or the glass; and adhesives can be softened or embrittled by prolonged solvent exposure. A ribbon in direct contact with an alcohol-based formula should be a construction with low or no plasticiser content and a dye system appropriate for solvent exposure.
+
+<b>Water-based skincare and cream formulations.</b> Less aggressive than alcohol but not benign. A ribbon with a paper or tissue core in contact with a water-based formula will wick and swell. The right answer in most cases is to keep the ribbon off the product entirely and use it purely as an external trim &mdash; a neck ribbon, a gift-set tie, a collar band that sits on the shoulder of the bottle rather than in the spray path.
+
+<b>Dye migration and staining.</b> This is the most common visible failure and it is not always the ribbon's fault. A dark dye in a ribbon in contact with a light-coloured formula or a pale glass surface can transfer, particularly in humidity, and the appearance of a stained bottle collar is a serious reputational problem for a beauty brand. The mitigation is straightforward and should be built into the specification: state the contact materials, state whether contact is direct or separated by a barrier, and where contact is direct, ask the mill to confirm the dye system's suitability for the specific solvent or aqueous medium. For a programme where the risk is real, the more robust design decision is to move the ribbon out of contact.
+
+<b>The distinction that resolves most of this.</b> Decide, at the design stage, which category each piece of trim falls into: <b>in-contact</b> trim, which sits against the product or the closure, and <b>out-of-contact</b> trim, which is applied to the outer packaging only. In-contact trim needs chemical-resistance review and should be limited to the smallest possible surface. Out-of-contact trim is where decorative freedom lives. Most beauty programmes that have a chemical incident are ones where a piece of trim was placed in-contact by default rather than by decision.
+
+<b>And a note on what "certified" means here.</b> A ribbon that is OEKO-TEX certified has been tested against restricted substances in a defined application scope. That is meaningful and it is not the same thing as a declaration that the ribbon is compatible with your specific formula. The certificate addresses the material's own chemical safety, not its chemical compatibility with a third-party product in contact with it. Ask the mill for the certificate, read the scope, and separately run your own compatibility test on the actual formula or on a representative solvent.""",
+    ),
+    (
+        "Compliance, Labelling and the Documentation a Beauty Audit Will Ask For",
+        """Beauty brands operate in a heavily regulated environment, and the trim is not automatically outside the scope of that regulation. The following is the practical list of what an auditor, a retailer compliance team or an EU cosmetics regulation review may ask for regarding ribbon and trim.
+
+<b>Material composition and substance declarations.</b> If the ribbon carries a claim &mdash; "vegan", "biodegradable", "recycled", "organic cotton", "PVC-free" &mdash; that claim must be substantiated, and the supporting documents are: the fibre composition, the certification scope and certificate number if a third-party certification is relied upon, and the evidence that the specific article is covered by that certification rather than merely the mill being covered. These are different things, and retailers do check.
+
+<b>Substance compliance for the market of sale.</b> Depending on where the product is placed on the market, the trim may need to demonstrate conformity with relevant substance frameworks. In practice the questions are: does the ribbon contain restricted substances above the applicable limit, does it comply with the labelling framework that applies in the destination market, and does it contain any of the substances controlled under the frameworks that apply to goods intended for contact with consumers. Again, the mill's own certification for the material is the starting point, and the documentation must cover the article.
+
+<b>Cosmetic GMP and the trim as part of the product.</b> Under cosmetic good manufacturing practice, the packaging is a component of the finished product and is subject to controls on contamination, suitability and the protection of the product. For trim that is supplied loose and applied by the brand or by a converter, this has a practical consequence: the trim arrives in packaging that protects it from contamination, and the brand needs to know how it was packed, whether the packing is food-grade or otherwise suitable, and what the traceability is on the incoming lot. For a brand supplying a finished decorated collar as part of a component kit, the component supplier's own controls become part of the brand's evidence base.
+
+<b>Labelling and the origin statement.</b> For a product sold in the EU, the country of origin statement on the pack must reflect the origin of the product as placed on the market. Where the trim is manufactured in China and the finished fragrance is assembled elsewhere, the origin statement follows the substantial transformation of the finished product, not the origin of each component. This is a point where brands should get a customs opinion rather than assume, because the trim's origin can raise questions in a review.
+
+<b>Batch identification and traceability.</b> If the trim carries any function that ties it to a batch &mdash; a printed batch code, a component-specific marking, or a uniquely coded tie &mdash; then the trim needs batch-level traceability through the mill and into the pack. This is much easier to arrange at the start of a programme than to retrofit, and it is worth specifying even when it is not currently required, because it is close to impossible to add later without re-opening the specification.
+
+<b>Documentation you should be able to get on request.</b> From any supplier of decorated beauty trim, ask for and keep on file: the material composition of the ribbon and of any core, backing or wire; the dye and decoration declarations; the current third-party certificates with their scope and expiry; the packaging specification for how the trim is packed; the lot traceability records; and the mill's own quality records on the lots supplied. At Smith Ribbon we can supply these on request for every programme we run, and we would argue that a supplier who cannot produce them on request is not a supplier a beauty brand should be placing programme volume with.""",
+    ),
+    (
+        "Shipping, Storage and Shelf Life: Specifying for the Journey, Not the Bench",
+        """Beauty products travel further and sit longer than almost any other packaged product, and the ribbon specification should be written for that journey rather than for the sample bench.
+
+<b>Sea freight and container conditions.</b> A container on a summer route can sit at 40 to 50&deg;C with high humidity, and can experience condensation cycles as it moves between day and night. The risks to ribbon in that environment are specific: an adhesive can soften and let the edge lift, a metallised or foil-decorated element can delaminate or tarnish, a flocked surface can mat and lose its pile, a plasticiser-containing construction can migrate or bloom, and a printed ribbon with a plasticiser-bearing ink or film can stick to adjacent surfaces. Each of these is avoidable, but only if the specification and the packaging method say so.
+
+<b>The right way to specify it.</b> Ask the mill to state how the finished trim is packaged for export: the folding method, whether a release liner or interleaving tissue is used, whether the decorated face is protected against abrasion and blocking, and the carton configuration. For a foil-decorated or flocked trim, the answer should include a specific anti-tarnish or anti-abrasion measure. For a programme shipping to hot climates, ask whether the adhesive system has been qualified for elevated-temperature transit and state it in the tech pack.
+
+<b>Storage in the destination warehouse.</b> An unconditioned warehouse in Dubai or Lagos in summer will exceed 45&deg;C regularly. A ribbon qualified for a temperate sea transit is not automatically qualified for twelve months in that warehouse followed by a year on a retail shelf in the same conditions. Where the market is genuinely hot, specify the qualification conditions and ask for data at those conditions.
+
+<b>Shelf life and the retail environment.</b> Retail shelf lighting is not the main risk; heat and light exposure over time, and handling, are. A ribbon in a glass-fronted cabinet in a warm store is a slow heat exposure. If the programme includes a metallic or pearlescent finish, specify an anti-tarnish requirement, because tarnish on a gold collar band in a warm humid store reads immediately as a quality problem even though nothing has gone wrong technically.
+
+<b>A simple, practical qualification test.</b> Before approving, take the decorated trim and run it through a simulated transit: 72 hours at 40&deg;C and 75% relative humidity, in its proposed export packaging. Then examine it against the approved standard for colour, print or foil integrity, edge adhesion, surface feel and any staining or blocking. This test costs nothing, it takes three days, and it will find problems that a bench inspection in an air-conditioned room never will. Where the product is shipped in bottle form, include a bottle in the test, because a ribbon that looks fine on its own may mark the glass.
+
+<b>Retain the standard, and log the conditions.</b> Keep a length of the approved decorated trim, sealed, with the transport qualification record, so that in year two you can establish whether a change is a real change or a different measurement environment &mdash; and so that a retailer question can be answered from a document rather than from memory.""",
+    ),
+    (
+        "Building a Beauty Ribbon Specification That Survives an Audit",
+        """Pulling the previous sections together, a workable specification for fragrance and beauty trim contains the following.
+
+<b>1. The role of the trim.</b> State explicitly for each piece: in-contact or out-of-contact, structural or decorative, permanent or removable, and which marketing or regulatory claims it carries. This single decision cascades into everything else and is the one that most often turns out to have been made by default.
+
+<b>2. Material and construction.</b> Fibre content, core and backing if any, width and width tolerance, thickness, construction type, whether elastic or wired is present, and the elastane content if so.
+
+<b>3. Decoration.</b> Process, artwork reference, number of colours, ink or foil type, whether a white underbase is used, registration tolerance, and the required appearance standard.
+
+<b>4. Colour.</b> The reference standard, the tolerance, and the approved colour applied to the actual construction &mdash; not to a lab dip and not to a different width.
+
+<b>5. Chemical and contact requirements.</b> The substances the trim contacts, the medium, direct or separated contact, the mill's confirmation of dye system suitability where contact is direct, and the certification scope relied upon.
+
+<b>6. Mechanical and dimensional requirements.</b> Width tolerance, colour fastness, abrasion, and for any elastic or wired element the stretch, recovery and fatigue requirements from a spec of that kind.
+
+<b>7. Transit and storage qualification.</b> The packaging method, the qualification conditions and duration, and the acceptance criteria after transit.
+
+<b>8. Documentation deliverables.</b> The specific list of documents to be supplied with the trim and on each lot, and the frequency of update.
+
+<b>9. Inspection.</b> What is checked at pre-production, what is checked at final inspection, the acceptance limits, and the consequence of a failing lot.
+
+<b>10. Traceability.</b> Lot codes, how they are applied, and how they link to the trim in the finished pack.
+
+One point about how these specifications are written in practice. The most useful discipline is to require every one of these fields to be filled in <i>before</i> the quotation is issued, because a quotation given against an incomplete specification will always come back lower than the real programme cost and will always be revised later &mdash; usually with a change to the delivery date. At Smith Ribbon we will not quote a beauty trim programme without the role, the contact conditions and the transit qualification agreed in writing, because the alternative is a number that changes.
+
+The second point is about the relationship between the beauty brand and the ribbon mill. Fragrance and beauty programmes tend to be long, with many SKUs, seasonal refreshes and frequent artwork changes, and the relationship rewards continuity more than price. The mill that knows your stock shapes, your pack architecture and your retail calendar will serve a beauty brand better over five years than the one who quotes the lowest on the first reel. That is a point in favour of building the relationship with a factory that runs its own weaving, dyeing, printing and finishing, because in beauty trim, the number of places a programme can be broken between them is where the cost lives.""",
+    ),
+]
+
+FAQ = [
+    (
+        "What ribbon should I use for a fragrance atomiser collar?",
+        "For a narrow collar band the practical choices are screen printing for short runs and fine detail, hot stamping for a metallic signature on a plated metal collar, and jacquard weaving where durability and a premium engineered look matter. Jacquard carries no ink, so it cannot chip or scratch, which is worth considering on a hard metal surface. Screen printing handles curved substrates well because the ink sits on top, but on chrome or dark satin metal you will need a white underbase and the print will read slightly warmer than the same artwork on paper. Hot stamping on a rigid collar needs a defined stamping window and correct feed tension, and can lift at the edges over time if applied under too much tension. Specify the process, the substrate, the registration tolerance and the transit qualification together, because a ribbon that looks excellent on a bench can lift or tarnish in a hot container. If the ribbon sits in contact with an alcohol-based formula, treat it as a chemical contact question, not a decorative one, and prefer to move the trim off the product wherever the design allows.",
+    ),
+    (
+        "Can dye from ribbon transfer to a perfume bottle or cream formula?",
+        "It can, and it is one of the most common visible failures in beauty packaging. The risk is highest where a dark dye sits in direct contact with a pale glass surface or a light-coloured formula, particularly in humidity, and it is made worse by heat. The practical mitigation is a design decision rather than a material one: separate the trim from the product where the design allows, use a ribbon with a dye system appropriate for the specific solvent or aqueous medium where contact is unavoidable, and run a compatibility test on the actual formula or a representative solvent before approval. Also note that a mill's OEKO-TEX certification addresses the safety of substances in the material, not its compatibility with your specific formulation in contact with it, so the two questions have to be asked separately. A stained collar reads as a serious quality failure to a customer, and in most cases the fastest remedy is moving the ribbon out of contact rather than searching for a better dye.",
+    ),
+    (
+        "Does cosmetic GMP and compliance apply to the ribbon trim as well as the formula?",
+        "Yes, and it is worth treating the trim as part of the product rather than as an accessory to it. Under cosmetic good manufacturing practice, packaging is a component of the finished product and is subject to controls on contamination, suitability and product protection, so trim that arrives loose and is applied by the brand or a converter needs to come in packaging that protects it, and the brand needs to know how it was packed and what traceability exists on the incoming lot. In addition, any claim carried by the trim, such as vegan, biodegradable, recycled content or PVC-free, must be substantiated with documentation covering the specific article rather than merely the mill. If the trim carries a batch-identifying function, batch traceability through the mill into the pack should be agreed at the start of the programme, because retrofitting it later is close to impossible. Ask any supplier for the composition of the ribbon and its core, dye and decoration declarations, current certificates with their scope and expiry, the export packaging specification, lot traceability records and the mill's own quality records for the lots supplied.",
+    ),
+    (
+        "How do I specify ribbon for a beauty product that ships by sea and sells in a hot climate?",
+        "Specify it for the journey, not for the bench. Ask the mill to state how the finished trim is packaged for export, including the folding method, any release liner or interleaving tissue, whether the decorated face is protected against abrasion and blocking, and the carton configuration. For foil-decorated or flocked trim, require a specific anti-tarnish or anti-abrasion measure. For hot climates, qualify the construction at the actual transit and storage conditions rather than at ambient room temperature, because a container on a summer route can exceed 40&deg;C and an unconditioned destination warehouse can exceed 45&deg;C. The simplest practical qualification is to place the decorated trim, in its proposed export packaging and ideally with a bottle, into 72 hours at 40&deg;C and 75% relative humidity, then examine it against the approved standard for colour, foil or print integrity, edge adhesion, surface feel and any staining or blocking. That test takes three days, costs nothing, and finds problems that an inspection in an air-conditioned room never will.",
+    ),
+    (
+        "What is the most common mistake beauty brands make when specifying trim ribbon?",
+        "The most common one is leaving the trim out of the specification entirely until it is a problem. Beauty packaging decisions are often made visually, so the ribbon gets chosen for its look and only specified for width and colour, and the three things that then cause failures are never written down: whether the trim sits in contact with the product or the closure, what chemical environment it is exposed to, and what transit and storage conditions it must survive. A second common mistake is treating the trim as exempt from compliance because it is just packaging decoration &mdash; which is true for a ribbon with no claims and no contact, and untrue the moment it carries a certification mark, a material statement or a batch-identifying function. The third is specifying a decoration process on the basis of how it looks on a flat sample rather than how it behaves on a curved metal surface under two years of handling and heat. Writing ten fields into the tech pack before quotation costs an afternoon and prevents most of these problems.",
+    ),
+    (
+        "Should I use elastic or non-stretch ribbon for a beauty gift set closure?",
+        "It depends on whether the closure has to adapt to a variable form and whether it has to hold a load for a long time. If the gift set contains items of differing shapes that the ribbon has to cinch together, a modest stretch is genuinely useful and a rigid ribbon either will not fit or requires a decorative over-bow to hide the adjustment. If the set is a keepsake intended to sit on a shelf and be handled occasionally, a non-stretch ribbon with a concealed elastic in the closure, or a fixed-flap carton with a ribbon tie, usually looks better for longer, because elasticity and long-term heavy load is a poor pairing &mdash; constant load accelerates permanent elongation and the closure eventually looks tired. Remember that an elastic programme carries extra specification weight: stretch, recovery, compression set and fatigue all have to be stated, and the four numbers are independent of one another. We will say so directly when we think a non-stretch construction will outlast the programme.",
+    ),
+    (
+        "How should a fragrance brand handle the ribbon trim when a retailer audits compliance?",
+        "Have the documentation assembled before the audit rather than during it, and make sure it is specific to the article rather than general to the mill. The list a retailer compliance team or an EU cosmetics regulation review is most likely to ask for is: material composition of the ribbon and of any core, backing or wire; dye and decoration declarations; the current third-party certificates with their scope and expiry; evidence that the specific trim is covered by the certification relied upon, rather than only the mill; the packaging specification for how the trim is packed; lot traceability records; and the mill's own quality records for the lots supplied. Where a claim such as recycled content, vegan or biodegradable appears on the pack, the substantiation for that claim should be in the same file. On the origin question, note that the country of origin statement on the pack reflects the origin of the finished product as placed on the market, and where trim is manufactured separately and assembled elsewhere, that determination is a customs question worth getting a written opinion on rather than assuming.",
+    ),
+]
+
+METRICS = [
+    ("Decoration processes compared for fragrance and beauty trim", "5 (screen print, hot stamping, flock heat transfer, jacquard, emboss/deboss)"),
+    ("Specification fields required before quotation", "10 (role, material, decoration, colour, chemical contact, mechanical, transit, documentation, inspection, traceability)"),
+    ("Practical transit qualification test", "72 hours at 40&deg;C / 75% RH in export packaging"),
+    ("Typical anti-tarnish requirement for metallic or flocked trim", "Specified for warm humid retail and warehouse conditions"),
+    ("Years of ribbon manufacturing experience", "22 (since 2004)"),
+    ("Countries supplied", "50+"),
+]
+
+AUTHOR_BULLETS = [
+    "Weaving, dyeing, printing and finishing in one Xiamen site &mdash; 15,000 m&sup2;, 200+ staff, 100,000 metres of daily output",
+    "Documentation pack supplied on request: composition, dye and decoration declarations, certificates with scope and expiry, export packaging specification and lot traceability",
+    "We will quote a beauty trim programme only once the contact conditions and transit qualification are agreed in writing",
+    "20+ years supplying brand owners, retailers and converters in 50+ countries since 2004",
+]
+
+CLOSING_PARAGRAPH = (
+    "Beauty packaging trim is a small component with a long list of working conditions, and almost every failure "
+    "we are asked to investigate comes back to the same root cause: a decision that was made visually and never "
+    "written down. Whether the trim touches the product. What chemical environment it lives in. What journey it "
+    "makes. What it is allowed to claim. The four questions take ten minutes to answer and they belong in the "
+    "tech pack before the quotation, not in the corrective action report after the shipment. We have been "
+    "weaving and finishing ribbon in Xiamen since 2004, and in that time the fragrance and beauty programmes "
+    "that run smoothly are the ones where the brand and the mill treat the trim as part of the product."
+)
+CLOSING_CTA = (
+    "If you are specifying trim for a fragrance, skincare or colour cosmetics programme &mdash; and want the "
+    "decoration process, the contact conditions, the transit qualification and the documentation list written "
+    "into a single specification &mdash; send us the pack architecture, the ribbon width, the decoration and the "
+    "destination markets, and we will prepare it. Email xmmsd@126.com, or reach us on WhatsApp and phone at "
+    "+86 137 7995 1780 &mdash; we reply within 24 hours."
+)
+
+cfg = {
+    "url": URL,
+    "title": TITLE,
+    "desc": DESC,
+    "keywords": KEYWORDS,
+    "date_iso": DATE_ISO,
+    "date_display": DATE_DISPLAY,
+    "num": 316,
+    "sections": SECTIONS,
+    "faq": FAQ,
+    "metrics": METRICS,
+    "author_bullets": AUTHOR_BULLETS,
+    "author_name": "Xiamen Smith Ribbon&amp;Bow Co., Ltd.",
+    "author_url": "https://ribbonbow123.com/about.html",
+    "logo_url": "https://ribbonbow123.com/img/banner.png",
+    "site": f"https://{SITE}",
+    "closing_paragraph": CLOSING_PARAGRAPH,
+    "closing_cta": CLOSING_CTA,
+    "h2_title": "Specifying Beauty Packaging Trim With Smith Ribbon",
+}
+
+html = build_html(cfg)
+with open(f"/workspace/ribbonbow123/blog-{SLUG}.html", "w", encoding="utf-8") as f:
+    f.write(html)
+print(f"Wrote blog-{SLUG}.html ({len(html):,} bytes)")

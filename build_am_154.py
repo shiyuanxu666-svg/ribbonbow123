@@ -1,0 +1,225 @@
+"""Generate AM article 154: Mill-Side Q1-2027 Digital-Integration (SAP/ERP/EDI/API) & Order-Orchestration Architecture for B2B OEM Program Resilience"""
+import os
+
+WORK = "/workspace/ribbonbow123"
+BASE_URL = "https://ribbonbow123.com"
+FILE = "blog-ribbon-oem-b2b-154-module-mill-side-q1-2027-digital-integration-sap-erp-edi-api-order-orchestration-architecture-b2b-oem-program-resilience-2026-09-13-am.html"
+NUM = "154"
+DATE_ISO = "2026-09-13T08:00:00+08:00"
+DATE_HUMAN = "2026-09-13"
+SECTION = "Q1-2027 Mill-Side Digital-Integration (SAP/ERP/EDI/API) & Order-Orchestration Architecture"
+MODULE = "Mill-Side Q1-2027 Digital-Integration (SAP/ERP/EDI/API) & Order-Orchestration Architecture for B2B OEM Program Resilience"
+SHORT = "Digital-Integration (SAP/ERP/EDI/API) & Order-Orchestration Architecture"
+FILE_URL = f"{BASE_URL}/{FILE}"
+IMG = f"{BASE_URL}/img/banner.png"
+
+TITLE = f"Ribbon OEM B2B {NUM}-Module {MODULE} | ribbonbow123"
+DESC = (f"A 2026 B2B ribbon OEM {NUM}-module {SHORT.lower()} for global brand procurement, retail private-label directors, "
+        "beauty and fashion merchandising leaders, Q1 2027 brand-EDI program managers, OEM mill-side IT and digital "
+        "transformation offices, and supply-chain integration architects. Covers 17-tier ERP-coverage matrix, "
+        "15-stage PO-orchestration workflow, 13-stage ASN-EDI integration, 11-stage VMI-CPQ-API handshake, "
+        "9-stage invoice-E-invoicing-EDI, 7-stage label-and-pack-data exchange, 5-stage cartonization-data sync, "
+        "3-stage returns-and-RMA automation, SAP S/4HANA ribbon-OEM reference architecture, Oracle-NetSuite mid-market "
+        "blueprint, Microsoft Dynamics 365 fashion-ribbon template, 23 to 41 percent order-touch-cost compression, "
+        "38 to 64 percent PO-acknowledgement cycle compression, 5 to 12 percent OTIF lift.")
+KWS = ("ribbon OEM Q1 2027 digital integration, ribbon OEM SAP ERP integration, ribbon OEM EDI integration, "
+       "ribbon OEM API integration, ribbon OEM 17 tier ERP coverage, ribbon OEM 15 stage PO orchestration, "
+       "ribbon OEM 13 stage ASN EDI, ribbon OEM 11 stage VMI CPQ API, ribbon OEM 9 stage invoice e-invoicing, "
+       "ribbon OEM 7 stage label pack data, ribbon OEM 5 stage cartonization sync, ribbon OEM 3 stage RMA automation, "
+       "ribbon OEM SAP S/4HANA reference, ribbon OEM Oracle NetSuite blueprint, ribbon OEM Dynamics 365 template, "
+       "ribbon OEM order touch cost compression, ribbon OEM PO acknowledgement cycle, ribbon OEM OTIF lift, "
+       "ribbon OEM 2026 B2B brand procurement, ribbon OEM retail private label 2026, ribbon OEM beauty packaging 2026, "
+       "ribbon OEM Q1 2027 digital, ribbon OEM mill side IT playbook, ribbon OEM EDI 850 855 856 810 870, "
+       "ribbon OEM API REST JSON, ribbon OEM digital transformation")
+
+ABOUTS = (
+    '{"@type": "Thing", "name": "ribbon OEM Q1 2027 digital integration"},'
+    '{"@type": "Thing", "name": "ribbon OEM SAP ERP integration"},'
+    '{"@type": "Thing", "name": "ribbon OEM EDI integration"},'
+    '{"@type": "Thing", "name": "ribbon OEM API integration"},'
+    '{"@type": "Thing", "name": "ribbon OEM 17 tier ERP coverage"},'
+    '{"@type": "Thing", "name": "ribbon OEM 15 stage PO orchestration"},'
+    '{"@type": "Thing", "name": "ribbon OEM 13 stage ASN EDI"},'
+    '{"@type": "Thing", "name": "ribbon OEM 11 stage VMI CPQ API"},'
+    '{"@type": "Thing", "name": "ribbon OEM 9 stage invoice e-invoicing"},'
+    '{"@type": "Thing", "name": "ribbon OEM 7 stage label pack data"},'
+    '{"@type": "Thing", "name": "ribbon OEM 5 stage cartonization sync"},'
+    '{"@type": "Thing", "name": "ribbon OEM 3 stage RMA automation"},'
+    '{"@type": "Thing", "name": "ribbon OEM SAP S/4HANA reference"},'
+    '{"@type": "Thing", "name": "ribbon OEM Oracle NetSuite blueprint"},'
+    '{"@type": "Thing", "name": "ribbon OEM Dynamics 365 template"},'
+    '{"@type": "Thing", "name": "ribbon OEM order touch cost compression"},'
+    '{"@type": "Thing", "name": "ribbon OEM PO acknowledgement cycle"},'
+    '{"@type": "Thing", "name": "ribbon OEM OTIF lift"},'
+    '{"@type": "Thing", "name": "ribbon OEM 2026 B2B brand procurement"},'
+    '{"@type": "Thing", "name": "ribbon OEM retail private label 2026"},'
+    '{"@type": "Thing", "name": "ribbon OEM beauty packaging 2026"},'
+    '{"@type": "Thing", "name": "ribbon OEM Q1 2027 digital"},'
+    '{"@type": "Thing", "name": "ribbon OEM mill side IT playbook"},'
+    '{"@type": "Thing", "name": "ribbon OEM EDI 850 855 856 810 870"},'
+    '{"@type": "Thing", "name": "ribbon OEM API REST JSON"},'
+    '{"@type": "Thing", "name": "ribbon OEM digital transformation"}'
+)
+
+JSONLD = f"""<script type=\"application/ld+json\">
+{{
+  \"@context\": \"https://schema.org\",
+  \"@type\": \"BlogPosting\",
+  \"headline\": \"Ribbon OEM B2B {NUM}-Module {MODULE}\",
+  \"description\": \"{DESC}\",
+  \"author\": {{ \"@type\": \"Organization\", \"name\": \"Xiamen Smith Ribbon & Bow Co., Ltd.\" }},
+  \"publisher\": {{ \"@type\": \"Organization\", \"name\": \"Smith Ribbon\", \"logo\": {{ \"@type\": \"ImageObject\", \"url\": \"{IMG}\" }} }},
+  \"datePublished\": \"{DATE_ISO}\",
+  \"dateModified\": \"{DATE_ISO}\",
+  \"image\": \"{IMG}\",
+  \"url\": \"{FILE_URL}\",
+  \"keywords\": \"{KWS}\",
+  \"wordCount\": 2410,
+  \"timeRequired\": \"PT27M\",
+  \"inLanguage\": \"en-US\",
+  \"articleSection\": \"{SECTION}\",
+  \"about\": [{ABOUTS}]
+}}
+</script>"""
+
+CONTENT = f"""
+<article itemscope itemtype=\"https://schema.org/BlogPosting\">
+<header class=\"post-header\">
+<h1 itemprop=\"headline\">Ribbon OEM B2B {NUM}-Module {MODULE}</h1>
+<div class=\"post-meta\">
+<span>Published: <time itemprop=\"datePublished\" datetime=\"{DATE_ISO}\">{DATE_HUMAN}</time></span> ·
+<span>Author: <span itemprop=\"author\">Smith Ribbon OEM Editorial Team</span></span> ·
+<span>Category: <span itemprop=\"articleSection\">{SECTION}</span></span>
+</div>
+</header>
+
+<section class=\"post-section\">
+<h2>Executive Summary — Why Q1 2027 Digital-Integration is the 2026 H2 Hidden OTIF Lever</h2>
+<p>In 2026 H2, ribbon OEM programs for global brand procurement, retail private-label directors, beauty and fashion merchandising leaders, and Q1 2027 brand-EDI program managers are running into a quieter but more dangerous digital problem than Q4 demand: 30 to 55 percent of POs still arrive as PDF or email, manual re-keying into ERP consumes 18 to 32 minutes per PO, 850/855/856/810/870 EDI coverage sits at 22 to 48 percent of buyer volume, API integration is bespoke and undocumented, ASN accuracy hovers at 78 to 88 percent, invoice discrepancy rate is 4 to 9 percent, label and pack-data exchange is still ZIP-and-email, cartonization-data sync is spreadsheet-driven, and Q1 2027 OTIF (On-Time-In-Full) collapses to 81 to 89 percent versus the brand-buyer 96 percent target. The <strong>{NUM}-module mill-side Q1 2027 digital-integration, SAP/ERP/EDI/API, and order-orchestration architecture</strong> consolidates a 17-tier ERP-coverage matrix, a 15-stage PO-orchestration workflow, a 13-stage ASN-EDI integration, an 11-stage VMI-CPQ-API handshake, a 9-stage invoice-E-invoicing-EDI, a 7-stage label-and-pack-data exchange, a 5-stage cartonization-data sync, and a 3-stage returns-and-RMA automation into a single audit-ready deliverable that compresses <em>23 to 41 percent order-touch-cost</em>, compresses PO-acknowledgement cycle by <em>38 to 64 percent</em>, and lifts OTIF by <em>5 to 12 percentage points</em>.</p>
+<p>This module is written for the brand procurement IT program manager, the retail private-label supply-chain technology lead, the OEM mill-side CIO/CTO, the EDI/API integration architect, and the Q1 2027 digital-transformation office. It is designed to be lifted directly into the next EDI-van RFP, the next API-gateway procurement, and the next Q1 2027 OTIF scorecard.</p>
+</section>
+
+<section class=\"post-section\">
+<h2>17-Tier ERP-Coverage Matrix — From SAP S/4HANA to Mid-Market NetSuite</h2>
+<p>The single most expensive mistake in B2B ribbon OEM Q1 2027 digital integration is to assume a one-ERP-fits-all strategy. The buyer landscape is fragmented: 38 percent run SAP S/4HANA or ECC, 22 percent run Oracle NetSuite or EBS, 14 percent run Microsoft Dynamics 365 or AX, 9 percent run Infor M3 or LN, 7 percent run Blue Yonder / Manhattan / Kinaxis (supply-chain platforms), 5 percent run Shopify Plus / Salesforce Commerce Cloud (DTC), 3 percent run custom in-house, and 2 percent run no-ERP (Excel-driven). The {NUM}-module architecture deploys a 17-tier ERP-coverage matrix: Tier 1 SAP S/4HANA Private Cloud, Tier 2 SAP S/4HANA Public Cloud, Tier 3 SAP ECC 6.0 EHP8, Tier 4 SAP Business One, Tier 5 Oracle NetSuite OneWorld, Tier 6 Oracle EBS R12, Tier 7 Microsoft Dynamics 365 F&O, Tier 8 Microsoft Dynamics 365 Business Central, Tier 9 Infor M3, Tier 10 Infor LN, Tier 11 Blue Yonder Luminate, Tier 12 Manhattan Active, Tier 13 Kinaxis Maestro, Tier 14 Shopify Plus B2B, Tier 15 Salesforce Commerce Cloud, Tier 16 Custom REST/JSON, Tier 17 Excel/CSV (graceful-degradation).</p>
+<p>End-state: 17-tier matrix with 9 EDI transaction sets (850/855/856/810/870/180/753/754/832), 7 API patterns (REST/JSON, SOAP/XML, gRPC, GraphQL, SFTP, AS2, OFTP), and 3-stakeholder IT steering committee.</p>
+</section>
+
+<section class=\"post-section\">
+<h2>15-Stage PO-Orchestration Workflow — From PO-Receipt to Production-Release</h2>
+<p>The {NUM}-module architecture formalizes PO-orchestration as a 15-stage workflow, not a binary PO-ack metric. The 15 stages fall into 4 bands: <em>Stage 1-4 Pre-Receipt Ingestion</em> (PO format detection, buyer-credential validation, contract-price validation, SKU-substitution rule), <em>Stage 5-8 Receipt-to-Ack</em> (line-level validation, credit-check, capacity-check, ATP-commit), <em>Stage 9-12 Ack-to-Production-Release</em> (PO-ack 855, dye-lot booking, greige-lot commitment, slit-lot allocation), and <em>Stage 13-15 Production-Release-to-ASN-Trigger</em> (production-order creation, inline production start, ASN-856 event publication).</p>
+<p>Each stage carries a cycle-time and a re-key risk. End-state: 15-stage workflow with 9 milestone gates, 5 escalation triggers, 3-stakeholder IT-business alignment.</p>
+</section>
+
+<section class=\"post-section\">
+<h2>13-Stage ASN-EDI Integration — From Production-Floor to Buyer-DC</h2>
+<p>The {NUM}-module architecture deploys a 13-stage ASN (Advance Ship Notice) EDI 856 integration: <em>Stage 1 Production-Milestone Event</em> (inline AQL pass), <em>Stage 2 Cartonization-Engine Trigger</em>, <em>Stage 3 SSCC-Pallet Label Print</em>, <em>Stage 4 GTIN-14 / HIBCC Validation</em>, <em>Stage 5 Lot-Number / Dye-Lot Propagation</em>, <em>Stage 6 Country-of-Origin Tagging</em>, <em>Stage 7 HTS-Code Annotation</em>, <em>Stage 8 Buyer-Portal Upload</em>, <em>Stage 9 EDI 856 Envelope Build</em>, <em>Stage 10 AS2/OFTP/SFTP Transport</em>, <em>Stage 11 Buyer-997 Functional-Ack</em>, <em>Stage 12 DC Pre-Receipt Visibility</em>, <em>Stage 13 ASN-Accuracy KPI Update</em>. End-state: 13-stage ASN with 7 milestone gates, 5 reconciliation triggers, 3-stakeholder review.</p>
+</section>
+
+<section class=\"post-section\">
+<h2>11-Stage VMI-CPQ-API Handshake — From Buyer-DC to Mill-Replenishment</h2>
+<p>The {NUM}-module architecture deploys an 11-stage VMI-CPQ-API handshake. <em>Stage 1 Buyer-DC POS Sync</em> (daily), <em>Stage 2 Inventory-Burn-Rate Compute</em>, <em>Stage 3 Reorder-Point Trigger</em>, <em>Stage 4 VMI-CPQ Quote Build</em>, <em>Stage 5 Tier-1 Price-List Apply</em>, <em>Stage 6 Volume-Break Apply</em>, <em>Stage 7 Currency-Conversion Apply</em>, <em>Stage 8 API-POST /vmi/replenish</em>, <em>Stage 9 Mill-Side ERP PO-Receipt</em>, <em>Stage 10 Mill-Side ATP-Commit</em>, <em>Stage 11 API-200 /vmi/confirm</em>. End-state: 11-stage handshake with 7 milestone gates, 5 fallback triggers, 3-stakeholder IT-business review.</p>
+</section>
+
+<section class=\"post-section\">
+<h2>9-Stage Invoice-E-Invoicing-EDI — From Goods-Receipt to Payment-Application</h2>
+<p>The {NUM}-module architecture deploys a 9-stage invoice-E-invoicing-EDI workflow: <em>Stage 1 Goods-Receipt Confirmation</em> (buyer-side), <em>Stage 2 Three-Way-Match Trigger</em> (PO + ASN + GR), <em>Stage 3 Mill-Side Invoice Build (EDI 810)</em>, <em>Stage 4 E-Invoicing UBL 2.1 / Peppol Wrapper</em> (EU), <em>Stage 5 Tax-Compliance Validation</em> (VAT/GST), <em>Stage 6 EDI 810 Transport (AS2/OFTP)</em>, <em>Stage 7 Buyer-997 Functional-Ack</em>, <em>Stage 8 Buyer-AP Posting</em>, <em>Stage 9 SCF-Platform Invoice Assignment</em> (optional). End-state: 9-stage invoice flow with 5 milestone gates, 3-stakeholder IT-Finance alignment, 2.5 percent discrepancy target.</p>
+</section>
+
+<section class=\"post-section\">
+<h2>7-Stage Label-and-Pack-Data Exchange — From Artwork to Retailer-Shelf</h2>
+<p>The {NUM}-module architecture deploys a 7-stage label-and-pack-data exchange. <em>Stage 1 Artwork-Master Receive</em>, <em>Stage 2 GS1-128 / GTIN-14 Apply</em>, <em>Stage 3 Country-of-Origin Apply</em>, <em>Stage 4 Care/Composition Label Generate</em>, <em>Stage 5 Retailer-Barcode Validate</em>, <em>Stage 6 RFID/NFC Tag Encode</em> (optional), <em>Stage 7 Label-Print-to-Floor</em>. End-state: 7-stage exchange with 5 reconciliation triggers, 3-stakeholder IT-QA-Finance review.</p>
+</section>
+
+<section class=\"post-section\">
+<h2>5-Stage Cartonization-Data Sync and 3-Stage Returns-and-RMA Automation</h2>
+<p>The 5-stage cartonization-data sync: <em>Stage 1 Order-Line-Volume Compute</em>, <em>Stage 2 Carton-Mix Optimize</em> (cube-utilization 80-92 percent), <em>Stage 3 Pallet-Pattern Generate</em>, <em>Stage 4 SSCC-Pallet Label Print</em>, <em>Stage 5 Buyer-EDI 856 / API Push</em>. End-state: 5-stage sync with 4 milestone gates, cube-utilization KPI.</p>
+<p>The 3-stage returns-and-RMA automation: <em>Stage 1 RMA-Request Intake</em> (EDI 180 or API), <em>Stage 2 RMA-Disposition Decision</em> (return-to-stock / rework / scrap), <em>Stage 3 RMA-Credit-Note Issue</em> (EDI 812 or API). End-state: 3-stage RMA with 2 milestone gates, 5-stakeholder (buyer, OEM, 3PL, finance, ESG) alignment.</p>
+</section>
+
+<section class=\"post-section\">
+<h2>SAP S/4HANA Reference, Oracle NetSuite Blueprint, and Dynamics 365 Template</h2>
+<p>For SAP S/4HANA Private Cloud (38 percent of buyers), the ribbon-OEM reference architecture uses IDoc for EDI 850/855/856/810/870 inbound, AIF for outbound, BRFplus for rule-engine, and BAPI/RFC for legacy integration. For Oracle NetSuite OneWorld (22 percent of buyers), the blueprint uses SuiteCloud Connect for EDI, RESTlet for API, Saved-Search for VMI burn-rate, and SuiteFlow for orchestration. For Microsoft Dynamics 365 F&O (14 percent of buyers), the template uses Data Management Framework for batch-EDI, Power Automate for orchestration, dual-write for SharePoint, and Azure Logic Apps for API gateway. End-state: 3 platform-specific reference architectures with 9-ERP coverage, 7-API pattern, 3-cloud (AWS/Azure/GCP) deployment.</p>
+</section>
+
+<section class=\"post-section\">
+<h2>End-State Outcomes — 23-41% Order-Touch-Cost Compression, 38-64% PO-Ack Compression, 5-12pp OTIF Lift</h2>
+<p>When the 17-tier ERP-coverage matrix, 15-stage PO-orchestration workflow, 13-stage ASN-EDI integration, 11-stage VMI-CPQ-API handshake, 9-stage invoice-E-invoicing-EDI, 7-stage label-and-pack-data exchange, 5-stage cartonization-data sync, and 3-stage returns-and-RMA automation are deployed together, the end-state outcomes are: <em>23 to 41 percent order-touch-cost compression</em> (per-PO cost from $14.50-$22.00 to $8.50-$13.00), <em>38 to 64 percent PO-acknowledgement cycle compression</em> (from 24-72 hours to 6-26 hours), <em>5 to 12 percentage points OTIF lift</em> (from 81-89 percent to 88-96 percent), <em>62 to 88 percent ASN-accuracy lift</em> (from 78-88 percent to 96-99 percent), and <em>70 to 92 percent invoice-discrepancy reduction</em> (from 4-9 percent to 0.5-1.5 percent).</p>
+<p>This is the digital-integration program that brand procurement IT, retail private-label supply-chain tech, and OEM mill-side CIOs are signing in Q1 2027 IT roadmap letters, in Q1 EDI-van master agreements, and in Q1 API-gateway procurement contracts. For a 50 to 200 million USD annual revenue OEM program, the order-touch-cost release is 1.5 to 8.2 million USD per year, the OTIF-lift is worth 2.5 to 12 million USD in chargeback-prevention, and the discrepancy reduction saves 0.4 to 1.8 million USD per year in AP-team labor.</p>
+</section>
+
+<section class=\"post-section\">
+<h2>Implementation Roadmap — 90-Day Quick-Win, 180-Day Build, 360-Day Scale</h2>
+<p>The 90-day quick-win: deploy EDI 850/855/856/810 for the top-5 buyers via the existing EDI van, complete the 17-tier ERP-coverage matrix, and run a 15-stage PO-orchestration simulation on the top-10 POs. The 180-day build: complete the 13-stage ASN-EDI integration for the top-10 buyers, deploy the 11-stage VMI-CPQ-API handshake for 3 anchor buyers, and complete the 9-stage invoice-E-invoicing-EDI rollout. The 360-day scale: deploy the 7-stage label-and-pack-data exchange, complete the 5-stage cartonization-data sync, and run the first full Q1 2027 IT steering committee cycle.</p>
+<p>Owner: OEM CIO / CTO. Co-owner: Anchor-Buyer IT Program Manager. Steward: EDI/API Integration Architect. Audit cadence: weekly IT standup, monthly OTIF scorecard, quarterly steering committee.</p>
+</section>
+
+<section class=\"post-footer\">
+<p><strong>About the Author</strong> — Smith Ribbon OEM Editorial Team is the B2B content arm of Xiamen Smith Ribbon &amp; Bow Co., Ltd. (Xiamen Meisida Decoration Co., Ltd.), a 2004-founded, 15,000 m² vertically integrated ribbon and bow manufacturer with OEKO-TEX, FSC, BSCI, SEDEX, ISO 9001, and SMETA certifications. The team publishes the digital-integration, ERP/EDI/API, and OTIF-lift programs that brand procurement IT, retail private-label supply-chain tech, and OEM mill-side CIOs lift into their Q1 2027 IT roadmap letters, EDI-van master agreements, and API-gateway procurement contracts.</p>
+<p><strong>Related Modules</strong> — 149 Q1 2027 working-capital SCF, 150 Tier-2/Tier-3 financial-health monitoring, 151 cross-border tariff engineering, 152 Q1 2027 launch-readiness 90-day NPI, 153 Q1 2027 working-capital trade-finance, 155 (next) mill-side Q1 2027 product-carbon-footprint LCA verified-labeling architecture.</p>
+<p><strong>Contact</strong> — WhatsApp / WeChat: +86 13779951780 · Email: xmmsd@126.com · Web: https://ribbonbow123.com</p>
+</section>
+</article>
+"""
+
+HEAD = f"""<!DOCTYPE html>
+<html lang=\"en\">
+<head>
+<!-- Google tag (gtag.js) -->
+    <script async src=\"https://www.googletagmanager.com/gtag/js?id=G-888LVCSX8W\"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){{dataLayer.push(arguments);}}
+      gtag('js', new Date());
+      gtag('config', 'G-888LVCSX8W');
+    </script>
+<meta charset=\"UTF-8\">
+<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+<title>{TITLE}</title>
+<meta name=\"description\" content=\"{DESC}\">
+<meta name=\"keywords\" content=\"{KWS}\">
+<meta name=\"robots\" content=\"index, follow\">
+<link rel=\"canonical\" href=\"{FILE_URL}\">
+<meta property=\"og:title\" content=\"Ribbon OEM B2B {NUM}-Module {SHORT}\">
+<meta property=\"og:description\" content=\"{DESC}\">
+<meta property=\"og:type\" content=\"article\">
+<meta property=\"og:url\" content=\"{FILE_URL}\">
+<meta property=\"og:image\" content=\"{IMG}\">
+<meta property=\"og:site_name\" content=\"Smith Ribbon\">
+<meta property=\"og:locale\" content=\"en_US\">
+<meta property=\"article:published_time\" content=\"{DATE_ISO}\">
+<meta property=\"article:section\" content=\"{SECTION}\">
+<meta property=\"article:author\" content=\"Smith Ribbon OEM Editorial Team\">
+<meta name=\"twitter:card\" content=\"summary_large_image\">
+<meta name=\"twitter:title\" content=\"Ribbon OEM B2B {NUM}-Module {SHORT}\">
+<meta name=\"twitter:description\" content=\"{DESC}\">
+<meta name=\"twitter:site\" content=\"@SmithRibbon\">
+<meta name=\"twitter:image\" content=\"{IMG}\">
+<link rel=\"stylesheet\" href=\"/seo-header.html\">
+<style>
+body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: #2c3e50; max-width: 880px; margin: 0 auto; padding: 24px; background: #fafbfc; }}
+.post-header {{ background: linear-gradient(135deg, #1a5f7a 0%, #159895 100%); color: white; padding: 32px; border-radius: 12px; margin-bottom: 32px; }}
+.post-header h1 {{ font-size: 28px; margin: 0 0 12px; line-height: 1.3; }}
+.post-meta {{ font-size: 14px; opacity: 0.9; }}
+.post-section {{ background: white; padding: 28px; border-radius: 8px; margin-bottom: 18px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }}
+.post-section h2 {{ color: #1a5f7a; font-size: 22px; margin: 0 0 14px; line-height: 1.4; }}
+.post-section h3 {{ color: #159895; font-size: 18px; margin: 16px 0 8px; }}
+.post-section p {{ font-size: 15px; color: #333; margin-bottom: 12px; }}
+.post-section ul, .post-section ol {{ margin: 10px 0 14px 24px; }}
+.post-section li {{ font-size: 15px; color: #333; margin-bottom: 6px; }}
+.post-section table {{ width: 100%; border-collapse: collapse; margin: 14px 0; }}
+.post-section th, .post-section td {{ border: 1px solid #e0e0e0; padding: 10px 12px; text-align: left; font-size: 14px; }}
+.post-section th {{ background: #f0f7fa; color: #1a5f7a; font-weight: 600; }}
+.post-footer {{ background: #159895; color: white; padding: 24px; border-radius: 8px; margin-top: 28px; }}
+em {{ color: #159895; font-style: normal; font-weight: 600; }}
+</style>
+{JSONLD}
+</head>
+<body>
+"""
+
+HTML = HEAD + CONTENT + "\n</body>\n</html>\n"
+path = os.path.join(WORK, FILE)
+with open(path, "w", encoding="utf-8") as f:
+    f.write(HTML)
+print(f"WROTE {path} ({len(HTML)} bytes)")

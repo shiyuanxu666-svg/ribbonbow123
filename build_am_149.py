@@ -1,0 +1,247 @@
+"""Generate AM article 149: Q1-2027 Mill-Side Working-Capital & Receivables-Financing Architecture"""
+import os
+
+WORK = "/workspace/ribbonbow123"
+BASE_URL = "https://ribbonbow123.com"
+FILE = "blog-ribbon-oem-b2b-149-module-mill-side-q1-2027-working-capital-receivables-financing-supply-chain-finance-program-architecture-b2b-oem-program-resilience-2026-09-12-am.html"
+NUM = "149"
+DATE_ISO = "2026-09-12T08:00:00+08:00"
+DATE_HUMAN = "2026-09-12"
+SECTION = "Q1-2027 Mill-Side Working-Capital & Receivables-Financing Program Architecture"
+MODULE = "Mill-Side Q1-2027 Working-Capital, Receivables-Financing & Supply-Chain Finance Program Architecture for B2B OEM Program Resilience"
+SHORT = "Q1-2027 Working-Capital & Receivables-Financing Program Architecture"
+FILE_URL = f"{BASE_URL}/{FILE}"
+IMG = f"{BASE_URL}/img/banner.png"
+
+TITLE = f"Ribbon OEM B2B {NUM}-Module {MODULE} | ribbonbow123"
+DESC = (f"A 2026 B2B ribbon OEM {NUM}-module {SHORT.lower()} for global brand procurement, retail private-label directors, "
+        "beauty and fashion merchandising leaders, Q1 2027 working-capital controllers, OEM treasury and finance leaders, "
+        "and supply-chain finance program offices. Covers 18-month receivables-financing rolling window, 21-stage mill-side "
+        "working-capital conversion cycle, 19-tier dynamic-discounting ladder, 17-stage reverse-factoring onboarding, "
+        "15-signal early-warning buyer-credit deterioration stack, 13-tier inventory-finance collateral matrix, "
+        "11-stage PO-financing bridge, 9-stage payables-stretching optimization, 7-tier FX-hedging cost-of-capital model, "
+        "5-stage SCF-bank diversification, 3-stakeholder treasury steering committee, 18 to 32 percent working-capital release, "
+        "12 to 26 percent finance-cost compression, 8 to 18 days DSO improvement.")
+KWS = ("ribbon OEM Q1 2027 working capital, ribbon OEM receivables financing, ribbon OEM supply chain finance, "
+       "ribbon OEM 18 month receivables window, ribbon OEM 21 stage working capital cycle, ribbon OEM 19 tier dynamic discount, "
+       "ribbon OEM 17 stage reverse factoring, ribbon OEM 15 signal buyer credit, ribbon OEM 13 tier inventory finance, "
+       "ribbon OEM 11 stage PO financing, ribbon OEM 9 stage payables stretch, ribbon OEM 7 tier FX hedging cost capital, "
+       "ribbon OEM 5 stage SCF bank diversification, ribbon OEM 3 stakeholder treasury, ribbon OEM working capital release, "
+       "ribbon OEM finance cost compression, ribbon OEM DSO improvement, ribbon OEM 2026 B2B brand procurement, "
+       "ribbon OEM retail private label 2026, ribbon OEM beauty packaging 2026, ribbon OEM Q1 2027 finance, "
+       "ribbon OEM mill side SCF playbook, ribbon OEM receivables financing playbook, ribbon OEM reverse factoring onboarding, "
+       "ribbon OEM dynamic discounting ladder")
+
+ABOUTS = (
+    '{"@type": "Thing", "name": "ribbon OEM Q1 2027 working capital"},'
+    '{"@type": "Thing", "name": "ribbon OEM receivables financing"},'
+    '{"@type": "Thing", "name": "ribbon OEM supply chain finance"},'
+    '{"@type": "Thing", "name": "ribbon OEM 18 month receivables window"},'
+    '{"@type": "Thing", "name": "ribbon OEM 21 stage working capital cycle"},'
+    '{"@type": "Thing", "name": "ribbon OEM 19 tier dynamic discount"},'
+    '{"@type": "Thing", "name": "ribbon OEM 17 stage reverse factoring"},'
+    '{"@type": "Thing", "name": "ribbon OEM 15 signal buyer credit"},'
+    '{"@type": "Thing", "name": "ribbon OEM 13 tier inventory finance"},'
+    '{"@type": "Thing", "name": "ribbon OEM 11 stage PO financing"},'
+    '{"@type": "Thing", "name": "ribbon OEM 9 stage payables stretch"},'
+    '{"@type": "Thing", "name": "ribbon OEM 7 tier FX hedging cost capital"},'
+    '{"@type": "Thing", "name": "ribbon OEM 5 stage SCF bank diversification"},'
+    '{"@type": "Thing", "name": "ribbon OEM 3 stakeholder treasury"},'
+    '{"@type": "Thing", "name": "ribbon OEM working capital release"},'
+    '{"@type": "Thing", "name": "ribbon OEM finance cost compression"},'
+    '{"@type": "Thing", "name": "ribbon OEM DSO improvement"},'
+    '{"@type": "Thing", "name": "ribbon OEM 2026 B2B brand procurement"},'
+    '{"@type": "Thing", "name": "ribbon OEM retail private label 2026"},'
+    '{"@type": "Thing", "name": "ribbon OEM beauty packaging 2026"},'
+    '{"@type": "Thing", "name": "ribbon OEM Q1 2027 finance"},'
+    '{"@type": "Thing", "name": "ribbon OEM mill side SCF playbook"},'
+    '{"@type": "Thing", "name": "ribbon OEM receivables financing playbook"},'
+    '{"@type": "Thing", "name": "ribbon OEM reverse factoring onboarding"},'
+    '{"@type": "Thing", "name": "ribbon OEM dynamic discounting ladder"}'
+)
+
+JSONLD = f"""<script type=\"application/ld+json\">
+{{
+  \"@context\": \"https://schema.org\",
+  \"@type\": \"BlogPosting\",
+  \"headline\": \"Ribbon OEM B2B {NUM}-Module {MODULE}\",
+  \"description\": \"{DESC}\",
+  \"author\": {{ \"@type\": \"Organization\", \"name\": \"Xiamen Smith Ribbon & Bow Co., Ltd.\" }},
+  \"publisher\": {{ \"@type\": \"Organization\", \"name\": \"Smith Ribbon\", \"logo\": {{ \"@type\": \"ImageObject\", \"url\": \"{IMG}\" }} }},
+  \"datePublished\": \"{DATE_ISO}\",
+  \"dateModified\": \"{DATE_ISO}\",
+  \"image\": \"{IMG}\",
+  \"url\": \"{FILE_URL}\",
+  \"keywords\": \"{KWS}\",
+  \"wordCount\": 2380,
+  \"timeRequired\": \"PT26M\",
+  \"inLanguage\": \"en-US\",
+  \"articleSection\": \"{SECTION}\",
+  \"about\": [{ABOUTS}]
+}}
+</script>"""
+
+CONTENT = f"""
+<article itemscope itemtype=\"https://schema.org/BlogPosting\">
+<header class=\"post-header\">
+<h1 itemprop=\"headline\">Ribbon OEM B2B {NUM}-Module {MODULE}</h1>
+<div class=\"post-meta\">
+<span>Published: <time itemprop=\"datePublished\" datetime=\"{DATE_ISO}\">{DATE_HUMAN}</time></span> ·
+<span>Author: <span itemprop=\"author\">Smith Ribbon OEM Editorial Team</span></span> ·
+<span>Category: <span itemprop=\"articleSection\">{SECTION}</span></span>
+</div>
+</header>
+
+<section class=\"post-section\">
+<h2>Executive Summary — Why Q1 2027 Working-Capital and Receivables-Financing is the 2026 H2 Hidden Cash Lever</h2>
+<p>In 2026 H2, ribbon OEM programs for global brand procurement, retail private-label directors, beauty and fashion merchandising leaders, and Q1 2027 working-capital controllers are running into a quieter but more dangerous cash problem than Q4 demand: receivables are extending to 75 to 110 days, working-capital is locked in 42 to 65 percent of revenue, supply-chain finance (SCF) programs are underutilized, reverse-factoring onboarding takes 90 to 140 days, dynamic-discounting offers go unmonitored, and Q1 2027 cash conversion cycle (CCC) blows out to 95 to 135 days. The <strong>{NUM}-module mill-side Q1 2027 working-capital, receivables-financing, and supply-chain finance program architecture</strong> consolidates an 18-month receivables-financing rolling window, a 21-stage mill-side working-capital conversion cycle, a 19-tier dynamic-discounting ladder, a 17-stage reverse-factoring onboarding, a 15-signal early-warning buyer-credit deterioration stack, a 13-tier inventory-finance collateral matrix, an 11-stage PO-financing bridge, a 9-stage payables-stretching optimization, a 7-tier FX-hedging cost-of-capital model, a 5-stage SCF-bank diversification, and a 3-stakeholder treasury steering committee into a single audit-ready deliverable that releases <em>18 to 32 percent working-capital</em>, compresses finance-cost by <em>12 to 26 percent</em>, and improves DSO by <em>8 to 18 days</em>.</p>
+<p>This module is written for the brand procurement treasurer, the retail private-label finance controller, the OEM mill-side CFO, the supply-chain finance program manager, and the Q1 2027 working-capital analyst. It is designed to be lifted directly into the next SCF bank RFP and the next Q1 cash forecast.</p>
+</section>
+
+<section class=\"post-section\">
+<h2>18-Month Receivables-Financing Rolling Window — The Q1 2027 Cash Lock Starts in July 2025</h2>
+<p>The single most expensive mistake in B2B ribbon OEM Q1 working-capital is to wait until November to engage the SCF bank. By then, the receivables pool is already 80 to 100 percent drawn, the dynamic-discounting platform fee is 1.4 to 1.8 percent of face value, and the reverse-factoring onboarding window is closed for the season.</p>
+<p>The {NUM}-module architecture deploys an 18-month receivables-financing rolling window. The Q1 2027 cash lock starts in July 2025. The Q1 2028 cash lock starts in July 2026. The window is anchored by a signed SCF master agreement on each anniversary, refreshed at 15 / 12 / 9 / 6 / 3 month horizons with progressively tighter receivables-coverage and finance-cost commitments.</p>
+<table>
+<thead><tr><th>Horizon</th><th>Receivables Coverage</th><th>Finance-Cost Lock</th><th>Onboarding Penalty</th></tr></thead>
+<tbody>
+<tr><td>T-18 months</td><td>40% of receivables</td><td>SOFR + 240 bps</td><td>0.5% of pool</td></tr>
+<tr><td>T-15 months</td><td>55% of receivables</td><td>SOFR + 220 bps</td><td>0.8% of pool</td></tr>
+<tr><td>T-12 months</td><td>70% of receivables</td><td>SOFR + 200 bps</td><td>1.2% of pool</td></tr>
+<tr><td>T-9 months</td><td>82% of receivables</td><td>SOFR + 180 bps</td><td>1.6% of pool</td></tr>
+<tr><td>T-6 months</td><td>92% of receivables</td><td>SOFR + 160 bps</td><td>2.0% of pool</td></tr>
+<tr><td>T-3 months</td><td>100% of receivables</td><td>SOFR + 145 bps</td><td>2.5% of pool</td></tr>
+</tbody>
+</table>
+<p>End-state: 18-32 percent working-capital release, 12-26 percent finance-cost compression, 8-18 days DSO improvement.</p>
+</section>
+
+<section class=\"post-section\">
+<h2>21-Stage Mill-Side Working-Capital Conversion Cycle — From PO-Receipt to Cash-Collection</h2>
+<p>The {NUM}-module architecture formalizes the working-capital conversion cycle as a 21-stage process, not a binary DSO/DPO metric. The 21 stages fall into 4 bands: <em>Stage 1-6 Order-to-Cash Pre-Production</em> (PO receipt, credit check, ART approval, dye-lot booking, greige-lot commitment, slit-lot allocation), <em>Stage 7-12 Production-to-Ship Cash-Lock</em> (inline production, AQL inspection, FAT, cartonization, container-loading, ETD), <em>Stage 13-17 In-Transit Cash-Float</em> (ocean freight, customs clearance, DDP handoff, DC putaway, in-bond transit, retailer-receipt confirmation), and <em>Stage 18-21 Receivables-to-Cash Conversion</em> (invoice issuance, dynamic-discounting offer, reverse-factoring assignment, payment application, bank reconciliation).</p>
+<p>Each stage carries a working-capital dwell time and a finance-cost accrual. End-state: 21-stage cycle with 9 milestone gates, 5 escalation triggers, 3-stakeholder treasury steering committee.</p>
+</section>
+
+<section class=\"post-section\">
+<h2>19-Tier Dynamic-Discounting Ladder — Tier 1 through Tier 19 Capture the Q1 2027 Cash Window</h2>
+<p>The {NUM}-module architecture deploys a 19-tier dynamic-discounting ladder. Tier 1 covers 0-3 day payment at 2.5 percent discount, Tier 2 covers 4-7 day at 2.2 percent, Tier 3 covers 8-14 day at 1.9 percent, Tier 4 covers 15-21 day at 1.6 percent, Tier 5 covers 22-28 day at 1.3 percent, Tier 6 covers 29-35 day at 1.0 percent, Tier 7 covers 36-42 day at 0.8 percent, Tier 8 covers 43-49 day at 0.6 percent, Tier 9 covers 50-56 day at 0.4 percent, Tier 10 covers 57-63 day at 0.2 percent, Tier 11 through Tier 14 cover 64-84 day at 0 percent (base net terms), Tier 15 through Tier 17 cover 85-105 day at 0 percent + 1.5 percent annual service fee, Tier 18 covers 106-120 day at 0 percent + 2.5 percent, and Tier 19 covers 120+ day at 0 percent + 4.0 percent (penalty tier).</p>
+<p>End-state: 19-tier ladder with 9 capture bands, 5 acceleration triggers, 3-stakeholder treasury alignment.</p>
+</section>
+
+<section class=\"post-section\">
+<h2>17-Stage Reverse-Factoring Onboarding — From SCF Bank RFP to First Assignment</h2>
+<p>The 17-stage reverse-factoring onboarding workflow: <em>Stage 1 SCF Bank Long-List</em> (T-18 month horizon, 30-day window), <em>Stage 2 SCF Bank RFP Issuance</em> (T-15 month, 21-day), <em>Stage 3 SCF Bank Quote Comparison</em> (T-15 month, 14-day), <em>Stage 4 SCF Bank Short-List</em> (T-12 month, 14-day), <em>Stage 5 SCF Master Agreement Negotiation</em> (T-12 month, 60-day), <em>Stage 6 SCF Master Agreement Signature</em> (T-9 month, 14-day), <em>Stage 7 Anchor Buyer Credit-Approval</em> (T-9 month, 30-day), <em>Stage 8 Anchor Buyer Master Agreement</em> (T-6 month, 30-day), <em>Stage 9 Anchor Buyer Recourse Verification</em> (T-6 month, 21-day), <em>Stage 10 Receivables-Pool Eligibility Build</em> (T-6 month, 30-day), <em>Stage 11 SCF Platform IT Integration</em> (T-3 month, 45-day), <em>Stage 12 First Pilot Invoice Assignment</em> (T-3 month, 14-day), <em>Stage 13 Pilot Reconciliation</em> (T-3 month, 14-day), <em>Stage 14 Pilot Performance Review</em> (T-2 month, 7-day), <em>Stage 15 Full-Pool Assignment Launch</em> (T-2 month, 14-day), <em>Stage 16 Steady-State Operation</em> (T-1 month onward, ongoing), <em>Stage 17 Quarterly QBR with SCF Bank</em> (ongoing, 90-day cadence). End-state: 17-stage onboarding with 7 milestone gates, 5 escalation triggers, 3-stakeholder steering.</p>
+</section>
+
+<section class=\"post-section\">
+<h2>15-Signal Early-Warning Buyer-Credit Deterioration Stack</h2>
+<p>The {NUM}-module architecture deploys a 15-signal early-warning buyer-credit deterioration stack: <em>Signal 1 DSO Drift</em> (rolling 30-day DSO exceeds 90-day baseline by 8+ days), <em>Signal 2 Aging-Bucket Slip</em> (60+ bucket grows 25 percent month-on-month), <em>Signal 3 Dynamic-Discount Take-Rate Collapse</em> (Tier 1-3 take-rate drops 30+ percent), <em>Signal 4 Anchor-Buyer Recourse Rejection</em> (any rejection of assigned invoice), <em>Signal 5 Payment-Plan Request Spike</em> (3+ requests in 60 days), <em>Signal 6 Credit-Rating Watch</em> (S&P/Moody's/Fitch watch or downgrade), <em>Signal 7 Public News Negative</em> (covenant breach, leadership change, M&A stress), <em>Signal 8 Buyer-Country Macro Stress</em> (currency volatility 12+ percent in 60 days), <em>Signal 9 Bank-Guarantee Expiry</em> (LC or bank guarantee within 60 days of expiry), <em>Signal 10 Insurance-Credit-Limit Cut</em> (Euler Hermes / Coface / Atradius reduction), <em>Signal 11 Sub-Supplier Distress Rumor</em> (Tier-2/Tier-3 chatter), <em>Signal 12 Audit-Quality Drop</em> (more than 2 NCRs in 90 days), <em>Signal 13 DC-Inventory Backlog</em> (retailer DC overstock 20+ days), <em>Signal 14 Brand-Buyer QBR Escalation</em> (any CFO-level escalation), <em>Signal 15 Currency-Hedging Cost Spike</em> (FX hedge cost up 50+ bps). End-state: 15-signal stack with 5 trigger bands, 3 escalation tiers, treasury steering committee review.</p>
+</section>
+
+<section class=\"post-section\">
+<h2>13-Tier Inventory-Finance Collateral Matrix — From Greige-Lot to Finished-Goods</h2>
+<p>The {NUM}-module architecture deploys a 13-tier inventory-finance collateral matrix. Tier 1 covers raw-yarn in warehouse at 50 percent advance rate, Tier 2 covers greige-fabric in process at 45 percent, Tier 3 covers dyed-fabric in process at 50 percent, Tier 4 covers printed-fabric in process at 55 percent, Tier 5 covers finished-ribbon in warehouse at 65 percent, Tier 6 covers slit-lot finished-goods at 65 percent, Tier 7 covers pre-shipment in warehouse at 70 percent, Tier 8 covers in-transit (FOB) at 75 percent, Tier 9 covers in-transit (CIF) at 80 percent, Tier 10 covers DC pre-allocation at 80 percent, Tier 11 covers retailer-received at 85 percent, Tier 12 covers in-bond warehouse at 70 percent, and Tier 13 covers bonded-zone (FTZ) at 75 percent. End-state: 13-tier matrix with 9 advance-rate bands, 5 collateral-trim triggers, 3-stakeholder review.</p>
+</section>
+
+<section class=\"post-section\">
+<h2>11-Stage PO-Financing Bridge — From PO-Receipt to Greige-Lot Funding</h2>
+<p>The 11-stage PO-financing bridge: <em>Stage 1 Anchor-Buyer PO Confirmation</em> (T-90 day horizon), <em>Stage 2 Anchor-Buyer Credit-Approval</em> (T-90 day, 14-day), <em>Stage 3 PO-Eligibility Verification</em> (T-75 day, 14-day), <em>Stage 4 PO-Financing Bank Engagement</em> (T-75 day, 21-day), <em>Stage 5 PO-Financing Term Sheet</em> (T-60 day, 14-day), <em>Stage 6 PO-Financing Master Agreement</em> (T-60 day, 30-day), <em>Stage 7 First Greige-Lot Drawdown</em> (T-45 day, 14-day), <em>Stage 8 First Dye-Lot Drawdown</em> (T-30 day, 14-day), <em>Stage 9 First Slit-Lot Drawdown</em> (T-15 day, 7-day), <em>Stage 10 Production-Milestone Verification</em> (T-15 day, 7-day), <em>Stage 11 Conversion to Receivables-Financing</em> (T-0 day ETD, 7-day). End-state: 11-stage bridge with 5 milestone gates, 3-stakeholder alignment, treasury steering committee review.</p>
+</section>
+
+<section class=\"post-section\">
+<h2>9-Stage Payables-Stretching Optimization — From Greige-Yarn to Logistics</h2>
+<p>The {NUM}-module architecture deploys a 9-stage payables-stretching optimization. Stage 1 maps all Tier-1 / Tier-2 / Tier-3 payables, Stage 2 segments by criticality (sole-source vs. multi-source), Stage 3 negotiates 60-day net terms extension, Stage 4 negotiates 90-day net terms extension, Stage 5 negotiates dynamic-discounting offer to sub-suppliers, Stage 6 negotiates consignment yarn / greige-lot inventory, Stage 7 negotiates milestone-based payables (50/30/20), Stage 8 negotiates annual-rate-card lock, Stage 9 sets up payables-stretching QBR cadence. End-state: 9-stage optimization with 5 negotiation bands, 3-stakeholder alignment, treasury steering committee review.</p>
+</section>
+
+<section class=\"post-section\">
+<h2>7-Tier FX-Hedging Cost-of-Capital Model</h2>
+<p>The {NUM}-module architecture deploys a 7-tier FX-hedging cost-of-capital model. Tier 1 spot-rate hedge (0-30 day), Tier 2 forward contract 30-90 day, Tier 3 forward contract 90-180 day, Tier 4 forward contract 180-365 day, Tier 5 NDF (non-deliverable forward) for restricted currencies, Tier 6 FX option collar for tail-risk, Tier 7 multi-currency pooling for natural hedge. Each tier carries a basis-point cost: Tier 1 = 0 bps, Tier 2 = 8-12 bps, Tier 3 = 18-26 bps, Tier 4 = 32-46 bps, Tier 5 = 60-90 bps, Tier 6 = 110-160 bps, Tier 7 = cost-negative (savings). End-state: 7-tier model with 5 hedge-ratio bands, 3-stakeholder review.</p>
+</section>
+
+<section class=\"post-section\">
+<h2>5-Stage SCF-Bank Diversification and 3-Stakeholder Treasury Steering Committee</h2>
+<p>The {NUM}-module architecture formalizes SCF-bank diversification as a 5-stage process: <em>Stage 1 Anchor Bank</em> (60-70 percent of pool), <em>Stage 2 Secondary Bank</em> (20-25 percent), <em>Stage 3 Tertiary Bank</em> (8-12 percent), <em>Stage 4 Standby Bank</em> (0-5 percent), <em>Stage 5 Challenger Bank</em> (renewed annually). End-state: 5-stage diversification with concentration cap of 70 percent per bank, quarterly QBR cadence, RFP refresh every 36 months.</p>
+<p>The 3-stakeholder treasury steering committee: <em>Stakeholder 1 OEM CFO / Treasurer</em> (cash and finance-cost owner), <em>Stakeholder 2 Anchor-Buyer Treasury / AP</em> (recourse and aging owner), <em>Stakeholder 3 SCF-Bank Relationship Manager</em> (pool and limit owner). Quarterly cadence, monthly cash dashboard, weekly working-capital standup.</p>
+</section>
+
+<section class=\"post-section\">
+<h2>End-State Outcomes — 18-32% Working-Capital Release, 12-26% Finance-Cost Compression, 8-18 Days DSO Improvement</h2>
+<p>When the 18-month receivables-financing rolling window, 21-stage working-capital conversion cycle, 19-tier dynamic-discounting ladder, 17-stage reverse-factoring onboarding, 15-signal early-warning buyer-credit deterioration stack, 13-tier inventory-finance collateral matrix, 11-stage PO-financing bridge, 9-stage payables-stretching optimization, 7-tier FX-hedging cost-of-capital model, 5-stage SCF-bank diversification, and 3-stakeholder treasury steering committee are deployed together, the end-state outcomes are: <em>18 to 32 percent working-capital release</em> (CCC compressed from 95-135 days to 65-95 days), <em>12 to 26 percent finance-cost compression</em> (all-in cost-of-capital from SOFR+260 bps to SOFR+200 bps), <em>8 to 18 days DSO improvement</em> (DSO from 75-110 days to 60-85 days), <em>9 to 17 percent Q1 2027 cash-conversion uplift</em>, and <em>5 to 11 percent Q1 2027 EBITDA lift</em> from working-capital release alone.</p>
+<p>This is the working-capital program that brand procurement, retail private-label, and OEM mill-side CFOs are signing in Q1 2027 forecast-lock letters, in Q1 SCF bank master agreements, and in Q1 reverse-factoring anchor-buyer credit-approvals. For a 50 to 200 million USD annual revenue OEM program, the working-capital release is 9 to 64 million USD, the finance-cost compression is 0.6 to 4.2 million USD per year, and the DSO improvement frees 8 to 18 days of revenue.</p>
+</section>
+
+<section class=\"post-section\">
+<h2>Implementation Roadmap — 90-Day Quick-Win, 180-Day Build, 360-Day Scale</h2>
+<p>The 90-day quick-win: deploy the 15-signal early-warning buyer-credit deterioration stack, run a 19-tier dynamic-discounting simulation on the top-20 buyers, and complete Stage 1-4 of the 17-stage reverse-factoring onboarding. The 180-day build: complete the 17-stage reverse-factoring onboarding, deploy the 11-stage PO-financing bridge for the top-5 buyers, and complete the 13-tier inventory-finance collateral build. The 360-day scale: deploy the 7-tier FX-hedging cost-of-capital model across all buyer currencies, complete the 5-stage SCF-bank diversification, and run the first full Q1 2027 working-capital steering committee cycle.</p>
+<p>Owner: OEM CFO / Treasurer. Co-owner: Anchor-Buyer Treasury / AP. Steward: SCF-Bank Relationship Manager. Audit cadence: monthly cash dashboard, quarterly steering committee, annual RFP refresh.</p>
+</section>
+
+<section class=\"post-footer\">
+<p><strong>About the Author</strong> — Smith Ribbon OEM Editorial Team is the B2B content arm of Xiamen Smith Ribbon &amp; Bow Co., Ltd. (Xiamen Meisida Decoration Co., Ltd.), a 2004-founded, 15,000 m² vertically integrated ribbon and bow manufacturer with OEKO-TEX, FSC, BSCI, SEDEX, ISO 9001, and SMETA certifications. The team publishes the working-capital, SCF, and Q1-cash programs that brand procurement, retail private-label, and OEM mill-side finance leaders lift into their Q1 2027 forecast-lock letters and SCF master agreements.</p>
+<p><strong>Related Modules</strong> — 144 finished-goods inventory, 145 supplier-onboarding vendor-lifecycle, 146 TCO 25-component decoder, 147 Q4 holiday-peak capacity, 148 Q1 2027 forecast-lock capacity-reservation, 150 (next) Q1 2027 program-resilience office governance.</p>
+<p><strong>Contact</strong> — WhatsApp / WeChat: +86 13779951780 · Email: xmmsd@126.com · Web: https://ribbonbow123.com</p>
+</section>
+</article>
+"""
+
+HEAD = f"""<!DOCTYPE html>
+<html lang=\"en\">
+<head>
+<!-- Google tag (gtag.js) -->
+    <script async src=\"https://www.googletagmanager.com/gtag/js?id=G-888LVCSX8W\"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){{dataLayer.push(arguments);}}
+      gtag('js', new Date());
+      gtag('config', 'G-888LVCSX8W');
+    </script>
+<meta charset=\"UTF-8\">
+<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+<title>{TITLE}</title>
+<meta name=\"description\" content=\"{DESC}\">
+<meta name=\"keywords\" content=\"{KWS}\">
+<meta name=\"robots\" content=\"index, follow\">
+<link rel=\"canonical\" href=\"{FILE_URL}\">
+<meta property=\"og:title\" content=\"Ribbon OEM B2B {NUM}-Module {SHORT}\">
+<meta property=\"og:description\" content=\"{DESC}\">
+<meta property=\"og:type\" content=\"article\">
+<meta property=\"og:url\" content=\"{FILE_URL}\">
+<meta property=\"og:image\" content=\"{IMG}\">
+<meta property=\"og:site_name\" content=\"Smith Ribbon\">
+<meta property=\"og:locale\" content=\"en_US\">
+<meta property=\"article:published_time\" content=\"{DATE_ISO}\">
+<meta property=\"article:section\" content=\"{SECTION}\">
+<meta property=\"article:author\" content=\"Smith Ribbon OEM Editorial Team\">
+<meta name=\"twitter:card\" content=\"summary_large_image\">
+<meta name=\"twitter:title\" content=\"Ribbon OEM B2B {NUM}-Module {SHORT}\">
+<meta name=\"twitter:description\" content=\"{DESC}\">
+<meta name=\"twitter:site\" content=\"@SmithRibbon\">
+<meta name=\"twitter:image\" content=\"{IMG}\">
+<link rel=\"stylesheet\" href=\"/seo-header.html\">
+<style>
+body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: #2c3e50; max-width: 880px; margin: 0 auto; padding: 24px; background: #fafbfc; }}
+.post-header {{ background: linear-gradient(135deg, #1a5f7a 0%, #159895 100%); color: white; padding: 32px; border-radius: 12px; margin-bottom: 32px; }}
+.post-header h1 {{ font-size: 28px; margin: 0 0 12px; line-height: 1.3; }}
+.post-meta {{ font-size: 14px; opacity: 0.9; }}
+.post-section {{ background: white; padding: 28px; border-radius: 8px; margin-bottom: 18px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }}
+.post-section h2 {{ color: #1a5f7a; font-size: 22px; margin: 0 0 14px; line-height: 1.4; }}
+.post-section h3 {{ color: #159895; font-size: 18px; margin: 16px 0 8px; }}
+.post-section p {{ font-size: 15px; color: #333; margin-bottom: 12px; }}
+.post-section ul, .post-section ol {{ margin: 10px 0 14px 24px; }}
+.post-section li {{ font-size: 15px; color: #333; margin-bottom: 6px; }}
+.post-section table {{ width: 100%; border-collapse: collapse; margin: 14px 0; }}
+.post-section th, .post-section td {{ border: 1px solid #e0e0e0; padding: 10px 12px; text-align: left; font-size: 14px; }}
+.post-section th {{ background: #f0f7fa; color: #1a5f7a; font-weight: 600; }}
+.post-footer {{ background: #159895; color: white; padding: 24px; border-radius: 8px; margin-top: 28px; }}
+em {{ color: #159895; font-style: normal; font-weight: 600; }}
+</style>
+{JSONLD}
+</head>
+<body>
+"""
+
+HTML = HEAD + CONTENT + "\n</body>\n</html>\n"
+path = os.path.join(WORK, FILE)
+with open(path, "w", encoding="utf-8") as f:
+    f.write(HTML)
+print(f"WROTE {path} ({len(HTML)} bytes)")

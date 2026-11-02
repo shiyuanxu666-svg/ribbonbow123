@@ -1,0 +1,91 @@
+name: 🔍 Submit Sitemap to Google Search Console
+
+on:
+  # 每次 main 分支有 push 时自动提交 sitemap
+  push:
+    branches: [main]
+  # 也支持手动触发
+  workflow_dispatch:
+    inputs:
+      site_url:
+        description: 'Site URL (e.g. https://ribbonbow123.com)'
+        required: false
+        default: 'https://ribbonbow123.com'
+
+jobs:
+  submit-sitemap:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 📦 Install google-auth
+        run: pip install google-auth requests httpx
+
+      - name: 🚀 Submit sitemap via GSC API
+        env:
+          GCS_SERVICE_ACCOUNT_KEY: ${{ secrets.GCS_SERVICE_ACCOUNT_KEY }}
+          SITE_URL: ${{ github.event.inputs.site_url || 'https://ribbonbow123.com' }}
+        run: |
+          python << 'EOF'
+import os
+import requests
+from google.auth.transport.requests import Request
+from google.oauth2 import service_account
+import json
+
+SITE_URL = os.environ.get("SITE_URL", "https://ribbonbow123.com")
+SITEMAP_URL = f"{SITE_URL}/sitemap.xml"
+CREDS = os.environ.get("GCS_SERVICE_ACCOUNT_KEY")
+
+if not CREDS:
+    print("⚠️  GCS_SERVICE_ACCOUNT_KEY secret not set.")
+    print("   To enable auto-submit:")
+    print("   1. Go to https://console.cloud.google.com")
+    print("   2. Create a Service Account with 'Search Console API' access")
+    print("   3. Download the JSON key")
+    print("   4. Add it as a GitHub Secret: Settings → Secrets → Actions → New secret")
+    print("      Name: GCS_SERVICE_ACCOUNT_KEY")
+    print("      Value: (paste the entire JSON)")
+    print("")
+    print("✅ Running fallback: ping Google webmaster URL directly...")
+    ping_url = f"https://www.google.com/ping?sitemap={SITEMAP_URL}"
+    r = requests.get(ping_url, timeout=10)
+    print(f"   Google ping status: {r.status_code}")
+    exit(0)
+
+# Full GSC API submission
+creds_dict = json.loads(CREDS)
+SCOPES = ['https://www.googleapis.com/auth/webmasters']
+credentials = service_account.Credentials.from_service_account_info(creds_dict, scopes=SCOPES)
+
+# Build GSC API endpoint
+site_url_escaped = requests.utils.quote(SITE_URL, safe='')
+api_url = f"https://searchconsole.googleapis.com/v1/urlInspection/index:inspect"
+
+payload = {
+    "inspectionUrl": SITEMAP_URL,
+    "siteUrl": site_url_escaped,
+}
+
+headers = {"Authorization": f"Bearer {credentials.token}", "Content-Type": "application/json"}
+response = requests.post(api_url, json=payload, headers=headers)
+print(f"GSC API response: {response.status_code}")
+print(response.text[:500])
+
+# Also submit via sitemap submission endpoint
+submit_url = f"https://searchconsole.googleapis.com/v1/sites/{site_url_escaped}/sitemaps"
+submit_data = {"sitemapUrl": SITEMAP_URL}
+r2 = requests.post(submit_url, json=submit_data, headers=headers)
+print(f"Sitemap submit response: {r2.status_code}")
+EOF
+
+      - name: 🔔 Notify completion
+        run: |
+          echo "✅ Sitemap submission complete!"
+          echo "   Check results at: https://search.google.com/search-console/sitemaps"
