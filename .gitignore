@@ -1,1 +1,3 @@
 __pycache__/
+# build artifact dirs (duplicated article output, lives at repo root)
+_content_*/
