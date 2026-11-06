@@ -41,3 +41,25 @@ timeout on the next run rather than treating the SIGTERM as a push failure.
   inserted there automatically. `blog.html` and `en-blog.html` are the working listing surfaces.
 - `git push` to github.com intermittently fails ("Failed to connect to github.com port 443") while
   `api.github.com` stays reachable. Retry the push; do not treat it as a content failure.
+
+## 2026-11-06 13:00 cron — pushed successfully
+
+- **ribbonbow123** articles #357 (AM, 08:00) and #358 (PM, 13:00) pushed via
+  `python3 /workspace/push-retry.py` (single attempt, exit 0).
+- Local HEAD `a887b0c` → remote `main` `1013e61`. `push-retry.py` rebuilds the tree via the
+  GitHub API, so the remote commit SHA differs from the local one while the content is identical.
+  This is expected behaviour, not a failed push — check tree content, not SHA equality.
+- Live verification (HTTP 200 on both URLs):
+  - #357 AM — `blog-oem-custom-packaging-private-label-ribbon-programme-guide-nine-field-brief-sample-ladder-artwork-ownership-decoration-method-moq-cost-drivers-first-order-readiness-checklist-private-label-buyers-guide-2026-11-06-am.html`
+    desc 200 chars, 8 FAQ items, FAQPage + BlogPosting present, ~5,857 visible words.
+  - #358 PM — `blog-ribbon-oem-quote-comparison-total-cost-analysis-normalise-two-supplier-landed-cost-components-supplier-scoring-evidence-hidden-cost-traps-cost-reduction-sequence-brand-procurement-guide-2026-11-06-pm.html`
+    desc 199 chars, 8 FAQ items, FAQPage + BlogPosting present, ~6,173 visible words.
+  - sitemap.xml: exactly 1 `<loc>` per article (0 duplicates), `<lastmod>2026-11-06</lastmod>` x2.
+- No pending items. Nothing requires manual action.
+
+### Note for the next cron run
+
+The 13:00 slot ran with the day's AM and PM articles **already built and committed** by an
+earlier run of the same day. The job then correctly identified the unpushed state and pushed
+once. If a future run finds both of the day's articles already committed and pushed, the correct
+action is to verify and report, **not** to write replacement articles.
