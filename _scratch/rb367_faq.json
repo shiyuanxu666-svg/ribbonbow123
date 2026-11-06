@@ -1,0 +1,26 @@
+[
+  {
+    "q": "Why is ribbon planning harder than planning other purchased components?",
+    "a": "Because a mill-made ribbon with your colour, width and decoration cannot be replenished quickly. A quoted lead time covers only the making stage — yarn purchase, dyeing, weaving, finishing, decoration, inspection, packing and shipping all sit behind it, and a first-time colour adds a lab-dip and approval cycle on top. Factory minimums are also structural rather than commercial: they reflect the smallest run that fills a dye lot or loom order without creating disproportionate waste. A brand buying from a mill is therefore planning a scheduled material with a long pipeline, not a component that can be topped up next week."
+  },
+  {
+    "q": "Should I forecast in metres or by specific ribbon construction?",
+    "a": "By specific construction, width, colour and decoration. Aggregate metre forecasts hide the constraint: the total can look comfortable while one specific colour-width combination is already short. The factory schedules dye machines, looms and print lines around specific combinations, so a forecast at that granularity is the only one it can act on. If your planning system reports only totals, break them out for the critical SKUs at minimum, and split demand into three tiers — committed (already placed or a firm customer order), probable (a named channel plan with a confirmed window) and exploratory (ideas and capacity wishes). Only the first two should reach the factory as a forecast; the third belongs in a separate capacity discussion."
+  },
+  {
+    "q": "How do I set a reorder point for a long-lead-time ribbon?",
+    "a": "Reorder point = average daily usage multiplied by total lead time in days, plus safety stock. The lead-time multiplier is the part that surprises people. If a SKU moves 100 metres a day and the real end-to-end lead time is 50 days, you need 5,000 metres in the pipeline before safety stock is even considered. That is arithmetic, not a planning failure, and it means shortening the quote-to-delivery cycle usually delivers more than improving forecast accuracy. Size safety stock against lead-time variability rather than demand variability, and ask the factory for their shortest, median and longest actual lead time over the last twelve months for a repeat order of a construction you already have approved."
+  },
+  {
+    "q": "What is the most effective way to reduce ribbon inventory?",
+    "a": "Order consolidation. Combining three colourways of the same construction into a single order does not just reduce freight — it usually moves you into a lower price bracket and improves the mill's dye-lot efficiency, which can improve consistency as well as cost. Plan a consolidation calendar at the start of each season rather than placing urgent orders as you discover gaps. The second lever is deliberate range reduction: trim programmes grow until no one is removing anything, and every SKU carries an MOQ exposure, dye-lot waste and its own failure mode. A trim range that has not shrunk in two years is not being managed."
+  },
+  {
+    "q": "How should reorder decisions be governed?",
+    "a": "Name the decisions, their triggers, their owners and their deadlines. A workable process has a small number of entries — place reorder for core construction, commit to next season volume, drop or defer a slow SKU, approve a colour development, authorise a rush order — each with a named owner, a clear trigger and a deadline. The deadline is the part that matters: a trigger without a deadline is an aspiration. Review stock position monthly using four numbers per SKU: current stock, stock on order, projected stock at four weeks, and days of cover against actual lead time. Anything under one lead time is a problem today even if the absolute number looks comfortable. Record every rush order with its cost and reason, because the same SKU generating rushes every quarter is telling you that either the reorder point, the forecast or the lead time has moved."
+  },
+  {
+    "q": "What should I do when I am short on a construction mid-season?",
+    "a": "Work the levers in order of increasing cost. First, substitute within the approved range — a second colour or width already approved and in stock is nearly free, which is why a well-governed approved range has real commercial value as insurance. Second, substitute within the same construction using a different decoration method, which keeps the brand look. Third, ask whether an existing order can be brought forward. Fourth, split the order — ask for partial delivery of the quantity now and the balance on the normal schedule, which factories can often do without penalty if the balance is firm. Only when those are exhausted, or when the gap is on a launch-critical SKU, should you authorise a rush order, and you should first ask what it pushes in the factory's queue, because every rush delays the legitimate orders behind it."
+  }
+]

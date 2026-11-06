@@ -1,0 +1,34 @@
+[
+  [
+    "What is the difference between a lab dip, a development sample and a pre-production sample?",
+    "A lab dip proves colour only: it is a dye trial showing the shade on the proposed fibre and finish, and it tells you nothing about drape, width, edge or how a print will sit on it. A development sample is the actual construction finished as a prototype, and it proves width, hand, finish and decoration. A pre-production sample is made on the production equipment from the actual production lot, and it proves the line can reproduce what the development sample showed. Collapsing the first two is the most common specification error buyers make, because they approve colour on a swatch and then complain about the finished product."
+  ],
+  [
+    "What is a counter sample and why should my factory keep one?",
+    "A counter sample is the sample the factory retains from the same lot, made at the same time and on the same machine as the sample you receive, kept under controlled conditions and sealed in a labelled bag. It is the physical reference for every future dispute. Colour disagreements are almost always memory disagreements, and a retained, signed counter sample turns that conversation from opinion into evidence: put it next to the delivered goods and the question answers itself. Specify the bagging format, label fields and retention period in your purchase specification, and require a retained-sample register on demand."
+  ],
+  [
+    "Which production changes should trigger a fresh sample approval?",
+    "At minimum: a dye lot or yarn batch change, a change of production site or line, any material substitution including base fibre, yarn count, weave construction or width tolerance, a change of decoration method such as screen print to heat transfer, and an annual written re-confirmation of the standard. A tolerance breach on an incoming lot should also move the next lot to pre-production sample status until a clean run is recorded. Write these as obligations with a named owner and a time limit rather than as requests for courtesy notification."
+  ],
+  [
+    "What should a production release note contain before goods leave the factory?",
+    "At minimum the lot number, roll count, total metreage, the AQL inspection result, the colour-difference readings against the approved reference, the name and date of the person releasing it, and the reference to the pre-production sample the lot was matched against. The commercial reason for requiring it is leverage: a claim raised before the goods ship is a decision the factory makes in your favour, whereas a claim raised after arrival, once the goods are in three customer programmes, is only a negotiation."
+  ],
+  [
+    "Do I need all four approval stages for every ribbon SKU?",
+    "No, and a sensible specification will scale them. Stage 1 and stage 2 are essential for any new colour or new construction. Stage 3 is essential for a new programme, for any change that touches material or equipment, and for anything on your critical path. Stage 4, the production release, should apply to every lot that ships on a specification you own, because it costs the factory one document and it is what you will use the first time something goes wrong. The point is not to add stages but to make it explicit which stages apply to which SKU."
+  ],
+  [
+    "How long should a ribbon supplier keep approved samples and production records?",
+    "We recommend a minimum of three years for retained counter samples and release notes, and longer for colours or SKUs you treat as core to the programme. Consumer-facing programmes and some home-goods categories carry claim exposure well beyond one season, so three years is a practical floor rather than a generous target. Specify the retention period in the purchase agreement so it is an obligation rather than a courtesy, and state who owns the archive on your side so the evidence does not disappear when a buyer leaves."
+  ],
+  [
+    "What evidence should I ask for when a customer escalates a colour or quality complaint?",
+    "In order: the production release note for the lot, the AQL inspection report and colour-difference readings, the retained counter sample from that lot, and the stage 3 pre-production sample the lot was released against. That set lets you establish whether the delivered lot was released to an agreed standard and whether it matches that standard on the shelf. It also tells you whether the issue is a lot-specific escape or a systematic problem, which determines whether you are claiming one shipment or raising a process issue with the supplier."
+  ],
+  [
+    "How do I stop approvals from being skipped when the programme gets busy?",
+    "Three controls. First, name the people who may sign each stage in writing, so a launch date pressure cannot manufacture an approval. Second, make the production release note a precondition of shipment rather than a post-hoc document, because a release that is required before dispatch cannot be skipped the way an approval can. Third, review the approval log quarterly and look at four numbers: samples approved, time per stage, re-approvals triggered, and releases issued without a corresponding sample. Those four numbers show you where the programme is actually losing control, rather than where you assume it is."
+  ]
+]
