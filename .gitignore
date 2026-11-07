@@ -1,3 +1,14 @@
 __pycache__/
 # build artifact dirs (duplicated article output, lives at repo root)
 _content_*/
+
+# --- SEO daily task 2026-11-07: prevent build-artifact redeploy ---
+# Build scripts and scratch files must never be deployed to the live site.
+# They were being published publicly (index bloat + leaked internal tooling).
+*.py
+*.txt
+_content_*.json
+*.bak
+*.bak-*
+create_articles
+PENDING_PUSH.md
