@@ -63,3 +63,21 @@ The 13:00 slot ran with the day's AM and PM articles **already built and committ
 earlier run of the same day. The job then correctly identified the unpushed state and pushed
 once. If a future run finds both of the day's articles already committed and pushed, the correct
 action is to verify and report, **not** to write replacement articles.
+
+## 2026-11-07 13:00 cron — pushed successfully
+
+- **ribbonbow123** articles #360 (AM, 08:00) and #361 (PM, 13:00) were already built and committed
+  locally in `6b5220a` (committed 2026-11-07 00:07 UTC) by an earlier run of the same day.
+  Per the rule above, this run **verified and pushed** rather than writing replacement articles.
+- Push: `python3 /workspace/push-retry.py`, single attempt, exit 0.
+  Local `6b5220a` → remote `main` `65a38f72` (the script rebuilds the tree via the GitHub API,
+  so the remote SHA differs from the local one while content is identical — expected).
+  Remote was 1 commit ahead / local 3 commits ahead before the push.
+- Content verification (before push, local files):
+  - #360 AM — `blog-ribbon-oem-private-label-packaging-purchasing-guide-9-evaluation-criteria-factory-capability-evidence-cost-transparency-sampling-approval-reorder-governance-brand-procurement-guide-2026-11-07-am.html`
+    desc 190 chars, 8 FAQ items, BlogPosting + FAQPage + BreadcrumbList present, ~3,563 visible words.
+  - #361 PM — `blog-ribbon-certification-compliance-credentials-what-each-certificate-actually-covers-verification-scope-expiry-evidence-archive-retail-audit-requests-brand-procurement-guide-2026-11-07-pm.html`
+    desc 172 chars, 7 FAQ items, BlogPosting + FAQPage + BreadcrumbList present, ~3,391 visible words.
+  - Both use the "since 2004" entity wording (no "since 2007" occurrences).
+  - sitemap.xml: exactly 1 `<loc>` per article, 0 duplicates; blog.html + en-blog.html both updated.
+- No pending items. Nothing requires manual action.
