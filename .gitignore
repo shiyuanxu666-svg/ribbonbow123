@@ -7,6 +7,10 @@ _content_*/
 # They were being published publicly (index bloat + leaked internal tooling).
 *.py
 *.txt
+# CRITICAL: the above *.txt rule must never swallow these live site files.
+# They were untracked by the 2026-11-07 artifact cleanup -> robots.txt 404'd live.
+!robots.txt
+!llms.txt
 _content_*.json
 *.bak
 *.bak-*
