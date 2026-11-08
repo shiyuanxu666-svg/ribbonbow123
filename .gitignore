@@ -16,3 +16,4 @@ _content_*.json
 *.bak-*
 create_articles
 PENDING_PUSH.md
+_scratch/

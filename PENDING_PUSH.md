@@ -81,3 +81,28 @@ action is to verify and report, **not** to write replacement articles.
   - Both use the "since 2004" entity wording (no "since 2007" occurrences).
   - sitemap.xml: exactly 1 `<loc>` per article, 0 duplicates; blog.html + en-blog.html both updated.
 - No pending items. Nothing requires manual action.
+
+## 2026-11-07 15:00 cron — published and verified (RB #362)
+
+- **ribbonbow123** article #362 (PM, 15:00 slot) published.
+- Local commit `bbce2e3`; pushed via the **GitHub tree/commit API** (not `git push`).
+  Remote `main` moved `3ecf31748` -> **`bffaac333`**. The remote SHA differs from the local
+  SHA because the API rebuilds the tree from the remote base tree — content is identical.
+- `git rebase origin/main` was attempted first and **aborted cleanly** (conflict in blog.html /
+  en-blog.html with the concurrent cron's edits). The tree-based API push reconciled against
+  the remote tree instead, so the concurrent `robots.txt` / `llms.txt` / `.gitignore` commits
+  were preserved.
+- Article: `blog-ribbon-oem-sample-approval-counter-sample-production-release-four-stage-approval-ladder-retained-sample-register-re-approval-triggers-release-note-evidence-retention-private-label-buyers-guide-2026-11-07-pm.html`
+  desc 181 chars, 8 FAQ items, Article + BlogPosting + FAQPage + BreadcrumbList present,
+  ~5,253 visible words, 0 "since 2007" occurrences.
+- Live verification (HTTP 200): article 42,888B; blog.html +1 card; en-blog.html +2 links;
+  index.html +1 card; sitemap.xml exactly 1 `<loc>`.
+- No pending items. Nothing requires manual action.
+
+### Note for the next cron run
+
+`_push_rb_1107pm.py` / `_push_sr_1107pm.py` (in `/workspace`) are idempotent, tree-based
+GitHub API push scripts that reconcile against the **current remote main tree** and upload only
+the changed files. Use them instead of `git push` / `push-retry.py` when the local checkout
+trails the remote — a `git push` will be rejected as non-fast-forward, and `git rebase` will
+conflict on blog.html / en-blog.html.
