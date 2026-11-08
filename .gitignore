@@ -17,3 +17,4 @@ _content_*.json
 create_articles
 PENDING_PUSH.md
 _scratch/
+_entity_fix_backup_*/
