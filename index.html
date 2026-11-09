@@ -49,76 +49,14 @@
     <script>if (location.protocol === 'http:') { location.replace(location.href.replace('http://', 'https://')); }</script>
     <!-- FAQPage Schema for Google Rich Results -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "What is your minimum order quantity for custom ribbons?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Our minimum order quantity for custom printed ribbons is 1,000 meters per design. For standard satin and jacquard ribbons, the MOQ is 500 meters. Small sample orders are welcome for quality testing."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Do you provide OEM and custom logo printing services?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, we offer full OEM and ODM services. We print custom logos, patterns, and designs on satin, grosgrain, organza, and velvet ribbons. Our design team assists with artwork creation."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What certifications does your factory hold?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Our factory is ISO9001:2015 and OEKO-TEX Standard 100 certified. We also hold BSCI and Sedex certifications, meeting international quality and social responsibility standards."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Do you ship internationally?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, we ship to over 50 countries worldwide via DHL, FedEx, UPS, and major shipping lines. Air freight and sea freight options available. We handle all export documentation."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is your production lead time?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Standard orders: 7-15 days production. Custom printed ribbons: 15-25 days. Rush orders available with additional fees. Sample orders ship within 3-5 business days."
-                }
-            }
-        ]
-    }
-    </script>
-
-    <!-- BreadcrumbList Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://ribbonbow123.com"},
-            {"@type": "ListItem", "position": 2, "name": "Products", "item": "https://ribbonbow123.com/#products"},
-            {"@type": "ListItem", "position": 3, "name": "Blog", "item": "https://ribbonbow123.com/blog.html"}
-        ]
-    }
-    </script>
-    <!-- Organization Schema -->
-    <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@context": "https://schema.org",
       "@type": [
         "Organization",
-        "Manufacturer"
+        "Manufacturer",
+        "LocalBusiness"
       ],
       "name": "Smith Ribbon Co., Ltd.",
       "alternateName": "Smith Ribbon",
@@ -155,7 +93,8 @@
         "https://www.linkedin.com/company/smith-ribbon",
         "https://www.facebook.com/smithribbon",
         "https://www.youtube.com/@smithribbon",
-        "https://smithribbon.com"
+        "https://smithribbon.com",
+        "https://ribbonbow123.com"
       ],
       "priceRange": "$$",
       "paymentAccepted": [
@@ -173,78 +112,174 @@
         "SMETA"
       ],
       "telephone": "+86-592-5095373",
-      "email": "xmmsd@126.com"
+      "email": "xmmsd@126.com",
+      "@id": "https://ribbonbow123.com/#organization",
+      "image": "https://ribbonbow123.com/img/banner.png"
     },
     {
-      "@context": "https://schema.org",
+      "@id": "https://ribbonbow123.com/#website",
       "@type": "WebSite",
-      "name": "Smith Ribbon - Ribbon Bow Manufacturer China",
       "url": "https://ribbonbow123.com",
-      "description": "Professional ribbon and bow manufacturer with 20+ years experience in Xiamen, China",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://ribbonbow123.com/blog.html?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      },
-      "inLanguage": "en-US",
+      "name": "Smith Ribbon Co., Ltd.",
+      "alternateName": "Ribbon Bow 123",
       "publisher": {
+        "@id": "https://ribbonbow123.com/#organization"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@id": "https://ribbonbow123.com/#webpage",
+      "@type": "WebPage",
+      "url": "https://ribbonbow123.com/",
+      "name": "Smith Ribbon Co., Ltd. - Ribbon & Bow Manufacturer in Xiamen, China",
+      "isPartOf": {
+        "@id": "https://ribbonbow123.com/#website"
+      },
+      "about": {
+        "@id": "https://ribbonbow123.com/#organization"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is your minimum order quantity for custom ribbons?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our minimum order quantity for custom printed ribbons is 1,000 meters per design. For standard satin and jacquard ribbons, the MOQ is 500 meters. Small sample orders are welcome for quality testing.",
+            "@id": "https://ribbonbow123.com/#faq-0"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide OEM and custom logo printing services?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we offer full OEM and ODM services. We print custom logos, patterns, and designs on satin, grosgrain, organza, and velvet ribbons. Our design team assists with artwork creation.",
+            "@id": "https://ribbonbow123.com/#faq-1"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What certifications does your factory hold?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our factory is ISO9001:2015 and OEKO-TEX Standard 100 certified. We also hold BSCI and Sedex certifications, meeting international quality and social responsibility standards.",
+            "@id": "https://ribbonbow123.com/#faq-2"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you ship internationally?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we ship to over 50 countries worldwide via DHL, FedEx, UPS, and major shipping lines. Air freight and sea freight options available. We handle all export documentation.",
+            "@id": "https://ribbonbow123.com/#faq-3"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is your production lead time?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Standard orders: 7-15 days production. Custom printed ribbons: 15-25 days. Rush orders available with additional fees. Sample orders ship within 3-5 business days.",
+            "@id": "https://ribbonbow123.com/#faq-4"
+          }
+        }
+      ],
+      "@id": "https://ribbonbow123.com/#faq"
+    },
+    {
+      "@type": "HowTo",
+      "name": "How to Choose the Right Ribbon for Your Project",
+      "description": "A step-by-step guide to selecting the perfect ribbon type, material, width, and customization for your specific application from Smith Ribbon, a professional ribbon manufacturer in Xiamen, China.",
+      "totalTime": "PT10M",
+      "supply": [
+        {
+          "@type": "HowToSupply",
+          "name": "Ribbon samples (request from Smith Ribbon)"
+        },
+        {
+          "@type": "HowToSupply",
+          "name": "Product specification sheet"
+        },
+        {
+          "@type": "HowToSupply",
+          "name": "Pantone color chart"
+        }
+      ],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Define Your Application",
+          "text": "Identify the primary use of the ribbon: gift packaging, fashion apparel, wedding decoration, holiday crafting, or promotional branding. Each application has different durability, aesthetic, and material requirements.",
+          "url": "https://ribbonbow123.com/#products"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Choose the Right Material",
+          "text": "Select from satin (luxury gifts), grosgrain (durability/industrial), organza (elegance/sheer), velvet (premium/soft touch), jacquard (pattern/woven), or polyester (cost-effective/broad use). Consider washability and environmental conditions.",
+          "url": "https://ribbonbow123.com/product-satin-ribbons.html"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Select the Correct Width",
+          "text": "Match ribbon width to your project scale: 3-5mm for hair bows and fine crafts, 10-16mm for gift wrapping and apparel, 25-38mm for prominent decoration and retail packaging, 50mm+ for large bows and industrial use.",
+          "url": "https://ribbonbow123.com/blog-ribbon-width-guide-2026.html"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Decide on Customization",
+          "text": "Choose between stock (no minimum, quick delivery) or custom printed/jacquard ribbons (MOQ 1,000m, logo branding, Pantone color matching). Smith Ribbon offers OEM/ODM services with 15-25 day lead time for custom orders.",
+          "url": "https://ribbonbow123.com/oem-services.html"
+        }
+      ],
+      "provider": {
         "@type": "Organization",
-        "name": "Smith Ribbon",
-        "logo": "https://ribbonbow123.com/img/banner.png"
-      }
+        "name": "Smith Ribbon Co., Ltd.",
+        "url": "https://ribbonbow123.com"
+      },
+      "@id": "https://ribbonbow123.com/#howto"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ribbonbow123.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Products",
+          "item": "https://ribbonbow123.com/#products"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Blog",
+          "item": "https://ribbonbow123.com/blog.html"
+        }
+      ],
+      "@id": "https://ribbonbow123.com/#breadcrumb"
     }
   ]
 }
 </script>
+
+    <!-- BreadcrumbList Schema -->
+    
+    <!-- Organization Schema -->
+    
     <!-- WebSite Schema with SearchAction -->
     
 
     <!-- HowTo Schema for Google Rich Results -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "HowTo",
-        "name": "How to Choose the Right Ribbon for Your Project",
-        "description": "A step-by-step guide to selecting the perfect ribbon type, material, width, and customization for your specific application from Smith Ribbon, a professional ribbon manufacturer in Xiamen, China.",
-        "totalTime": "PT10M",
-        "supply": [
-            {"@type": "HowToSupply", "name": "Ribbon samples (request from Smith Ribbon)"},
-            {"@type": "HowToSupply", "name": "Product specification sheet"},
-            {"@type": "HowToSupply", "name": "Pantone color chart"}
-        ],
-        "step": [
-            {
-                "@type": "HowToStep",
-                "name": "Define Your Application",
-                "text": "Identify the primary use of the ribbon: gift packaging, fashion apparel, wedding decoration, holiday crafting, or promotional branding. Each application has different durability, aesthetic, and material requirements.",
-                "url": "https://ribbonbow123.com/#products"
-            },
-            {
-                "@type": "HowToStep",
-                "name": "Choose the Right Material",
-                "text": "Select from satin (luxury gifts), grosgrain (durability/industrial), organza (elegance/sheer), velvet (premium/soft touch), jacquard (pattern/woven), or polyester (cost-effective/broad use). Consider washability and environmental conditions.",
-                "url": "https://ribbonbow123.com/product-satin-ribbons.html"
-            },
-            {
-                "@type": "HowToStep",
-                "name": "Select the Correct Width",
-                "text": "Match ribbon width to your project scale: 3-5mm for hair bows and fine crafts, 10-16mm for gift wrapping and apparel, 25-38mm for prominent decoration and retail packaging, 50mm+ for large bows and industrial use.",
-                "url": "https://ribbonbow123.com/blog-ribbon-width-guide-2026.html"
-            },
-            {
-                "@type": "HowToStep",
-                "name": "Decide on Customization",
-                "text": "Choose between stock (no minimum, quick delivery) or custom printed/jacquard ribbons (MOQ 1,000m, logo branding, Pantone color matching). Smith Ribbon offers OEM/ODM services with 15-25 day lead time for custom orders.",
-                "url": "https://ribbonbow123.com/oem-services.html"
-            }
-        ],
-        "provider": {
-            "@type": "Organization",
-            "name": "Smith Ribbon Co., Ltd.",
-            "url": "https://ribbonbow123.com"
-        }
-    }
-    </script>
+    
 
     <!-- FAQ Page Structured Data -->
 <style>
@@ -642,25 +677,7 @@
         }
     </style>
     
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Smith Ribbon - Ribbon Manufacturer in China",
-      "image": "https://ribbonbow123.com/img/banner.png",
-      "url": "https://ribbonbow123.com",
-      "telephone": "+86-592-5095373",
-      "email": "xmmsd@126.com",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "No.16, Meixi Road, Xike Town, Tong'an District",
-        "addressLocality": "Xiamen",
-        "addressRegion": "Fujian",
-        "addressCountry": "CN"
-      },
-      "priceRange": "$$"
-    }
-    </script>
+    
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="dns-prefetch" href="https://www.google-analytics.com">
