@@ -106,3 +106,40 @@ GitHub API push scripts that reconcile against the **current remote main tree** 
 the changed files. Use them instead of `git push` / `push-retry.py` when the local checkout
 trails the remote — a `git push` will be rejected as non-fast-forward, and `git rebase` will
 conflict on blog.html / en-blog.html.
+
+## 2026-11-11 cron — pushed successfully (2 articles)
+
+- **ribbonbow123** articles **#372** (AM, 08:00 slot) and **#373** (PM, 13:00 slot) published.
+- Local commit `1c6e86f`; pushed via `python3 /workspace/push-retry.py`, single attempt.
+  Remote `main` `0a3c847c` -> **`fe1d4f73`** (the script rebuilds the tree via the GitHub API,
+  so the remote SHA differs from the local one while content is identical — expected).
+- Remote commit touched exactly 6 files: 2 new articles + `blog.html`, `en-blog.html`,
+  `index.html`, `sitemap.xml`.
+- Content verification (via GitHub contents API on `ref=main`):
+  - #372 AM — `blog-ribbon-oem-incoming-quality-inspection-acceptance-procedure-defect-classification-sampling-plan-shade-tolerance-correction-action-private-label-buyers-guide-2026-11-11-am.html`
+    desc 172 chars, 7 FAQ items (LD == HTML), Article + BlogPosting + FAQPage present, ~5,003 words.
+  - #373 PM — `blog-ribbon-oem-pilot-run-first-production-lot-sample-to-production-transition-scale-up-process-capability-brand-procurement-guide-2026-11-11-pm.html`
+    desc 174 chars, 7 FAQ items (LD == HTML), Article + BlogPosting + FAQPage present, ~4,651 words.
+  - Both use the "since 2004" entity wording (0 "since 2007" occurrences).
+  - Remote sitemap.xml: 831 `<loc>`, 0 duplicates; both new URLs present exactly once with
+    `<lastmod>2026-11-11</lastmod>`.
+- Note: live `ribbonbow123.com` still served the pre-push sitemap (829 locs) at the moment of
+  checking — normal GitHub Pages build propagation lag, not a content failure. The GitHub repo
+  content is confirmed correct.
+- **Status**: CLEARED — nothing pending.
+
+### Note for the next cron run
+
+`blog.html` currently contains 2 pre-existing duplicate `<h3><a>` links for the old
+"b2b-68-module-sustainability-esg" and "b2b-69-module-retailer-tender-rfp" articles. These are
+leftovers from the earlier keyword-stuffed "module" series, not from the current article runs.
+Do not create new duplicates; the old ones are outside the scope of the daily publishing job.
+
+### 2026-11-11 — documentation commit pending
+
+- The article commit (`1c6e86f` -> remote `fe1d4f73`) is **pushed and verified**.
+- A follow-up documentation-only commit `2d22189` (this PENDING_PUSH.md entry) was still
+  uploading when the cron window closed. It touches **no article, blog.html, en-blog.html,
+  index.html or sitemap.xml** — it is a log file only.
+- Action for the next cron: run `python3 /workspace/push-retry.py` once. The script exits early
+  with `UP-TO-DATE` if the remote already matches HEAD, so it is safe to run unconditionally.
