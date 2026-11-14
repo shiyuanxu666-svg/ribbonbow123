@@ -189,3 +189,17 @@ Do not create new duplicates; the old ones are outside the scope of the daily pu
 3. `index.html` has a pre-existing unclosed `<li>` in its bottom link list. Insert new
    items as siblings *after* closing the previous `<li>`, otherwise you create nested
    `<li>` tags and break the open/close balance.
+
+### 2026-11-14 05:00 UTC cron — re-verification (no new publish needed)
+
+- This cron slot found today's AM (#382 EUDR/EPR) and PM (#383 REACH/SVHC) articles
+  **already published and live** by an earlier run of the same daily cron.
+- Verified via `publish_guard.py check --repo ribbonbow123`: 850 HTML files scanned,
+  sitemap 849 locs / 849 unique / 1 host, **0 errors**.
+- `reconcile_remote.py --repo ribbonbow123`: local 887 = remote 887, **LOCAL-ONLY = 0**.
+- Live HTTP 200 confirmed for both articles + blog.html + en-blog.html + index.html +
+  sitemap.xml. (One PM curl returned a transient `000` timeout, re-request returned 200.)
+- Local git tree was 6 files behind the remote publish (untracked articles + 4 listing
+  files). Committed locally as `e150809` so the next run starts from a clean tree.
+  **No re-push performed** — remote content already matches; re-pushing would be a no-op.
+- **Status**: CLEARED — nothing pending.
