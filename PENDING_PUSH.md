@@ -157,3 +157,35 @@ Do not create new duplicates; the old ones are outside the scope of the daily pu
 - Build script: `/workspace/rb_build_1111b.py`; bodies: `/workspace/rb_body_1111b_am.py`,
   `/workspace/rb_body_1111b_pm.py`; validator: `/workspace/rb_validate_1111b.py` (PASS).
 - No pending manual action.
+
+## 2026-11-14 daily cron — pushed successfully (2 articles)
+
+- **ribbonbow123** articles **#382** (AM, 08:00) and **#383** (PM, 13:00) published.
+- Topics: EUDR/EPR/PPWR packaging regulation (0 prior dedicated articles) and REACH/SVHC
+  chemical compliance (0 prior dedicated articles) — both genuine coverage gaps in the
+  credible content set.
+- Pushed via `python3 /workspace/tools/publish_guard.py push --repo ribbonbow123
+  --from-status <manifest>` (NOT `git push`). Result: ok=5, skipped=1 (idempotent
+  re-push of the AM article), failed=0.
+- Files touched: 2 new articles + `blog.html`, `en-blog.html`, `index.html`, `sitemap.xml`.
+  sitemap.xml gained both `<loc>` entries with `<lastmod>2026-11-14</lastmod>`; 849 locs,
+  0 duplicates.
+- Content verification: #382 2699 words / 7 FAQ; #383 2549 words / 7 FAQ; all meta/og/
+  twitter descriptions <= 200 chars and independently worded; Article + BlogPosting +
+  FAQPage JSON-LD present in both; "since 2004" entity wording used.
+- `reconcile_remote.py` -> **LOCAL-ONLY = 0** (local 887 = remote 887).
+- Live verification (HTTP 200) confirmed for both articles + blog.html + en-blog.html +
+  index.html + sitemap.xml.
+- **Status**: CLEARED — nothing pending.
+
+### Operational notes for the next cron run
+
+1. `--from-status` manifest must contain **one bare relative path per line**. Writing
+   `git status --short` output directly causes every file to fail with "file not found".
+   Use: `git status --porcelain | sed -E 's/^.. //' | sed -E 's/.* -> //' > manifest.txt`
+2. GitHub Pages needs ~30-60 s to rebuild after a push. A live 404 or 503 immediately
+   after `push`/`verify` is propagation lag, **not** a failure — wait and re-check, but
+   never re-push.
+3. `index.html` has a pre-existing unclosed `<li>` in its bottom link list. Insert new
+   items as siblings *after* closing the previous `<li>`, otherwise you create nested
+   `<li>` tags and break the open/close balance.
