@@ -203,3 +203,21 @@ Do not create new duplicates; the old ones are outside the scope of the daily pu
   files). Committed locally as `e150809` so the next run starts from a clean tree.
   **No re-push performed** — remote content already matches; re-pushing would be a no-op.
 - **Status**: CLEARED — nothing pending.
+
+### 2026-11-15 05:00 UTC cron — re-verification (no new publish needed)
+
+- This cron slot found today's AM (#382 sampling & first-order approval workflow) and PM
+  (#383 choosing a ribbon OEM supplier — weighted scoring framework) articles **already
+  published and live** by an earlier run of the same daily cron.
+- `publish_guard.py check --repo ribbonbow123`: 853 HTML scanned, sitemap 852 locs / 852
+  unique / 1 host, **0 errors**.
+- `publish_guard.py verify --repo ribbonbow123 --files <am> <pm>`: both present on the
+  remote tree (890 blobs) and **live HTTP 200**.
+- `reconcile_remote.py --repo ribbonbow123`: local 890 = remote 890, **LOCAL-ONLY = 0**.
+- Byte-level diff of `blog.html` / `en-blog.html` / `index.html` / `sitemap.xml` against
+  the GitHub Contents API: **all four identical to remote** — the local `git status`
+  diff was only an uncommitted mirror of already-live content.
+- Local git tree was 6 files behind the remote publish. Committed locally as `83613f8`
+  so the next run starts clean. **No re-push performed** — remote content already matches;
+  re-pushing would be a no-op.
+- **Status**: CLEARED — nothing pending.
