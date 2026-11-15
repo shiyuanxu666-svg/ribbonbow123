@@ -221,3 +221,52 @@ Do not create new duplicates; the old ones are outside the scope of the daily pu
   so the next run starts clean. **No re-push performed** — remote content already matches;
   re-pushing would be a no-op.
 - **Status**: CLEARED — nothing pending.
+
+### 2026-11-15 15:00 UTC cron — article publish (task two)
+
+- Published one new B2B article per site, both on genuine coverage gaps:
+  - **ribbonbow123 #384** — "Ribbon Production Changeover & Setup-Time Economics — Why Your
+    Delivery Date Depends on the Mill's Changeover Queue (2026)".
+    Gap rationale: 'changeover' had only 2 incidental mentions and 'setup-time' had 0 across
+    the existing 853-file corpus.
+  - **smithribbon #353** — "Ribbon Payment Terms & Order Financing — Structuring T/T, Letter
+    of Credit and Deposit Balances with an Overseas Ribbon Mill (2026)".
+    Gap rationale: 'payment-terms' had 4 incidental mentions and 'letter-of-credit' had 0.
+- Word counts: 4,397 and 4,043 rendered words respectively; 8 FAQ entries each.
+- Both articles carry meta/OG/Twitter tags, canonical, Article/BlogPosting/FAQPage JSON-LD
+  (smithribbon also BreadcrumbList), a TOC (ribbonbow123), KPI box, CTA block and footer.
+- Files touched per repo: 1 new article + `blog.html`, `en-blog.html`, `index.html`, `sitemap.xml`.
+  sitemap.xml `<lastmod>2026-11-15</lastmod>` for both.
+- `publish_guard.py check` — ribbonbow123: 854 html scanned, 853 sitemap locs / 853 unique,
+  **0 errors**. smithribbon-web: 937 html scanned, 930 locs / 930 unique, **0 errors**.
+- `reconcile_remote.py` — ribbonbow123: local 891 = remote 891, **LOCAL-ONLY = 0**.
+  smithribbon-web: local 996 = remote 996, **LOCAL-ONLY = 0**.
+- Live HTTP 200 confirmed for both new articles + both `blog.html` listing pages.
+
+#### Bugs found and fixed this run
+
+1. **Double-escaped HTML entities.** The `esc()` helper in both generators escapes `&`, so a
+   title containing a pre-formed entity like `&mdash;` renders as `&amp;mdash;` and fails the
+   `publish_guard` assertion "double-escaped entity". Fix: use the literal Unicode character
+   (—) in the generator source instead of the named entity. The repo validator caught this on
+   both sites; it is worth remembering that `esc()` must never receive `&mdash;`/`&amp;`/`&nbsp;`.
+2. **Listing-card double-escaping.** `wire_listing()` in the smithribbon generator applied
+   `esc()` to a title that had already been escaped once, producing `&amp;amp;` in
+   blog.html/en-blog.html/index.html. Fix: insert the raw title into listing HTML and let the
+   single `esc()` call in `build_article()` handle the `<title>`/meta attributes only.
+   Note that ribbonbow123's `_publish_*.py` card helper already inserts the raw title.
+
+#### Git notes for the next run
+
+- Both remotes had advanced past the local branch (the earlier 05:00 cron run had pushed
+  articles without leaving the local tree clean), so `git push` was rejected and a
+  `git pull --rebase` was required.
+- On ribbonbow123 the rebase **dropped** local commit `83613f8` ("patch contents already
+  upstream") — that was correct and expected, not data loss.
+- On smithribbon-web the rebase **conflicted** in blog.html / en-blog.html / sitemap.xml,
+  because the remote already contained articles 351 and 352 from the AM and PM slots.
+  Resolution: `git checkout --theirs` the three listing files (taking the remote version that
+  already had 351/352 wired), then confirm all three articles (351/352/353) are still present
+  in all four listing files before `git rebase --continue`. The remote listing files did not
+  contain 353, so the resolution preserved it correctly.
+- **Status**: CLEARED — nothing pending.
