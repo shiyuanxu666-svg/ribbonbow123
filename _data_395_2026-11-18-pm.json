@@ -1,0 +1,69 @@
+{
+  "slug": "blog-ribbon-supplier-audit-checklist-factory-verification-questions-purchasing-audit-preparation-oem-procurement-guide-2026-11-18-pm",
+  "title": "Ribbon Supplier Audit Checklist - Questions to Ask Before You Commit (2026)",
+  "meta_desc": "A practical ribbon supplier audit checklist: factory verification questions, capacity checks, quality system evidence and the paperwork worth asking for before placing an order.",
+  "og_desc": "The ribbon supplier audit checklist: what to verify on the factory floor, which quality documents matter and what to ask for before you place the order.",
+  "tw_desc": "A ribbon supplier audit checklist - factory verification, capacity, quality system evidence and the questions to ask before ordering.",
+  "section": "B2B Sourcing and Supplier Management",
+  "minutes": "25 min read",
+  "kpi": "A supplier audit is not a visit. It is a set of questions asked in a sequence that produces the same answer from every supplier, so that the answers can be compared against each other instead of being remembered as a general impression of how professional somebody seemed. The most common failure in factory sourcing is not choosing a bad supplier; it is discovering the problems after the deposit, when switching costs have already been paid. The good news is that most of what matters can be established in a video call, a document request and one focused set of questions that takes about forty minutes.",
+  "keywords": [
+    "ribbon supplier audit checklist",
+    "factory audit questions ribbon",
+    "how to verify ribbon supplier",
+    "ribbon manufacturer due diligence",
+    "capacity check ribbon factory",
+    "ribbon quality management system audit",
+    "OEM supplier verification checklist",
+    "ribbon factory inspection questions",
+    "decorative trim supplier assessment",
+    "ribbon supplier risk assessment",
+    "factory audit preparation guide",
+    "ribbon production capacity check",
+    "supplier audit red flags ribbon",
+    "ribbon QC system verification",
+    "sourcing supplier diligence checklist",
+    "ribbon factory video tour checklist",
+    "buying from overseas ribbon factory",
+    "ribbon supplier onboarding",
+    "audit garment decoration supplier",
+    "ribbon manufacturer questions"
+  ],
+  "toc": [
+    ["what-audit-is", "What a supplier audit is actually for"],
+    ["before-you-visit", "Before the audit: preparation that halves the time"],
+    ["documents", "The documents worth asking for, and what each proves"],
+    ["capacity", "Verifying capacity and lead time"],
+    ["quality-system", "Verifying the quality system on the floor"],
+    ["material", "Material sourcing and traceability"],
+    ["people", "Management, communication and language"],
+    ["red-flags", "Red flags that should end the process"],
+    ["questions", "A compact question set you can reuse"]
+  ],
+  "faq": [
+    [
+      "Do I need to visit the factory before placing a first order?",
+      "For a trial order, not necessarily. For a programme that will run for years and represent a meaningful share of your volume, yes, a visit is worth the cost, because it answers questions that documents cannot. The most useful pattern is to do a remote assessment first, using a structured call and a document request, and then visit only if the remote assessment leaves real gaps. Skipping the visit entirely is defensible for a small first order with a supplier who has been audited by a third party, and is a mistake for a first order with a supplier who has not. A first order is a reasonable cost of learning, but only if the learning is cheap enough that a failure does not damage your launch."
+    ],
+    [
+      "Which quality certifications should I actually verify?",
+      "Verify the ones your customer or your market requires, and check them against the issuing body's public register rather than against a PDF the supplier sends you. The register check is the step that matters, because a certificate is a claim about a period of time at a defined scope, and a supplier presenting a certificate outside its scope is doing something that every experienced buyer has seen. Check three things: that the certificate is current, that the manufacturing site named on it is the site you are actually buying from, and that the product scope covers what you are ordering. A certificate for a different site, a lapsed certificate, or a scope covering sewing rather than narrow ribbon manufacturing are all common and all disqualifying. OEKO-TEX, BSCI, SEDEX and ISO 9001 are the ones most often presented for this category, and each answers a different question."
+    ],
+    [
+      "How do I check that a factory really has the capacity they claim?",
+      "Ask for capacity in machine hours rather than in output units, because output figures can be quoted at an ideal rate and machine hours cannot. Then ask a question that reveals the answer indirectly: what is your bottleneck line, and what is its current utilisation. A supplier who knows their own constraint can tell you that the warping line runs at ninety per cent while the dyeing house has slack, which tells you where your order actually sits in the schedule. A supplier who cannot name the constraint is telling you something else. Then check consistency: the number of looms, dyeing vats or printing lines should be visible in a video walkthrough and should match what they claim. Capacity claims that cannot be reconciled with the physical plant are the single most reliable predictor of late delivery."
+    ],
+    [
+      "What should I ask to verify their quality control process?",
+      "Ask what they measure, where in the process they measure it, what the measurement standard is, and what happens when it fails. Those four questions separate a real inspection system from a nominal one. A genuine system has defined incoming inspection of raw material, in-process checks at defined intervals, final inspection against a written standard, and a documented non-conformance route that specifies who is notified and what disposition is applied. Ask to see the inspection record for a recent production batch and to see an example of a rejected batch, including what was done with it. A supplier who cannot produce a record is telling you that inspection is performed but not managed."
+    ],
+    [
+      "How do I verify that the material is what they say it is?",
+      "Ask for the fibre composition in writing, in a form that names the test method rather than just the claim, and ask for a recent third-party test report covering the specific material. Composition drives your cost model, your duty classification and your compliance obligations simultaneously, so it should be the one attribute you verify first and document most carefully. Where recycled or certified material is involved, the chain of custody documentation matters as much as the material: a certified fibre with broken chain of custody is worth nothing to you commercially. Also ask a practical question, which is whether you can have a fibre identification test performed on an incoming shipment by a laboratory you choose, and whether the supplier will accept the result."
+    ],
+    [
+      "How long should a supplier audit take?",
+      "For a remote assessment, budget ninety minutes for the first call and about forty minutes for the document review. For an on-site visit, two full days is a realistic minimum for a factory of meaningful size, and one day is enough to form a preliminary view but not to reach a confident conclusion, because the informative parts of a factory visit are the secondary and tertiary spaces where work actually happens rather than the production floor where visitors are taken. The number of questions matters less than the discipline of asking the same ones of every supplier, because the value of an audit comes almost entirely from comparability across suppliers rather than from depth on any single one."
+    ]
+  ]
+}

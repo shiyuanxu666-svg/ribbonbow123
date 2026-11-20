@@ -1,0 +1,69 @@
+{
+  "slug": "blog-oem-ribbon-cost-breakdown-landed-cost-tooling-setup-freight-duty-margin-model-procurement-guide-2026-11-18-am",
+  "title": "OEM Ribbon Cost Breakdown - How to Build a Landed Cost Model (2026)",
+  "meta_desc": "A working method for building an OEM ribbon landed cost model: unit cost, tooling and setup, freight, duty, MOQ amortisation and the margin decisions behind them.",
+  "og_desc": "How to build an OEM ribbon landed cost model that survives negotiation - unit cost, tooling, freight, duty and the margin decisions behind them.",
+  "tw_desc": "Build an OEM ribbon landed cost model: unit price, tooling and setup, freight, duty, MOQ amortisation and margin.",
+  "section": "B2B Cost and Pricing",
+  "minutes": "27 min read",
+  "kpi": "The ribbon quote that looks expensive and the ribbon quote that is actually expensive are rarely the same ribbon. A unit price of one dollar thirty per hundred metres tells you almost nothing, because it excludes the setup charge, the freight that is charged per carton rather than per metre, the duty that depends on the material code, and the inventory cost of holding four thousand metres of a colour that only sells for three weeks a year. A landed cost model is not an accounting exercise. It is the only way to compare two suppliers who have quoted different things, and the only way to know whether the cheaper quote is cheaper.",
+  "keywords": [
+    "OEM ribbon cost breakdown",
+    "landed cost model ribbon",
+    "ribbon supplier cost comparison",
+    "private label ribbon pricing",
+    "ribbon tooling setup cost",
+    "ribbon MOQ cost calculation",
+    "decorative trim cost breakdown",
+    "ribbon freight cost estimation",
+    "ribbon import duty ribbon",
+    "ribbon gross margin model",
+    "custom ribbon pricing guide",
+    "ribbon unit cost calculation",
+    "OEM packaging cost planning",
+    "ribbon cost per metre",
+    "sourcing cost transparency",
+    "ribbon supplier quotation comparison",
+    "inventory carrying cost trim",
+    "ribbon sampling cost",
+    "private label margin calculation",
+    "ribbon costing template"
+  ],
+  "toc": [
+    ["why-quote-comparisons-fail", "Why two quotations for the same ribbon are never comparable"],
+    ["cost-structure", "The cost structure: what a ribbon quote actually contains"],
+    ["tooling", "Tooling, setup and the charges that are not per metre"],
+    ["freight", "Freight: cartons, pallets and the cost that hides in them"],
+    ["duty", "Duty, tax and the material code question"],
+    ["moq-amortisation", "MOQ amortisation and the inventory cost nobody quotes"],
+    ["model", "Building the model: a worked structure"],
+    ["negotiation", "Using the model in negotiation"],
+    ["mistakes", "Six costing mistakes that lose money quietly"]
+  ],
+  "faq": [
+    [
+      "What cost components make up a ribbon quotation?",
+      "Six, normally. First, the material itself, which is the largest single element in any ribbon quote and the one most often expressed per metre or per hundred metres. Second, conversion cost, which covers winding, cutting, edge treatment, quality control and packing. Third, setup or tooling charges, which are one-time and may include plate engraving, ribbon printing setup, die cutting for bows, or a new colour recipe in the dye house. Fourth, packaging, which ranges from a simple polybag to a printed carton. Fifth, freight, which is calculated per carton or per pallet rather than per metre and is therefore the component most often excluded from a headline unit price. Sixth, duty and tax, which depend on the fibre composition and the HS code. If a quotation omits any of these, it is not a total cost, and it will not be comparable to another quotation."
+    ],
+    [
+      "How should I compare two suppliers quoting different structures?",
+      "Normalise them into the same unit before you compare anything. Take each quotation and build a per-unit delivered cost: material plus conversion divided by the quantity, plus the amortised setup, plus the packaging, plus the freight apportioned per unit, plus duty. Do this on a spreadsheet with the quantity you actually intend to buy, not on the quantity the supplier used to price it. Suppliers price differently because they assume different volumes, so a quotation at a quantity you will never order can look attractive for reasons that have nothing to do with the product. Once both are on the same basis and the same quantity, the comparison becomes about the product rather than about the arithmetic, which is where you want it to be."
+    ],
+    [
+      "How do I estimate freight cost for a ribbon shipment?",
+      "Start from volume, not weight, because decorative ribbon is light and voluminous. A carton of ribbon takes up far more cubic space than its weight implies, and ocean freight is charged on the greater of volume or weight in practice for most forwarders. So establish the carton dimensions and the metres per carton, calculate the total cubic volume of your order, and compare it against the volume of a full container. A full 20-foot container holds a specific cubic capacity, and once your order exceeds that, the next unit of cost is a second container, which changes the economics completely. Then add the inland haulage, the export handling at origin, customs clearance and the final delivery to your warehouse. For air freight on a small order, remember that air waybill charges are calculated on a greater-of basis too, with a dimensional divisor that makes light bulky goods expensive."
+    ],
+    [
+      "Should I include duty in my landed cost model?",
+      "Yes, but you need to establish the right code before you finalise the number, and the code depends on fibre composition rather than on what the product is called. Polyester ribbon, nylon ribbon, rayon ribbon, paper ribbon and bamboo fibre ribbon do not all attract the same treatment, and a blend may be classified differently from its dominant fibre. Ask your supplier for the material composition in writing, and ask your broker for a written classification opinion before the first commercial shipment, not after. Rates change with trade policy, and a number that was accurate six months ago should not be embedded in a model you use for planning. Treat duty as a line you can update from a single source rather than as a fixed cost buried in the unit price."
+    ],
+    [
+      "How should I treat MOQ in the costing model?",
+      "Split it into two effects, because they are usually conflated. The first is a volume discount: larger quantities genuinely cost less per metre because setup is spread across more units and the production line runs more efficiently. The second is a working capital and carrying cost: buying four thousand metres of a seasonal colour means you pay for them, store them, insure them, and then possibly write them down when the season ends. Model the discount as a real reduction in unit cost, and model the carrying cost as an addition to unit cost based on how long the stock sits and at what rate of return you need. A colour that sells in three weeks a year should carry a different stock position from a colour that sells year round, and the model should make that difference visible rather than averaging it away."
+    ],
+    [
+      "What is the single most useful question to ask a supplier about cost?",
+      "Ask them to break the quotation down by component and tell you which components are fixed and which scale with volume. This question is revealing in three ways at once. It tests whether their pricing has internal structure or is a single number negotiated from a benchmark, it shows you where the negotiation leverage actually sits, because you cannot negotiate with a number you do not understand, and it exposes whether setup is being amortised silently into the unit price or charged separately. Suppliers who answer this question clearly are usually suppliers who can hold a price through a raw material move, because they know where their own cost sits."
+    ]
+  ]
+}

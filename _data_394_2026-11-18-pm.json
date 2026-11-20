@@ -1,0 +1,68 @@
+{
+  "slug": "blog-ribbon-supplier-qualification-factory-audit-questions-sample-requests-pilot-order-capability-check-oem-sourcing-manager-guide-2026-11-18-pm",
+  "title": "Qualifying a Ribbon Supplier - Factory Audits, Pilot Orders and Capability Checks (2026)",
+  "meta_desc": "How to qualify a ribbon supplier: factory audit questions, sample requests, pilot orders, capability checks and capacity planning for OEM and branded trim buyers.",
+  "og_desc": "Qualifying a ribbon supplier properly: what to ask on a factory audit, how to structure sample requests and pilot orders, and which capability checks actually predict quality.",
+  "tw_desc": "How to qualify a ribbon supplier - audit questions, sample requests, pilot orders, capability checks and capacity planning for branded trim.",
+  "section": "B2B Sourcing and Supplier Management",
+  "minutes": "29 min read",
+  "kpi": "Most supplier problems are not discovered during production. They are discovered because nobody ever checked whether the supplier could do the thing. A buyer can spend four months negotiating a price, audit a factory in an afternoon, and still not know the two things that matter most: whether the line can hold the specification on a bad week, and whether the capacity exists when your volume triples. Qualification is the exercise of finding out those things before you commit, and the difference between a qualification and a factory visit is that a qualification produces evidence you can hold.",
+  "keywords": [
+    "ribbon supplier qualification",
+    "ribbon factory audit",
+    "ribbon OEM supplier selection",
+    "how to choose a ribbon manufacturer",
+    "ribbon sample request",
+    "ribbon pilot order",
+    "supplier capacity planning",
+    "ribbon production capability check",
+    "ribbon weaving mill audit",
+    "OEM trim supplier evaluation",
+    "ribbon quality audit checklist",
+    "ribbon supplier due diligence",
+    "private label ribbon supplier",
+    "ribbon factory visit questions",
+    "ribbon process capability",
+    "how to vet a ribbon factory",
+    "ribbon bulk order first trial",
+    "ribbon manufacturer verification",
+    "ribbon sourcing manager guide",
+    "decorative trim supplier audit"
+  ],
+  "toc": [
+    ["what-qualification-is", "What qualification actually means"],
+    ["prequalification", "Prequalification: filtering before you spend time"],
+    ["audit-questions", "The factory audit: what to ask and what to look at"],
+    ["samples", "Sample requests: how to structure them"],
+    ["pilot-order", "The pilot order as the real test"],
+    ["capability", "Capability checks that predict quality"],
+    ["capacity", "Capacity and lead time as a qualification question"],
+    ["red-flags", "Red flags and the disqualifying answers"]
+  ],
+  "faq": [
+    [
+      "What is the difference between a factory visit and a supplier qualification?",
+      "A factory visit is a look at the facility. A qualification is a set of evidence that lets you make a decision you can defend later, and it has a different output. The visit produces impressions and the qualification produces records: a documented process for a given material and specification, a capability check on the production line that will actually make your product, a trial run delivered against your specification and your order, and a documented capacity position. Many buyers do the visit and treat it as the end of the process, which is why they discover the real answer six months later when a busy season exposes a line that cannot hold tolerance."
+    ],
+    [
+      "How do I check whether a supplier's capacity is real?",
+      "Ask for the constraint rather than the number. Most factories will quote a monthly capacity figure that is really a theoretical nameplate number; the useful answer is which machine or step is the bottleneck, what its realistic output is under a normal load, and how the factory balances that against other customers' orders. Then test the answer against behaviour: compare the promised lead time against the actual lead time on your first orders, ask whether the factory has ever had to prioritise between customers and how that was handled, and check whether they are willing to show you a real schedule. A supplier that gives you an honest bottleneck and a realistic number is more reliable than one that gives you a large number with no explanation."
+    ],
+    [
+      "Should the pilot order be the same specification as the production order?",
+      "Yes, as close as you can make it, and the differences should be deliberate and documented. A pilot is meant to reveal the same risks as the production run, so it should use the same material, the same width, the same colour standard, the same labelling and the same packaging. Where it genuinely cannot be identical, say so explicitly and write down which risk each difference removes. For example, a pilot at 500 metres does not test the mill's ability to hold colour over a 50,000 metre dye lot, and pretending otherwise is how programmes end up with a beautiful first run and a bad second one. The purpose of the pilot is to find the problems you would rather find at 500 metres than at 50,000."
+    ],
+    [
+      "How many samples should I request and what should they demonstrate?",
+      "Ask for two distinct things rather than one thing twice. The first is a material sample, which demonstrates how the base construction handles — hand, drape, edge, colour depth against the master and the colour reference. The second is a production-approximate sample, made on production equipment from production material, which demonstrates whether the process can reproduce the material sample consistently. Suppliers will readily send beautiful hand-made samples; the meaningful question is whether they can make the same thing again on a production line at volume. If you only ask for one, you will usually get the first, and you will learn nothing about the second."
+    ],
+    [
+      "What should a first production order look like when I am still unsure about a supplier?",
+      "Make it small enough to fail cheaply and structured enough to generate evidence. One or two SKUs, a quantity that is commercially trivial if it goes wrong, but on the normal production specification rather than a special trial run. Then specify in advance what you will measure on receipt: width across the roll, net weight, colour against the master, label content, pack quantity, and delivery against the promised date. Agree in advance what happens if the results miss. This first order is not primarily a delivery, it is a data collection event, and the suppliers who understand that will treat it better than those who understand that it is a trial, and they will give you more usable information as a result."
+    ],
+    [
+      "Which certifications should I require, and how do I verify them?",
+      "Require only the certifications that are relevant to what you are buying and to where it is being sold, and verify each one rather than accepting a scan. OEKO-TEX is the standard that matters for anything touching skin or used in children's and baby products, and it is worth checking that the certificate number actually resolves and that the scope covers the material and the factory you are buying from rather than a group certificate for another site. FSC or PEFC matters if you are making a paper or board element and making a chain-of-custody claim. BSCI, SEDEX, SMETA and ISO 9001 are relevant where your own customers audit you, which is increasingly most of them. The practical test is simple: ask for the certificate and the scope, then check it independently against the issuing body, and note the expiry date."
+    ]
+  ]
+}

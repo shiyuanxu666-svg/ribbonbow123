@@ -1,0 +1,69 @@
+{
+  "slug": "blog-ribbon-oem-quality-agreement-defect-classes-aql-levels-pre-shipment-inspection-rma-remedy-terms-private-label-procurement-guide-2026-11-19-am",
+  "title": "Ribbon OEM Quality Agreement - Defect Classes, AQL and RMA Terms (2026)",
+  "meta_desc": "How to build a ribbon OEM quality agreement: functional vs cosmetic defect classes, AQL levels by severity, pre-shipment inspection release, RMA remedy ladder and claim terms.",
+  "og_desc": "Building a ribbon OEM quality agreement: defect classes, AQL levels by severity, pre-shipment inspection, RMA remedy ladder and enforceable claim terms.",
+  "tw_desc": "A ribbon OEM quality agreement guide - defect classes, AQL acceptance numbers, pre-shipment inspection release, RMA remedies and claim periods.",
+  "section": "B2B Quality and Compliance",
+  "minutes": "26 min read",
+  "kpi": "Most ribbon quality disputes are not quality disputes. They are disputes about a percentage that was never agreed - what counts as a defect, how much of it is acceptable, who pays when the threshold is crossed. A quality agreement fixes that before the first bulk order, while both sides are still collaborating, so that a shade that drifts three steps against the approved sample triggers a remedy rather than an argument.",
+  "keywords": [
+    "ribbon oem quality agreement",
+    "ribbon defect classification aql",
+    "ribbon pre-shipment inspection",
+    "ribbon rma terms and remedies",
+    "private label ribbon quality terms",
+    "ribbon aql levels major minor critical",
+    "ribbon quality agreement template clauses",
+    "ribbon sample approval defect tolerance",
+    "ribbon lot traceability agreement",
+    "ribbon shade tolerance delta e agreement",
+    "ribbon claim window credit note terms",
+    "oem ribbon quality contract negotiation",
+    "ribbon inspection and testing agreement",
+    "ribbon change control clause supplier",
+    "ribbon supplier quality performance review",
+    "ribbon selvedge defect standard",
+    "ribbon cosmetic versus functional defect"
+  ],
+  "toc": [
+    ["why", "Why a quality agreement is not a technical document"],
+    ["defects", "Which defects actually matter in ribbon and trim"],
+    ["aql", "Setting AQL levels that reflect the product"],
+    ["inspection", "Where and how inspection should happen"],
+    ["rma", "Writing an RMA and remedy clause that survives a dispute"],
+    ["clauses", "The clauses experienced buyers insist on"],
+    ["process", "Building the agreement into your buying process"],
+    ["checklist", "Pre-order checklist"]
+  ],
+  "faq": [
+    [
+      "What is a reasonable AQL level for decorative ribbon?",
+      "For decorative ribbon used in gift packaging and trims, a workable structure is zero acceptance on critical defects such as wrong material, contamination or print out of the approved colour tolerance; an acceptance number equivalent to roughly 2.5 AQL on major defects such as width out of tolerance, short metreage, selvedge defects or shade beyond the agreed Delta E limit; and roughly 4.0 on minor cosmetic faults that do not affect use. The right number depends on how the ribbon is inspected downstream. If your customer inspects at store level, tighten the cosmetic level. If the ribbon is trimmed and hidden inside a pack, specify explicitly that light cosmetic faults are not grounds for rejection, which also removes the incentive for over-inspection at the factory."
+    ],
+    [
+      "Should inspection happen at the factory or after arrival?",
+      "At the factory, before shipment, in nearly all cases. A pre-shipment inspection means a defect found while the goods are still in the factory costs a rework or a replacement run, and the buyer is not left holding rejected pallets plus freight. It also moves discovery earlier, which is what makes a remedy possible at all. Keep a narrow arrival check as well, limited to carton counts, external transit damage and lot identity, and write the agreement so that arrival findings cannot reopen the quality inspection that was already closed at the factory gate."
+    ],
+    [
+      "How do you handle a colour mismatch dispute fairly?",
+      "Agreement is reached before production, not during the dispute. Retain a physically sealed, signed and dated master sample of the approved colour, and state the reference method in the agreement - a measured Delta E figure under a stated illuminant, or a defined visual comparison procedure against the retained master. A photograph of the approved colour will not survive a dispute, because screen rendering varies and a shade approved on a screen is not the same decision as a shade approved against physical ribbon. Without a reference method, every colour conversation becomes an argument about opinion rather than about specification."
+    ],
+    [
+      "What should the remedy ladder look like in a ribbon RMA clause?",
+      "It should escalate in four steps so the factory gets the first chance to fix the problem and both parties keep the delivery schedule where possible. First, rework or re-sort at factory cost for shipments where the majority passes. Second, replacement of the non-conforming quantity where goods cannot be reworked, with the agreement specifying who bears the freight. Third, a credit at an agreed calculation basis where the buyer no longer needs the goods, typically because the season has passed. Fourth, a price concession or downgrade for minor defects the buyer accepts. The ladder should end in a defined claim window, factory response time and cure period."
+    ],
+    [
+      "Who should pay the freight when ribbon is rejected?",
+      "It follows logically from where the inspection happens. If the inspection point is at the factory before shipment, the factory bears the cost, because the defect was present before the goods left. If the defect is transit damage, the buyer bears it, which is why the arrival check must be confined to transit and documentation issues rather than general quality. Leaving this unwritten guarantees a dispute, and a contradictory clause pair - inspection at the factory but buyer-pays return freight - guarantees an ugly one, because the contradiction gets resolved by whoever is angrier at the time."
+    ],
+    [
+      "Do we need a quality agreement for a small order or a trial run?",
+      "You need fewer clauses, but you still need the core four: the standard, the method, the consequence and the process. A trial order should at minimum have a written specification, a sealed approved sample, a defect classification and a statement of what happens if the delivered goods do not match. Trial runs are exactly where the habits of a programme get set, and a programme that begins without an agreement tends to continue without one and then attempt to negotiate one under pressure at the point of a large order."
+    ],
+    [
+      "How do we prevent factory substitution of materials without notice?",
+      "Include an explicit no-substitution-without-approval clause covering material, construction, dye source, printing method, packaging format and sub-suppliers, with mandatory advance written approval. Substitution is usually well-intentioned - a filament shortage, a discontinued dye lot - and it becomes a serious problem only when the buyer learns of it after the goods are in production. Pair it with a change control clause so that any change to the specified construction requires prior written approval, and require lot identification on cartons so a contained problem can be isolated."
+    ]
+  ]
+}

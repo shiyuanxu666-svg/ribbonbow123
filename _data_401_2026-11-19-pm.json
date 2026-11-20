@@ -1,0 +1,62 @@
+{
+  "slug": "blog-ribbon-colour-approval-sample-board-muster-colour-matching-physical-swatch-standard-pre-production-approval-guide-2026-11-19-pm",
+  "title": "Ribbon Colour Approval - Sample Boards, Physical Swatches and the Colour Matching Standard (2026)",
+  "meta_desc": "How to build and use a ribbon colour approval sample board: physical swatch standards, controlled colour matching under D65 light, board records, and purchase order clauses.",
+  "og_desc": "A practical guide to ribbon colour approval sample boards: why photos fail, how to compare shades under controlled light, and how to keep the reference alive through production.",
+  "tw_desc": "Ribbon colour approval sample boards explained - physical swatch standards, controlled comparison under D65 light, records, and purchase order clauses.",
+  "section": "B2B Quality and Compliance",
+  "minutes": "22 min read",
+  "kpi": "A colour approved from a photograph is not a colour approval. A ribbon sample board, used as a controlled physical standard and referenced in the purchase order, is what makes a shade defensible months later - and it costs almost nothing to do properly.",
+  "keywords": [
+    "ribbon colour approval sample board",
+    "ribbon colour matching standard",
+    "physical ribbon swatch approval",
+    "ribbon colour sample board process",
+    "ribbon delta e tolerance agreement",
+    "ribbon colour approval procedure",
+    "ribbon shade difference dispute",
+    "ribbon sample board storage",
+    "ribbon visual colour comparison method",
+    "ribbon master sample retention",
+    "ribbon colour specification purchase order",
+    "d65 lighting ribbon colour check",
+    "ribbon swatch labelling standard",
+    "ribbon colour consistency across batches",
+    "ribbon colour approval pre production",
+    "ribbon sample board version control",
+    "ribbon photo colour approval problem",
+    "ribbon colour matching window frame"
+  ],
+  "toc": [
+    ["why", "Why a photograph fails as a colour reference"],
+    ["board", "What a working ribbon sample board contains"],
+    ["compare", "Running a physical colour comparison properly"],
+    ["records", "Records, revisions and keeping the approval alive"],
+    ["handover", "Handover between factory, buyer and third parties"],
+    ["pitfalls", "Common mistakes and how to avoid them"],
+    ["spec", "What to put in the purchase order and specification"],
+    ["checklist", "Colour approval checklist"]
+  ],
+  "faq": [
+    [
+      "Can I approve ribbon colour from a photo or a PDF colour value?",
+      "Use them to shortlist, not to approve. A photograph captures one light source, one device and one colour profile, and it cannot reproduce the reflective behaviour of a satin, velvet or metallic ribbon under real lighting. A digital colour value describes a pixel, not a material. A photograph can trigger a conversation about shade, but the approval that matters is a physical swatch compared under stated conditions against a retained reference. If a buyer approves from a photo and the production batch arrives looking different, the buyer has no reference with which to make a claim."
+    ],
+    [
+      "What lighting should I use to compare ribbon swatches?",
+      "Daylight-balanced light around 5000 kelvin, or indirect north-facing daylight. Avoid direct sunlight, which is variable and warm, and avoid warm domestic or office lighting, which pushes every shade towards yellow and makes cool shades look wrong. If you are working under office lighting only, record that fact in the approval note. A shade approved under warm lighting and rejected under the buyer's cool warehouse lighting is a process failure rather than a manufacturing failure, and the record of the conditions is what proves that."
+    ],
+    [
+      "How should the swatch be fixed to the sample board?",
+      "Mount it permanently with adhesive tape across the full width at both ends, leaving the middle free so the ribbon can flex without lifting at the corners. A single attachment point across the top edge will lift over time as the ribbon moves. Cut every swatch to a consistent size, usually around 50 by 100 millimetres, so that swatches can be stacked and their edges compared for shade shift. Attach a printed label to the board rather than to the ribbon, so the swatch can be removed without losing its identity."
+    ],
+    [
+      "How do I keep an approved ribbon colour consistent across different factories?",
+      "Use one controlled board as the reference for every production site and require each factory to retain a sealed, signed and dated master sample of the approved shade. Each master and the buyer's board are treated as equivalent references for the same shade. Without a shared physical reference, each factory works from a photograph and a written description, and the shades drift apart within a few production runs. Version the board rather than overwriting it, so that a shipment can always be checked against the revision that was actually approved."
+    ],
+    [
+      "What should I specify in the purchase order for ribbon colour?",
+      "State that colour is defined by the physical swatch identified by board revision and swatch code, and that the physical reference prevails over any digital colour value. Set a precedence order if both exist, name the comparison method and lighting, and either give a numeric tolerance such as an agreed maximum Delta E under a stated method or explicitly say that acceptance is by visual comparison with no numeric tolerance. Also require the factory to retain a sealed master sample and state where the buyer board is stored. Leaving the reference method unstated is what turns a colour question into an unresolvable argument about method."
+    ]
+  ]
+}

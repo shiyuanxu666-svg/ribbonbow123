@@ -1,0 +1,93 @@
+{
+  "slug": "blog-ribbon-batch-code-lot-numbering-component-label-compliance-labelling-traceability-requirements-recall-readiness-brand-procurement-guide-2026-11-19-pm",
+  "title": "Ribbon Batch Coding and Compliance Labelling Guide",
+  "meta_desc": "A ribbon labelling specification: batch and lot codes, fibre content and origin marking, label data fields and the records a recall depends on.",
+  "og_desc": "A practical ribbon labelling and traceability specification: how to structure batch codes, declare fibre content, mark origin, and keep the records that make a recall answerable.",
+  "tw_desc": "Ribbon batch coding and compliance labelling explained - lot number structure, fibre content and origin marking, label data fields, and the traceability records a recall depends on.",
+  "section": "B2B Quality and Compliance",
+  "minutes": "22 min read",
+  "kpi": "A label is the only part of a roll of ribbon that leaves the factory with you on it. Everything else - the weave, the dye lot, the finishing batch - disappears once the ribbon is trimmed and packed. If the label does not carry enough information to identify that ribbon later, traceability stops being possible and the only remaining options are a full recall or no answer at all.",
+  "keywords": [
+    "ribbon batch code labelling",
+    "ribbon lot numbering traceability",
+    "ribbon fibre content label",
+    "ribbon country of origin marking",
+    "ribbon care label requirements",
+    "ribbon packaging label specification",
+    "ribbon recall readiness textile",
+    "GS1 ribbon packaging label",
+    "ribbon material declaration label",
+    "private label ribbon barcode",
+    "textile labelling regulation ribbon",
+    "brand buyer ribbon traceability spec",
+    "ribbon roll label fields",
+    "ribbon dye lot identification",
+    "ribbon supplier traceable records",
+    "ribbon label artwork approval",
+    "brand procurement guide ribbon OEM"
+  ],
+  "toc": [
+    [
+      "why-label-matters",
+      "Why the Label Is the Only Durable Record"
+    ],
+    [
+      "lot-code-structure",
+      "Designing a Batch and Lot Code Structure"
+    ],
+    [
+      "label-data-fields",
+      "The Fields a Ribbon Label Should Carry"
+    ],
+    [
+      "material-declaration",
+      "Material and Component Declaration"
+    ],
+    [
+      "origin-marking",
+      "Country of Origin and Import Marking"
+    ],
+    [
+      "barcode-retail",
+      "Barcode and Retail Presentation Requirements"
+    ],
+    [
+      "traceability-records",
+      "The Records That Make a Recall Workable"
+    ],
+    [
+      "common-mistakes",
+      "Seven Labelling Mistakes That Break Traceability"
+    ],
+    [
+      "faq",
+      "Frequently Asked Questions"
+    ]
+  ],
+  "faq": [
+    [
+      "How do we design a lot code that will still be readable in three years?",
+      "Encode meaning rather than sequence. A lot code should carry the production date, the line or shift, and a batch discriminator, because those are the three questions you will actually ask during a claim or a recall - when was it made, where, and which group shares its characteristics. A purely sequential number answers none of them and forces a lookup into records that may no longer exist. Keep the format fixed and short enough to survive printing on a narrow ribbon edge, and never reuse a lot code, even years later."
+    ],
+    [
+      "Do we really need fibre content on ribbon labels?",
+      "It depends on the market and the use. Textile labelling and fibre content requirements that apply to apparel do not automatically apply to decorative trim, but they become live the moment the ribbon is sold in a garment, attached to a textile article, or presented to consumers as a product with a material claim. Many retail and brand programmes impose the requirement voluntarily because a question on a customer care line is far more expensive than a label. Decide the requirement by market and channel, document it in the label specification, and confirm it with the compliance contact at the destination rather than assuming."
+    ],
+    [
+      "What is the difference between a batch code, a lot number and a roll number?",
+      "They describe three different granularities. A batch number groups material produced together under the same conditions and is the right unit for quality claims and traceability. A lot number is a commercial and accounting grouping, often larger than a batch, and is what appears on invoices and packing lists. A roll number identifies one physical unit. The practical rule is that a customer complaint must always be resolvable to a batch, and a recall must always be resolvable to a set of batches. Getting that hierarchy right at the start is far cheaper than retrofitting it later."
+    ],
+    [
+      "How long should we keep production and traceability records?",
+      "Long enough to cover the life of the product plus the statute of limitations for the claims you could face against it, which for consumer products is often considerably longer than the warranty period. In practice, textile and safety-critical records are frequently retained for five to ten years. The determinant is not fashion cycles but liability exposure. Whatever the commercial retention period for the ribbon, the quality and traceability records should have a separately defined and longer retention period, because that is what a claim will require."
+    ],
+    [
+      "Who decides the label artwork, and when should it be approved?",
+      "The brand owns the label content, because it carries the brand's regulatory and marketing claims, and the factory owns the execution, because it is the party that knows the production data that has to be encoded. The handover happens at artwork approval, which should happen before the first production batch rather than alongside it, because the batch code format determines how the data is captured at the line. If the format is not agreed before production, the factory will capture data in a form that cannot be read onto the label without transcription, and transcription is where traceability errors are introduced."
+    ],
+    [
+      "Does every destination market need the same label?",
+      "No, and treating them as identical creates customs and compliance problems rather than avoiding them. Requirements for fibre content, origin marking, language, hazard information and packaging recycling marks vary by market and by how the product is sold. A practical structure is a master label specification covering everything, with per-market variants that differ only where a rule differs. Maintaining variants explicitly - rather than letting each order deviate - keeps the number of label SKUs manageable and stops a market-specific rule being missed."
+    ]
+  ]
+}

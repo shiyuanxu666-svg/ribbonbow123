@@ -1,0 +1,80 @@
+{
+  "slug": "blog-ribbon-winding-roll-specification-spool-core-length-metre-weight-tolerance-slitting-line-lot-labeling-oem-brand-procurement-guide-2026-11-17-pm",
+  "title": "Ribbon Winding and Roll Specification - How to Specify Spool, Core, Length and Weight Tolerance (2026)",
+  "meta_desc": "A buyer's guide to ribbon winding and roll specification: spool and core sizes, length and net weight tolerances, slitting, roll labelling and how each affects your line.",
+  "og_desc": "Ribbon roll specification explained: spool and core sizes, length and net weight tolerances, slitting, roll labelling, and how each affects your own line.",
+  "tw_desc": "How to specify ribbon winding correctly - spool, core, length, net weight tolerance, slitting and roll labelling - and why it decides your line speed.",
+  "section": "B2B OEM and Private Label",
+  "minutes": "25 min read",
+  "kpi": "A roll of ribbon is not a length of ribbon. It is a length of ribbon wound onto a specific core, at a specific width, to a specific net weight, with a specific label, and a large proportion of production disputes in ribbon sourcing turn out to be disagreements about which of those five things was actually specified.",
+  "keywords": [
+    "ribbon winding specification",
+    "ribbon roll specification",
+    "ribbon spool size",
+    "ribbon core diameter",
+    "ribbon net weight",
+    "ribbon length tolerance",
+    "ribbon slitting",
+    "ribbon roll labelling",
+    "ribbon lot identification",
+    "how to order ribbon by weight",
+    "ribbon net weight vs metre",
+    "ribbon winding direction",
+    "ribbon roll packaging",
+    "ribbon reel specification",
+    "ribbon production yield",
+    "ribbon card core",
+    "ribbon plastic spool",
+    "ribbon metreage calculation",
+    "ribbon yield per kilogram",
+    "ribbon supplier specification sheet",
+    "ribbon order quantity basis",
+    "ribbon roll handling",
+    "ribbon net vs gross weight",
+    "ribbon carton quantity"
+  ],
+  "toc": [
+    ["why-roll-spec", "Why the roll specification is a separate decision"],
+    ["core-and-spool", "Core and spool: what to specify and why"],
+    ["width-and-slit", "Width, slitting and the sliver problem"],
+    ["length-and-weight", "Length and net weight: the two bases of order quantity"],
+    ["winding-quality", "Winding quality defects and how to test for them"],
+    ["labeling", "Roll labelling and lot identification"],
+    ["packaging", "Carton and pack specification"],
+    ["what-to-write", "What to write into the specification sheet"]
+  ],
+  "faq": [
+    [
+      "Should I order ribbon by metres or by net weight?",
+      "Specify net weight as the controlling quantity and use metres as a derived figure. Net weight is what the mill controls and what is weighed at the point of production; metreage depends on width, construction and finishes that you have already fixed in the specification, so it is a consequence rather than an input. Ordering by metres alone leaves the mill free to deliver the same metres in a heavier or lighter construction, which changes your true cost per metre and your yield per kilogram. The exception is where a customer-facing pack has a fixed cut length, such as a 10-metre retail spool, where the length is genuinely controlled and the net weight becomes the derived figure."
+    ],
+    [
+      "Which core size should I specify?",
+      "Most ribbon is supplied on a standard 25 mm (1 inch) core, with 38 mm (1.5 inch) and 76 mm (3 inch) also common for wider goods and heavier reels. Specify the core diameter in the order, because it changes both the roll's outer diameter for a given length and the amount of ribbon wound onto each core. A bigger core means a longer roll for the same weight and less frequent re-threading on the line, but a larger carton and a higher freight cost per metre. If your existing line equipment is set up for a particular core, state that as a fixed requirement rather than leaving it to default."
+    ],
+    [
+      "What net weight tolerance is reasonable to specify?",
+      "A tolerance of plus or minus 5 per cent on net weight per roll is a normal working commercial standard and is normally achievable without special measures on a specified construction. Tighter tolerances of plus or minus 3 per cent or less are achievable but usually attract a price premium and can restrict the mill's freedom to compensate for normal process variation by adjusting the winding, which in turn increases the risk of other defects such as excessive roll hardness. Specify the tolerance and then confirm that it applies to the rolled product rather than to the average of a batch, because the distinction determines who absorbs the variance."
+    ],
+    [
+      "How should roll labels be specified?",
+      "Specify at minimum the buyer or brand name, the internal article or SKU reference, the colour or Pantone reference, the roll number within the lot, the net weight and the lot or batch identifier. The lot identifier is the one that buyers most often leave out and most often need, because it is the only field that ties a physical roll back to the dye lot and the inspection record it came from. Require the label to be applied to the spool itself rather than only to the outer carton, so that the identification survives the carton being opened and removed for handling."
+    ],
+    [
+      "What is the difference between gross weight and net weight, and which should be on the packing list?",
+      "Gross weight is the roll plus its spool plus its packaging. Net weight is the ribbon alone. The packing list should show net weight per roll and gross weight per carton, because the two figures are used for entirely different purposes: net weight drives the commercial invoice and the quantity reconciliation against the purchase order, while gross weight drives freight calculation and customs. If a supplier quotes only gross weight and your purchase order is written on net weight, the delivered quantity will appear short by the weight of the spool and packaging on every roll in the consignment."
+    ],
+    [
+      "What winding defects should I look for during incoming inspection?",
+      "The defects that matter in practice are uneven end faces, which indicate poor winding tension control; ribbon that is wound too tightly and shows a visible dent or depression along the roll when pressed; ribbon wound too loosely, which shows as a soft roll with edge movement and a risk of telescoping in transit; ribbon overhang beyond the flange of the spool, which will foul the guide on a running line; and ribbon that has been wound with the printed or wired face on the inside, where the face will rub against itself. All five are visible in a thirty-second check on a random roll, and all five are cheaper to catch at goods-inward than to find in finished goods."
+    ],
+    [
+      "How does roll specification affect the cost of the ribbon?",
+      "It affects it in three ways, and only one of them is obvious. The obvious one is material: a heavier spool uses more cardboard or plastic per metre of ribbon. The second is packaging and freight: a larger roll diameter means fewer rolls per carton, more volume per shipment and a higher freight cost per metre. The third, and usually the largest, is production efficiency, because a specification that forces the mill to change winding settings or re-thread more often costs the mill time that is eventually reflected in the price. A well-specified roll that suits the mill's existing equipment is normally cheaper per metre than a bespoke specification that does not."
+    ],
+    [
+      "Should I specify the winding direction?",
+      "Only if it matters to your process, but specify it explicitly rather than leaving it open. Ribbon wound face-in and ribbon wound face-out behave differently on a running line: face-out reduces the tendency for decorated surfaces to abrade against the next layer, while face-in is often preferred where the ribbon will be unwound over a long path and the surface needs protection. The requirement is common in decorative and printed ribbon and rarely arises in plain or wired goods. If your requirement is genuinely indifferent, saying so in the order removes a source of unnecessary variation between deliveries."
+    ]
+  ]
+}

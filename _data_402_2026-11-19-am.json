@@ -1,0 +1,90 @@
+{
+  "slug": "blog-ribbon-oem-change-control-order-confirmation-ecn-modification-cost-reapproval-workflow-brand-procurement-guide-2026-11-19-am",
+  "title": "Ribbon OEM Change Control - ECN Approval and Re-Costing",
+  "meta_desc": "How to run change control in a ribbon OEM programme: order confirmation versioning, ECN approval workflow, cost recovery and sample re-approval.",
+  "og_desc": "A practical guide to ribbon OEM change control: order confirmation version control, ECN approval workflow, modification cost recovery, and re-approval of a changed golden sample.",
+  "tw_desc": "Ribbon OEM change control explained - order confirmation versions, ECN approvals, who pays for changes, and re-approving a modified sample before production.",
+  "section": "B2B Quality and Compliance",
+  "minutes": "21 min read",
+  "kpi": "A specification change that nobody formally approved is the single most common cause of a ribbon shipment that nobody can sign off. Change control is what converts a phone call into a priced, dated, signed instruction - and what stops the warehouse receiving goods against a specification that no longer exists.",
+  "keywords": [
+    "ribbon OEM change control",
+    "engineering change notice ECN ribbon",
+    "ribbon order confirmation version control",
+    "ribbon specification change approval",
+    "ribbon sample re-approval",
+    "change order cost recovery ribbon",
+    "ribbon procurement change management",
+    "golden sample amendment ribbon",
+    "ribbon colour change mid production",
+    "ribbon width change order",
+    "private label ribbon specification change",
+    "brand buyer change control ribbon",
+    "ribbon artwork revision approval",
+    "ribbon BOM revision control",
+    "ribbon supplier change notification",
+    "modification charge ribbon OEM",
+    "ribbon production change log",
+    "brand procurement guide ribbon OEM"
+  ],
+  "toc": [
+    [
+      "why-change-control",
+      "Why Change Control Exists in a Ribbon Programme"
+    ],
+    [
+      "confirmation-versioning",
+      "The Order Confirmation Is a Versioned Document"
+    ],
+    [
+      "ecn-workflow",
+      "The ECN Workflow: Who Proposes, Who Reviews, Who Approves"
+    ],
+    [
+      "cost-recovery",
+      "Cost Recovery: Which Changes Are Free and Which Are Charged"
+    ],
+    [
+      "sample-reapproval",
+      "Re-Approval: When a Change Means the Golden Sample Is Dead"
+    ],
+    [
+      "change-log",
+      "The Change Log and How to Read It in a Dispute"
+    ],
+    [
+      "common-mistakes",
+      "Six Mistakes That Turn a Small Change Into a Shipment Dispute"
+    ],
+    [
+      "faq",
+      "Frequently Asked Questions"
+    ]
+  ],
+  "faq": [
+    [
+      "What is the difference between a change order and an engineering change notice?",
+      "A change order is the commercial instrument - it moves the price, the quantity or the delivery date, and it becomes part of the contract. An ECN is the technical instrument - it records what is changing in the product or its process and who authorised it. A single event usually needs both: the ECN establishes what is technically different and why, and the change order establishes what it costs and when it ships."
+    ],
+    [
+      "Can a ribbon factory change a material without notifying us?",
+      "It should not, and in a properly written supply agreement it cannot without notice. Substituting a resin, a yarn supplier, a dye house or a finishing line changes the delivered product even when the specification on paper is unchanged. Your agreement should require advance written notice of any material, process, site or sub-tier change that affects the product, with a stated notice period before the change takes effect and a right for you to reject it or to sample the changed material before accepting it."
+    ],
+    [
+      "How far back can a ribbon supplier go in changing a specification after order confirmation?",
+      "Anywhere between no notice and unlimited notice, depending entirely on how the contract is written. That is the problem. A purchase order that silently permits changes gives the factory commercial flexibility it does not deserve and removes your ability to plan. Define the cut-off explicitly in terms of production stage - for example, changes permitted up to the dyeing stage, changes requiring re-approval after dyeing, and changes not permitted once cutting or finishing has started - and attach the stage gates to the production schedule so both sides are working from the same timeline."
+    ],
+    [
+      "We approved a colour from a physical swatch. The factory says the new dye lot is slightly different. Who is right?",
+      "Both statements are usually true, which is why colour changes need their own rule. A swatch describes a target; a dye lot is an instance. The question is whether the difference falls inside your agreed tolerance - typically expressed as a delta value under a standard viewing condition. If the new lot is inside the tolerance, the factory should proceed and note the lot change in the change log. If it is outside, the change is not a nuisance variation, it is a specification change and needs approval before the goods move. Decide this rule before the first order, not during the first argument."
+    ],
+    [
+      "Should a ribbon change be paid for even if it was our fault?",
+      "That is a contractual allocation question, and the honest answer is that the default in most supply agreements puts the cost on the buyer unless the agreement says otherwise. It is worth resisting that default. Costs that arise because the factory quoted or produced to a specification it had already accepted - a misread width, an unflagged colour tolerance, a material it chose - are the factory's cost to absorb. Costs that arise because the buyer changed their mind after approval are the buyer's. The distinction is cause, and it should be written as cause, not as a blunt blanket rule."
+    ],
+    [
+      "How do we avoid version chaos across email, WhatsApp and purchase orders?",
+      "Establish one controlled document and route everything else into it. The purchase order and its confirmed specification annex become the single source of truth, and every proposed change references a numbered entry in that document rather than a message thread. Verbal and instant-messaging approvals should be explicitly non-binding and should trigger a written change record within a defined window - commonly one working day. When buyers and factory both keep their own copy, disputes stop being about facts and become about which copy is current."
+    ]
+  ]
+}
