@@ -29,6 +29,13 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: '.'
+      # Workaround: deploy-pages@v4 lists the just-uploaded "github-pages" artifact
+      # via the Actions API, which intermittently returns 0 artifacts right after
+      # upload ("Found 0 artifact(s)" / "Fetching artifact metadata failed"),
+      # failing the deploy even though the artifact exists. Wait for the artifact
+      # index to become visible before deploying.
+      - name: Wait for artifact to become visible
+        run: sleep 45
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
