@@ -1,6 +1,19 @@
 # Pending Manual Push
 
-- **Status**: ✅ CLEARED — push landed on `origin/main`; both 2026-11-24 articles live (HTTP 200).
+- **Status**: ✅ CLEARED — push landed on `origin/main`; both 2026-11-26 articles live (HTTP 200).
+- **Last successful push**: 2026-11-26 cron (08:00 AM + 13:00 PM slots), ribbonbow123.
+- **Articles published (2026-11-26)**:
+  - AM `blog-ribbon-oem-backing-substrate-materials-solid-organza-metallic-film-nonwoven-decoration-method-construction-tradeoffs-brand-procurement-guide-2026-11-26-am.html`
+  - PM `blog-ribbon-oem-decoration-durability-foil-adhesion-rub-fastness-print-abrasion-resistance-metallic-film-transfer-testing-brand-procurement-guide-2026-11-26-pm.html`
+- Publish path: `publish_guard.py push --from-status` → ok=6 skipped=10 failed=0 (10 legacy files
+  already byte-identical on remote). `publish_guard.py verify` → both files present on remote tree
+  but live 404 → Pages deploy lag → single `workflow_dispatch` of `deploy.yml` on `ref: main`
+  after queue drain → both articles HTTP 200 (matches the 11-23/11-24 playbook).
+- Live verification: both article URLs HTTP 200; `blog.html` / `en-blog.html` / `index.html` each
+  contain both slugs; `sitemap.xml` 891 locs / 891 unique, 2× `<lastmod>2026-11-26</lastmod>`.
+- `reconcile_remote.py` → LOCAL-ONLY = 0.
+- `publish_guard.py check` → 895 html scanned, 0 error.
+- Local git commit: `3e50349`.
 - **Last successful push**: 2026-11-24 cron (08:00 AM + 13:00 PM slots), ribbonbow123.
 - **Re-verified 2026-11-24 (13:00 slot re-entry)**: reconcile LOCAL-ONLY = 0; both article
   URLs HTTP 200; live sitemap carries 2× `<lastmod>2026-11-24</lastmod>` and 885 `<loc>`;
