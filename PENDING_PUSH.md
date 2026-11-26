@@ -1,6 +1,19 @@
 # Pending Manual Push
 
-- **Status**: ✅ CLEARED — push landed on `origin/main`; both 2026-11-26 articles live (HTTP 200).
+- **Status**: ✅ CLEARED — 2026-11-26 13:00 slot re-entry. Both 2026-11-26 articles already
+  published and live (HTTP 200); no new articles generated (day's 2 slots already filled).
+- **2026-11-26 13:00 slot action**: `reconcile_remote.py` → LOCAL-ONLY = 0 (nothing pending).
+  Remote `sitemap.xml` diff vs local → 895/895, LOCAL-ONLY = 0, REMOTE-ONLY = 0.
+  Live sitemap initially served a stale tree (477 locs → 105 locs mid-deploy, then settled to
+  **895 locs / 2× `<lastmod>2026-11-26</lastmod>`**) — Pages deploy was in flight, no action
+  needed. Both article URLs HTTP 200 throughout.
+- **Sitemap repair committed locally**: `sitemap.xml` had 4 live-but-unlisted URLs
+  (`blog-ribbon-batch-code-lot-numbering-...-2026-11-19-pm.html`,
+  `blog-ribbon-oem-attachment-application-...-2026-11-09-am.html`,
+  `blog-ribbon-oem-change-control-order-confirmation-...-2026-11-19-am.html`, `zh/`),
+  all confirmed HTTP 200. Restored → 895 locs / 895 unique. Local git commit `b206ead`.
+  (Remote already carried the corrected sitemap, so no push was required.)
+- `publish_guard.py check` → 895 html scanned, 0 error; sitemap 895 locs / 895 unique / 1 host.
 - **Last successful push**: 2026-11-26 cron (08:00 AM + 13:00 PM slots), ribbonbow123.
 - **Articles published (2026-11-26)**:
   - AM `blog-ribbon-oem-backing-substrate-materials-solid-organza-metallic-film-nonwoven-decoration-method-construction-tradeoffs-brand-procurement-guide-2026-11-26-am.html`
