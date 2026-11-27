@@ -1,27 +1,62 @@
 # Pending Manual Push
 
-- **Status**: ✅ CLEARED — 2026-11-26 13:00 slot re-entry. Both 2026-11-26 articles already
-  published and live (HTTP 200); no new articles generated (day's 2 slots already filled).
-- **2026-11-26 13:00 slot action**: `reconcile_remote.py` → LOCAL-ONLY = 0 (nothing pending).
-  Remote `sitemap.xml` diff vs local → 895/895, LOCAL-ONLY = 0, REMOTE-ONLY = 0.
-  Live sitemap initially served a stale tree (477 locs → 105 locs mid-deploy, then settled to
-  **895 locs / 2× `<lastmod>2026-11-26</lastmod>`**) — Pages deploy was in flight, no action
-  needed. Both article URLs HTTP 200 throughout.
-- **Sitemap repair committed locally**: `sitemap.xml` had 4 live-but-unlisted URLs
-  (`blog-ribbon-batch-code-lot-numbering-...-2026-11-19-pm.html`,
-  `blog-ribbon-oem-attachment-application-...-2026-11-09-am.html`,
-  `blog-ribbon-oem-change-control-order-confirmation-...-2026-11-19-am.html`, `zh/`),
-  all confirmed HTTP 200. Restored → 895 locs / 895 unique. Local git commit `b206ead`.
-  (Remote already carried the corrected sitemap, so no push was required.)
-- `publish_guard.py check` → 895 html scanned, 0 error; sitemap 895 locs / 895 unique / 1 host.
+- **Status**: ✅ CLEARED — 2026-11-27 cron (08:00 AM + 13:00 PM slots), ribbonbow123.
+  Both articles published and live (HTTP 200); LOCAL-ONLY = 0; nothing pending.
+
+## 2026-11-27 cron run
+
+- **Articles published**:
+  - AM `blog-ribbon-oem-woven-ribbon-weaving-defect-taxonomy-broken-picks-weft-bars-floats-snags-misses-inspection-specification-brand-procurement-guide-2026-11-27-am.html`
+    — "Woven Ribbon Weaving Defect Taxonomy and Inspection Specifications" (~5,000 words, 8 FAQ)
+  - PM `blog-ribbon-oem-winding-core-roll-format-specification-automated-feeding-bow-machine-packaging-line-jam-reduction-roll-changeover-brand-procurement-guide-2026-11-27-pm.html`
+    — "Ribbon Winding, Core and Roll Format Specification for Automated Feeding" (~4,770 words, 8 FAQ)
+- `publish_guard.py check` → 898 html scanned, **0 error**; sitemap 897 locs / 897 unique / 1 host.
+- `publish_guard.py push --from-status` → **ok=6 skipped=0 failed=0** (2 articles + blog.html +
+  en-blog.html + index.html + sitemap.xml).
+- `publish_guard.py verify` → both files present on remote tree, but live 404 →
+  **Pages deploy lock contention** (occurrence #26, same root cause as 11-24).
+  Fix: queue-drain wait → **single `workflow_dispatch` of `deploy.yml` on `ref: main`**
+  → both articles HTTP 200 on first poll.
+  Tool: `/workspace/tools/rb_pages_rebuild_1127.py`.
+- `reconcile_remote.py` → **LOCAL-ONLY = 0** (REMOTE-ONLY = 28 legacy `_body_*` build artifacts, harmless).
+- Live verification: both article URLs HTTP 200; `blog.html` / `en-blog.html` / `index.html` HTTP 200
+  and each contain both slugs; live `sitemap.xml` = 897 `<loc>`, 2× `<lastmod>2026-11-27</lastmod>`.
+- Local git commit: `db269f3`.
+
+## ⚠️ sitemap.xml corruption repaired (2026-11-27) — pre-existing, not caused by this run
+
+The `sitemap.xml` inherited from the 2026-11-26 rebase merge had **two structural defects that
+were already committed in HEAD** (`b5785b6`) and were being **served live**:
+
+1. A stray merge-conflict marker `<<<<<<< HEAD` on line 2 (the `=======` / `>>>>>>>` halves had
+   been resolved away, but the opening marker survived).
+2. **No `</urlset>` closing tag** — the file was truncated XML.
+
+Consequence: the entire 895-URL sitemap was **not parseable as XML** by any strict parser, so
+search engines could not process it — despite every individual URL returning HTTP 200.
+
+Every committed version going back to `f35cc48` carried the marker, and none had the closing tag;
+the last clean sitemap in history was `b5d5564` (63 URLs). The rebase merge on 2026-11-26
+produced this.
+
+**Repair** (`/workspace/tools/fix_rb_sitemap_xml.py`, idempotent): strip the conflict-marker line,
+append the missing `</urlset>`, keep all 895 `<loc>` entries unchanged. Verified:
+`xml.etree.ElementTree.fromstring()` parses OK; 897 locs / 897 unique; 1 host; 0 conflict markers.
+**Live sitemap now parses correctly** with 897 `<loc>` entries.
+
+*Note for future slots:* `publish_guard.py check` does **not** validate sitemap XML well-formedness
+— only loc uniqueness, host, and future-dates. It passed clean while the sitemap was invalid XML.
+Consider adding an `ET.fromstring()` assertion to `check_sitemap()`.
+
+## Historical
+
 - **Last successful push**: 2026-11-26 cron (08:00 AM + 13:00 PM slots), ribbonbow123.
-- **Articles published (2026-11-26)**:
+- Articles published (2026-11-26):
   - AM `blog-ribbon-oem-backing-substrate-materials-solid-organza-metallic-film-nonwoven-decoration-method-construction-tradeoffs-brand-procurement-guide-2026-11-26-am.html`
   - PM `blog-ribbon-oem-decoration-durability-foil-adhesion-rub-fastness-print-abrasion-resistance-metallic-film-transfer-testing-brand-procurement-guide-2026-11-26-pm.html`
-- Publish path: `publish_guard.py push --from-status` → ok=6 skipped=10 failed=0 (10 legacy files
-  already byte-identical on remote). `publish_guard.py verify` → both files present on remote tree
-  but live 404 → Pages deploy lag → single `workflow_dispatch` of `deploy.yml` on `ref: main`
-  after queue drain → both articles HTTP 200 (matches the 11-23/11-24 playbook).
+- Publish path: `publish_guard.py push --from-status` → ok=6 skipped=10 failed=0. `publish_guard.py
+  verify` → both files present on remote tree but live 404 → Pages deploy lag → single
+  `workflow_dispatch` of `deploy.yml` on `ref: main` after queue drain → both articles HTTP 200.
 - Live verification: both article URLs HTTP 200; `blog.html` / `en-blog.html` / `index.html` each
   contain both slugs; `sitemap.xml` 891 locs / 891 unique, 2× `<lastmod>2026-11-26</lastmod>`.
 - `reconcile_remote.py` → LOCAL-ONLY = 0.
@@ -33,7 +68,7 @@
   live blog.html / en-blog.html / index.html all link both articles. `publish_guard.py check`
   → 888 html, 0 error. Local git history now records both articles (commit `74c268d`).
   → **No new push was needed**; the 13:00 slot was already published by the earlier run.
-- **Articles published**:
+- Articles published:
   - AM `blog-ribbon-oem-scrap-yield-waste-material-efficiency-trim-loss-setup-waste-colour-change-waste-defective-roll-cost-recovery-brand-procurement-guide-2026-11-24-am.html`
   - PM `blog-ribbon-oem-supplier-risk-assessment-business-continuity-dual-sourcing-financial-health-warning-signs-exit-plan-dependency-map-brand-procurement-guide-2026-11-24-pm.html`
 - Live verification: both article URLs return HTTP 200; sitemap.xml contains both `<loc>` entries with `<lastmod>2026-11-24</lastmod>`.
@@ -57,8 +92,3 @@
   workflow). GSC sitemap submission for 2026-11-24 may therefore be missing — harmless for
   crawl discovery (the sitemap is served live and linked from robots.txt) but worth a manual
   GSC ping if the next slot reports a stale `last seen`.
-
-## Action required
-
-None. If a future cron run reports a push failure, do not retry in the same run —
-record it here and leave it for the next cron cycle or for manual action.
